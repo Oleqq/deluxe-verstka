@@ -1,0 +1,1232 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <link rel="stylesheet" href="/css/bootstrap.min.css">
+
+    <link rel="stylesheet" href="./css/menu.css">
+
+    <link rel="stylesheet" href="./css/style.css">
+
+    
+
+    
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+    <script src="./menu.js"></script>
+
+    
+</head>
+<body class="club__body">
+
+    <header class="header" id="header">
+        <ul class="menu">
+            <div class="burger-menu" id="burger-menu">
+                <div class="bar white"></div>
+                <div class="bar white"></div>
+                <div class="bar white"></div>
+            </div>
+              
+                
+            <li class="menu-item">
+                    <div class="menu-dropdown">
+                        <div class="selected-menu white">
+                            
+                            <div class="selected-menu__title-secondary white">НАПРАВЛЕНИЯ И ЦЕНЫ</div>
+                            
+                        </div>
+                        <ul class="menu-list menu-list-secondary">
+                            <li class="menu-list__item white"><a href="./services.html"><span>• </span>Врачебный прием</a></li>
+                            <li class="menu-list__item white"><a href="./services.html"><span>• </span>Эстетическая косметология</a></li>
+                            <li class="menu-list__item white"><a href="./services.html"><span>• </span>Инъекционная косметология</a></li>
+                            <li class="menu-list__item white"><a href="./services.html"><span>• </span>Аппаратная косметология</a></li>
+                            <li class="menu-list__item white"><a href="./services.html"><span>• </span>ЛАЗЕРНАЯ ЭПИЛЯЦИЯ</a></li>   
+                            <li class="menu-list__item white"><a href="./services.html"><span>• </span>SPA-ПРОГРАММЫ И МАССАЖ</a></li>   
+                        </ul>
+                    </div>        
+            </li>
+            <li class="menu-item white"><a href="/">ДО И ПОСЛЕ</a></li>
+            <li class="menu-item white"><a href="/">КЛУБ ПРИВИЛЕГИЙ</a></li>
+            <li class="menu-item white"><a href="/">СЕРТИФИКАТЫ</a></li>
+        </ul>
+        <div class="container header__container">
+            <div class="row header__row">
+                <nav class="nav" id="nav">
+                    
+                    <div class="burger-menu-mobile" id="burger-menu-mobile">
+                        <div class="bar white"></div>
+                        <div class="bar white"></div>
+                        <div class="bar white"></div>
+                    </div>
+
+                    <a href="/" class="header__logo">
+                        <svg width="290" height="33" viewBox="0 0 290 33" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M0 32.6418V0.732666H13.1933C14.6585 0.732666 16.0839 0.92493 17.4562 1.30283C18.8286 1.68073 20.1081 2.21774 21.2882 2.91387C22.475 3.61 23.5689 4.45198 24.5501 5.41993C25.5379 6.39451 26.3733 7.46853 27.0694 8.64863C27.7655 9.82873 28.3092 11.095 28.6937 12.4608C29.0782 13.8199 29.2705 15.2254 29.2705 16.6972C29.2705 18.1756 29.0782 19.5811 28.6937 20.9402C28.3092 22.2994 27.7655 23.5723 27.0694 24.7524C26.3733 25.9325 25.5313 27.0065 24.5501 27.9811C23.5623 28.9557 22.475 29.7844 21.2882 30.4739C20.1015 31.1634 18.8286 31.7004 17.4562 32.0783C16.0839 32.4562 14.6585 32.6484 13.1933 32.6484H0V32.6418ZM225.181 22.3126C223.285 24.9181 221.395 27.5236 219.499 30.1291C218.909 30.9313 218.199 31.5479 217.377 31.9855C216.555 32.423 215.587 32.6484 214.493 32.6484H208.487L219.592 17.6187C220.188 16.843 220.135 16.127 219.572 15.3447L208.779 0.739292H214.785C215.853 0.739292 216.814 0.95145 217.669 1.37576C218.524 1.80006 219.207 2.41 219.724 3.20557L225.201 10.6773C227.01 8.20443 228.814 5.7249 230.63 3.25199C231.731 1.57465 233.395 0.739292 235.636 0.739292H241.596L230.736 15.4309C230.259 16.1204 230.226 16.8165 230.736 17.506C234.416 22.5844 238.188 27.5965 241.908 32.6484H235.967C234.853 32.6484 233.892 32.423 233.077 31.9788C232.261 31.5346 231.572 30.9313 231.008 30.1755C229.066 27.5568 227.123 24.938 225.181 22.3192V22.3126ZM13.2065 25.3424C14.38 25.3424 15.4938 25.1104 16.5546 24.6596C17.6087 24.2087 18.5435 23.5922 19.3523 22.8098C20.1612 22.0342 20.7976 21.1126 21.275 20.0585C21.7523 19.0043 21.9844 17.8839 21.9844 16.6906C21.9844 15.5038 21.7457 14.3834 21.275 13.3293C20.7976 12.2751 20.1612 11.3536 19.3523 10.5646C18.5435 9.77569 17.6087 9.16575 16.5546 8.7083C15.4938 8.25747 14.38 8.02543 13.2065 8.02543H7.29276V25.3358H13.2065V25.3424ZM79.3784 32.6418H58.1299V0.732666H79.3784V7.54146H65.4293V13.1502H76.7795V19.959H65.4293V25.833H79.3784V32.6418ZM108.536 32.6418V0.732666H115.836V25.833H128.432V32.6418H108.536ZM290 32.6418H268.752V0.732666H290V7.54146H276.044V13.1502H287.395V19.959H276.044V25.833H290V32.6418Z" fill="#ECE4D7"/>
+                            <path fill-rule="evenodd" clip-rule="evenodd" d="M180.741 25.833H157.358V32.6418H180.741V25.833Z" fill="#ECE4D7"/>
+                            <path d="M163.066 9.84862C163.066 10.6442 163.232 11.4066 163.557 12.116C163.882 12.8254 164.326 13.4486 164.869 13.9856C165.413 14.516 166.05 14.9403 166.766 15.2519C167.475 15.5635 168.244 15.716 169.04 15.716C169.835 15.716 170.598 15.5569 171.307 15.2519C172.023 14.9403 172.666 14.516 173.223 13.9856C173.78 13.4486 174.217 12.8254 174.542 12.116C174.867 11.4066 175.033 10.6508 175.033 9.84862V0.732666H182.332V9.86188C182.332 11.6851 181.981 13.4022 181.285 14.9933C180.589 16.5845 179.641 17.9767 178.434 19.1701C177.234 20.3568 175.828 21.2916 174.224 21.9811C172.613 22.6706 170.883 23.022 169.046 23.022C167.826 23.022 166.653 22.8629 165.532 22.5579C164.405 22.2463 163.351 21.8021 162.37 21.232C161.395 20.6618 160.494 19.9789 159.678 19.1767C158.863 18.3745 158.167 17.4861 157.59 16.5116C157.013 15.5436 156.569 14.4961 156.251 13.3757C155.932 12.2552 155.767 11.0818 155.767 9.86851V0.739292H163.066V9.85524V9.84862Z" fill="#ECE4D7"/>
+                        </svg>
+                    </a>
+
+                    <div class="header__info">
+                        <div class="header__tel white">
+                            +7 900 000 00 00
+                        </div>
+                        <select class="city-dropdown white">
+
+                            <ul class="city-list white">
+                                <option>Кемерово</option>
+                                <option>Новокузнецк</option>
+                                <option>Новосибирск</option>
+                                <option>Томск</option>
+                                <option>Тайга</option>    
+                            </ul>
+                        </select>                 
+                    </div>
+
+                </nav>
+
+                
+
+            </div>
+        </div>
+    </header>
+    
+
+
+
+
+
+    <main class="index-main">
+
+    <div class="fullscreen-menu-secondary fullscreen-menu " id="fullscreen-menu">
+        <div class="container fullscreen-menu__container">
+
+
+
+            <div class="row fullscreen-menu__row fullscreen-menu__row-desktop">
+
+                
+                <div class="col-md-7">
+
+                    <div class="cd-dropdown-wrapper">
+                        
+                        <nav class="cd-dropdown dropdown-is-active">
+                         
+                          
+                          <ul class="cd-dropdown-content white">
+
+                            <li class="has-children white">
+                                <a href=" ">ЭСТЕТИЧЕСКАЯ КОСМЕТОЛОГИЯ</a>
+                                <ul class="cd-dropdown-icons white is-hidden">
+                                  <li class="go-back"><a href="#0">Menu</a></li>
+                                    <div class="cd-dropdown-subitem-group">
+                                        <li>
+                                            <a class="cd-dropdown-item item-1" href=" ">
+                                            <h3>  Лечение акне</h3>
+                                            </a>
+                                        </li>
+                            
+                                        <li>
+                                            <a class="cd-dropdown-item item-2" href=" ">
+                                                <h3>  Пигментация</h3>
+                                            </a>
+                                        </li>
+                            
+                                        <li>
+                                            <a class="cd-dropdown-item item-3" href=" ">
+                                                <h3>  Лазерное омоложение</h3>
+                                            </a>
+                                        </li>
+                            
+                                        <li>
+                                            <a class="cd-dropdown-item item-4" href=" ">
+                                                <h3>  Интимное отбеливание</h3>
+                                            </a>
+                                        </li>
+                            
+                                        <li>
+                                            <a class="cd-dropdown-item item-5" href=" ">
+                                                <h3>  Удаление тату и татуажа</h3>
+                                            </a>
+                                        </li>
+                            
+                                        <li>
+                                            <a class="cd-dropdown-item item-6" href=" ">
+                                                <h3>  Карбоновый пилинг</h3>
+                                            </a>
+                                        </li>
+                            
+                                        <li>
+                                            <a class="cd-dropdown-item item-7" href=" ">
+                                                <h3>  RF-лифтинг InMode - Израиль</h3>
+                                            </a>
+                                        </li>
+                            
+                                        <li>
+                                            <a class="cd-dropdown-item item-8" href=" ">
+                                                <h3>  Фотоомоложение InMode - Израиль</h3>
+                                            </a>
+                                        </li>
+                            
+                                        <li>
+                                            <a class="cd-dropdown-item item-9" href=" ">
+                                                <h3>  Отбеливание зубов</h3>
+                                            </a>
+                                        </li>
+                            
+                                        <li>
+                                            <a class="cd-dropdown-item item-10" href=" ">
+                                                <h3>  Дополнительные услуги</h3>
+                                            </a>
+                                        </li>
+                            
+                                    </div>
+                                </ul>
+                                
+                            </li>
+
+
+                            <li class="has-children white">
+                                <a href=" ">ИНЪЕКЦИОННАЯ КОСМЕТОЛОГИЯ</a>
+                                <ul class="cd-dropdown-icons white is-hidden">
+                                  <li class="go-back"><a href="#0">Menu</a></li>
+                                    <div class="cd-dropdown-subitem-group">
+                                        <li>
+                                            <a class="cd-dropdown-item item-1" href=" ">
+                                            <h3>  Лечение акне</h3>
+                                            </a>
+                                        </li>
+                            
+                                        <li>
+                                            <a class="cd-dropdown-item item-2" href=" ">
+                                                <h3>  Пигментация</h3>
+                                            </a>
+                                        </li>
+                            
+                                        <li>
+                                            <a class="cd-dropdown-item item-3" href=" ">
+                                                <h3>  Лазерное омоложение</h3>
+                                            </a>
+                                        </li>
+                            
+                                        <li>
+                                            <a class="cd-dropdown-item item-4" href=" ">
+                                                <h3>  Интимное отбеливание</h3>
+                                            </a>
+                                        </li>
+                            
+                                        <li>
+                                            <a class="cd-dropdown-item item-5" href=" ">
+                                                <h3>  Удаление тату и татуажа</h3>
+                                            </a>
+                                        </li>
+                            
+                                        <li>
+                                            <a class="cd-dropdown-item item-6" href=" ">
+                                                <h3>  Карбоновый пилинг</h3>
+                                            </a>
+                                        </li>
+                            
+                                        <li>
+                                            <a class="cd-dropdown-item item-7" href=" ">
+                                                <h3>  RF-лифтинг InMode - Израиль</h3>
+                                            </a>
+                                        </li>
+                            
+                                        <li>
+                                            <a class="cd-dropdown-item item-8" href=" ">
+                                                <h3>  Фотоомоложение InMode - Израиль</h3>
+                                            </a>
+                                        </li>
+                            
+                                        <li>
+                                            <a class="cd-dropdown-item item-9" href=" ">
+                                                <h3>  Отбеливание зубов</h3>
+                                            </a>
+                                        </li>
+                            
+                                        <li>
+                                            <a class="cd-dropdown-item item-10" href=" ">
+                                                <h3>  Дополнительные услуги</h3>
+                                            </a>
+                                        </li>
+                            
+                                    </div>
+                                </ul>
+                                
+                            </li>
+
+
+                            <li class="has-children white">
+                                <a href=" ">АППАРАТНАЯ КОСМЕТОЛОГИЯ</a>
+                                <ul class="cd-dropdown-icons white is-hidden">
+                                  <li class="go-back"><a href="#0">Menu</a></li>
+                                    <div class="cd-dropdown-subitem-group">
+                                        <li>
+                                            <a class="cd-dropdown-item item-1" href=" ">
+                                            <h3>  Лечение акне</h3>
+                                            </a>
+                                        </li>
+                            
+                                        <li>
+                                            <a class="cd-dropdown-item item-2" href=" ">
+                                                <h3>  Пигментация</h3>
+                                            </a>
+                                        </li>
+                            
+                                        <li>
+                                            <a class="cd-dropdown-item item-3" href=" ">
+                                                <h3>  Лазерное омоложение</h3>
+                                            </a>
+                                        </li>
+                            
+                                        <li>
+                                            <a class="cd-dropdown-item item-4" href=" ">
+                                                <h3>  Интимное отбеливание</h3>
+                                            </a>
+                                        </li>
+                            
+                                        <li>
+                                            <a class="cd-dropdown-item item-5" href=" ">
+                                                <h3>  Удаление тату и татуажа</h3>
+                                            </a>
+                                        </li>
+                            
+                                        <li>
+                                            <a class="cd-dropdown-item item-6" href=" ">
+                                                <h3>  Карбоновый пилинг</h3>
+                                            </a>
+                                        </li>
+                            
+                                        <li>
+                                            <a class="cd-dropdown-item item-7" href=" ">
+                                                <h3>  RF-лифтинг InMode - Израиль</h3>
+                                            </a>
+                                        </li>
+                            
+                                        <li>
+                                            <a class="cd-dropdown-item item-8" href=" ">
+                                                <h3>  Фотоомоложение InMode - Израиль</h3>
+                                            </a>
+                                        </li>
+                            
+                                        <li>
+                                            <a class="cd-dropdown-item item-9" href=" ">
+                                                <h3>  Отбеливание зубов</h3>
+                                            </a>
+                                        </li>
+                            
+                                        <li>
+                                            <a class="cd-dropdown-item item-10" href=" ">
+                                                <h3>  Дополнительные услуги</h3>
+                                            </a>
+                                        </li>
+                            
+                                    </div>
+                                </ul>
+                                
+                            </li>
+
+
+
+
+                            <li class="has-children white ">
+                                <a href=" ">ЛАЗЕРНАЯ ЭПИЛЯЦИЯ</a>
+                                <ul class="cd-dropdown-icons white is-hidden">
+                                  <li class="go-back"><a href="#0">Menu</a></li>
+                                    <div class="cd-dropdown-subitem-group">
+                                        <li>
+                                            <a class="cd-dropdown-item item-1" href=" ">
+                                            <h3>  Лечение акне</h3>
+                                            </a>
+                                        </li>
+                            
+                                        <li>
+                                            <a class="cd-dropdown-item item-2" href=" ">
+                                                <h3>  Пигментация</h3>
+                                            </a>
+                                        </li>
+                            
+                                        <li>
+                                            <a class="cd-dropdown-item item-3" href=" ">
+                                                <h3>  Лазерное омоложение</h3>
+                                            </a>
+                                        </li>
+                            
+                                        <li>
+                                            <a class="cd-dropdown-item item-4" href=" ">
+                                                <h3>  Интимное отбеливание</h3>
+                                            </a>
+                                        </li>
+                            
+                                        <li>
+                                            <a class="cd-dropdown-item item-5" href=" ">
+                                                <h3>  Удаление тату и татуажа</h3>
+                                            </a>
+                                        </li>
+                            
+                                        <li>
+                                            <a class="cd-dropdown-item item-6" href=" ">
+                                                <h3>  Карбоновый пилинг</h3>
+                                            </a>
+                                        </li>
+                            
+                                        <li>
+                                            <a class="cd-dropdown-item item-7" href=" ">
+                                                <h3>  RF-лифтинг InMode - Израиль</h3>
+                                            </a>
+                                        </li>
+                            
+                                        <li>
+                                            <a class="cd-dropdown-item item-8" href=" ">
+                                                <h3>  Фотоомоложение InMode - Израиль</h3>
+                                            </a>
+                                        </li>
+                            
+                                        <li>
+                                            <a class="cd-dropdown-item item-9" href=" ">
+                                                <h3>  Отбеливание зубов</h3>
+                                            </a>
+                                        </li>
+                            
+                                        <li>
+                                            <a class="cd-dropdown-item item-10" href=" ">
+                                                <h3>  Дополнительные услуги</h3>
+                                            </a>
+                                        </li>
+                            
+                                    </div>
+                                </ul>
+                               
+                            </li>
+
+
+
+
+                            <li class="has-children white">
+                                <a href=" ">SPA-ПРОГРАММЫ</a>
+                                <ul class="cd-dropdown-icons white is-hidden">
+                                  <li class="go-back"><a href="#0">Menu</a></li>
+                                    <div class="cd-dropdown-subitem-group">
+                                        <li>
+                                            <a class="cd-dropdown-item item-1" href=" ">
+                                            <h3>  Лечение акне</h3>
+                                            </a>
+                                        </li>
+                            
+                                        <li>
+                                            <a class="cd-dropdown-item item-2" href=" ">
+                                                <h3>  Пигментация</h3>
+                                            </a>
+                                        </li>
+                            
+                                        <li>
+                                            <a class="cd-dropdown-item item-3" href=" ">
+                                                <h3>  Лазерное омоложение</h3>
+                                            </a>
+                                        </li>
+                            
+                                        <li>
+                                            <a class="cd-dropdown-item item-4" href=" ">
+                                                <h3>  Интимное отбеливание</h3>
+                                            </a>
+                                        </li>
+                            
+                                        <li>
+                                            <a class="cd-dropdown-item item-5" href=" ">
+                                                <h3>  Удаление тату и татуажа</h3>
+                                            </a>
+                                        </li>
+                            
+                                        <li>
+                                            <a class="cd-dropdown-item item-6" href=" ">
+                                                <h3>  Карбоновый пилинг</h3>
+                                            </a>
+                                        </li>
+                            
+                                        <li>
+                                            <a class="cd-dropdown-item item-7" href=" ">
+                                                <h3>  RF-лифтинг InMode - Израиль</h3>
+                                            </a>
+                                        </li>
+                            
+                                        <li>
+                                            <a class="cd-dropdown-item item-8" href=" ">
+                                                <h3>  Фотоомоложение InMode - Израиль</h3>
+                                            </a>
+                                        </li>
+                            
+                                        <li>
+                                            <a class="cd-dropdown-item item-9" href=" ">
+                                                <h3>  Отбеливание зубов</h3>
+                                            </a>
+                                        </li>
+                            
+                                        <li>
+                                            <a class="cd-dropdown-item item-10" href=" ">
+                                                <h3>  Дополнительные услуги</h3>
+                                            </a>
+                                        </li>
+                            
+                                    </div>
+                                </ul>
+                                
+                            </li>
+
+                            <li class="has-children white">
+                                <a href=" ">МАССАЖ</a>
+                                <ul class="cd-dropdown-icons white is-hidden">
+                                  <li class="go-back"><a href="#0">Menu</a></li>
+                                    <div class="cd-dropdown-subitem-group">
+                                        <li>
+                                            <a class="cd-dropdown-item item-1" href=" ">
+                                            <h3>  Лечение акне</h3>
+                                            </a>
+                                        </li>
+                            
+                                        <li>
+                                            <a class="cd-dropdown-item item-2" href=" ">
+                                                <h3>  Пигментация</h3>
+                                            </a>
+                                        </li>
+                            
+                                        <li>
+                                            <a class="cd-dropdown-item item-3" href=" ">
+                                                <h3>  Лазерное омоложение</h3>
+                                            </a>
+                                        </li>
+                            
+                                        <li>
+                                            <a class="cd-dropdown-item item-4" href=" ">
+                                                <h3>  Интимное отбеливание</h3>
+                                            </a>
+                                        </li>
+                            
+                                        <li>
+                                            <a class="cd-dropdown-item item-5" href=" ">
+                                                <h3>  Удаление тату и татуажа</h3>
+                                            </a>
+                                        </li>
+                            
+                                        <li>
+                                            <a class="cd-dropdown-item item-6" href=" ">
+                                                <h3>  Карбоновый пилинг</h3>
+                                            </a>
+                                        </li>
+                            
+                                        <li>
+                                            <a class="cd-dropdown-item item-7" href=" ">
+                                                <h3>  RF-лифтинг InMode - Израиль</h3>
+                                            </a>
+                                        </li>
+                            
+                                        <li>
+                                            <a class="cd-dropdown-item item-8" href=" ">
+                                                <h3>  Фотоомоложение InMode - Израиль</h3>
+                                            </a>
+                                        </li>
+                            
+                                        <li>
+                                            <a class="cd-dropdown-item item-9" href=" ">
+                                                <h3>  Отбеливание зубов</h3>
+                                            </a>
+                                        </li>
+                            
+                                        <li>
+                                            <a class="cd-dropdown-item item-10" href=" ">
+                                                <h3>  Дополнительные услуги</h3>
+                                            </a>
+                                        </li>
+                            
+                                    </div>
+                                </ul>
+                                
+                            </li>
+
+
+                  
+                            <li class="cd-divider white cd-divider-white" style="color: #ECE4D7 !important;
+                            border-bottom: 1px solid #ECE4D7 !important;
+                            border-top: 1px solid #ECE4D7 !important;">Про DELUXE</li>
+                  
+                            <li><a href=" ">КЛУБ ПРИВИЛЕГИЙ</a></li>
+                            <li><a href=" ">ФИЛОСОФИЯ БРЕНДА</a></li>
+                            <li><a href=" ">СПЕЦИАЛИСТЫ</a></li>
+                            <li><a href=" ">СЕРТИФИКАТЫ И ЛИЦЕНЗИИ</a></li>
+                            <li><a href=" ">ОБОРУДОВАНИЕ И ПРЕПАРАТЫ</a></li>
+                            <li><a href=" ">ФРАНШИЗА</a></li>
+                          </ul>
+                          
+                        </nav>
+                       
+                    </div>
+                    
+
+                </div>
+
+                <div class="col-md-5 fullscreen-menu__img">
+                    <img src="./img/menu/menu-img-1.jpg" alt="">
+                </div>
+
+            </div>
+
+            <section class="fullscreen-menu__accordion">
+                <div class="tab tab-secondary">
+                <input type="checkbox" name="accordion-1" id="cb1">
+                <label for="cb1" class="tab__label tab__label-secondary">ЭСТЕТИЧЕСКАЯ КОСМЕТОЛОГИЯ</label>
+                <div class="tab__content ">
+                    <ul class="fullscreen-menu__accordion-list white">
+                        <li>  <a href="./service.html">Лечение акне</a></li>
+                        <li>  <a href="./service.html">Пигментация</a></li>
+                        <li>  <a href="./service.html">Лазерное омоложение</a></li>
+                        <li>  <a href="./service.html">Интимное отбеливание</a></li>
+                        <li>  <a href="./service.html">Удаление тату и татуажа</a></li>
+                        <li>  <a href="./service.html">Карбоновый пилинг</a></li>
+                        <li>  <a href="./service.html">RF-лифтинг InMode - Израиль</a></li>
+                        <li>  <a href="./service.html">Фотоомоложение InMode - Израиль</a></li>
+                        <li>  <a href="./service.html">Отбеливание зубов</a></li>
+                        <li>  <a href="./service.html">Дополнительные услуги</a></li>
+
+                    </ul>
+                </div>
+                </div>
+
+                <div class="tab tab-secondary">
+                    <input type="checkbox" name="accordion-1" id="cb2">
+                    <label for="cb2" class="tab__label tab__label-secondary">ИНЪЕКЦИОННАЯ КОСМЕТОЛОГИЯ</label>
+                    <div class="tab__content">
+                        <ul class="fullscreen-menu__accordion-list white">
+                            <li>  <a href="./service.html">Лечение акне</a></li>
+                            <li>  <a href="./service.html">Пигментация</a></li>
+                            <li>  <a href="./service.html">Лазерное омоложение</a></li>
+                            <li>  <a href="./service.html">Интимное отбеливание</a></li>
+                            <li>  <a href="./service.html">Удаление тату и татуажа</a></li>
+                            <li>  <a href="./service.html">Карбоновый пилинг</a></li>
+                            <li>  <a href="./service.html">RF-лифтинг InMode - Израиль</a></li>
+                            <li>  <a href="./service.html">Фотоомоложение InMode - Израиль</a></li>
+                            <li>  <a href="./service.html">Отбеливание зубов</a></li>
+                            <li>  <a href="./service.html">Дополнительные услуги</a></li>
+    
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="tab tab-secondary">
+                    <input type="checkbox" name="accordion-1" id="cb3" checked>
+                    <label for="cb3" class="tab__label  tab__label-secondary">АППАРАТНАЯ КОСМЕТОЛОГИЯ</label>
+                    <div class="tab__content">
+                        <ul class="fullscreen-menu__accordion-list white">
+                            <li>  <a href="./service.html">Лечение акне</a></li>
+                            <li>  <a href="./service.html">Пигментация</a></li>
+                            <li>  <a href="./service.html">Лазерное омоложение</a></li>
+                            <li>  <a href="./service.html">Интимное отбеливание</a></li>
+                            <li>  <a href="./service.html">Удаление тату и татуажа</a></li>
+                            <li>  <a href="./service.html">Карбоновый пилинг</a></li>
+                            <li>  <a href="./service.html">RF-лифтинг InMode - Израиль</a></li>
+                            <li>  <a href="./service.html">Фотоомоложение InMode - Израиль</a></li>
+                            <li>  <a href="./service.html">Отбеливание зубов</a></li>
+                            <li>  <a href="./service.html">Дополнительные услуги</a></li>
+    
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="tab tab-secondary ">
+                    <input type="checkbox" name="accordion-1" id="cb4">
+                    <label for="cb4" class="tab__label  tab__label-secondary">ЛАЗЕРНАЯ ЭПИЛЯЦИЯ</label>
+                    <div class="tab__content">
+                        <ul class="fullscreen-menu__accordion-list white">
+                            <li>  <a href="./service.html">Лечение акне</a></li>
+                            <li>  <a href="./service.html">Пигментация</a></li>
+                            <li>  <a href="./service.html">Лазерное омоложение</a></li>
+                            <li>  <a href="./service.html">Интимное отбеливание</a></li>
+                            <li>  <a href="./service.html">Удаление тату и татуажа</a></li>
+                            <li>  <a href="./service.html">Карбоновый пилинг</a></li>
+                            <li>  <a href="./service.html">RF-лифтинг InMode - Израиль</a></li>
+                            <li>  <a href="./service.html">Фотоомоложение InMode - Израиль</a></li>
+                            <li>  <a href="./service.html">Отбеливание зубов</a></li>
+                            <li>  <a href="./service.html">Дополнительные услуги</a></li>
+    
+                        </ul>
+                    </div>
+                </div>
+
+
+                <div class="tab tab-secondary">
+                    <input type="checkbox" name="accordion-1" id="cb5">
+                    <label for="cb5" class="tab__label  tab__label-secondary">SPA-ПРОГРАММЫ</label>
+                    <div class="tab__content">
+                        <ul class="fullscreen-menu__accordion-list white">
+                            <li>  <a href="./service.html">Лечение акне</a></li>
+                            <li>  <a href="./service.html">Пигментация</a></li>
+                            <li>  <a href="./service.html">Лазерное омоложение</a></li>
+                            <li>  <a href="./service.html">Интимное отбеливание</a></li>
+                            <li>  <a href="./service.html">Удаление тату и татуажа</a></li>
+                            <li>  <a href="./service.html">Карбоновый пилинг</a></li>
+                            <li>  <a href="./service.html">RF-лифтинг InMode - Израиль</a></li>
+                            <li>  <a href="./service.html">Фотоомоложение InMode - Израиль</a></li>
+                            <li>  <a href="./service.html">Отбеливание зубов</a></li>
+                            <li>  <a href="./service.html">Дополнительные услуги</a></li>
+    
+                        </ul>
+                    </div>
+                </div>
+
+
+                <div class="tab tab-secondary">
+                    <input type="checkbox" name="accordion-1" id="cb6">
+                    <label for="cb6" class="tab__label tab__label-secondary">МАССАЖ</label>
+                    <div class="tab__content">
+                        <ul class="fullscreen-menu__accordion-list white">
+                            <li>  <a href="./service.html">Лечение акне</a></li>
+                            <li>  <a href="./service.html">Пигментация</a></li>
+                            <li>  <a href="./service.html">Лазерное омоложение</a></li>
+                            <li>  <a href="./service.html">Интимное отбеливание</a></li>
+                            <li>  <a href="./service.html">Удаление тату и татуажа</a></li>
+                            <li>  <a href="./service.html">Карбоновый пилинг</a></li>
+                            <li>  <a href="./service.html">RF-лифтинг InMode - Израиль</a></li>
+                            <li>  <a href="./service.html">Фотоомоложение InMode - Израиль</a></li>
+                            <li>  <a href="./service.html">Отбеливание зубов</a></li>
+                            <li>  <a href="./service.html">Дополнительные услуги</a></li>
+    
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="cd-divider" style="color: #ECE4D7 !important;
+                border-bottom: 1px solid #ECE4D7 !important;
+                border-top: 1px solid #ECE4D7 !important;">Про DELUXE</div>
+
+                <ul class="fullscreen-menu__mobile">
+
+                    <li class="fullscreen-menu__mobile-link fullscreen-menu__mobile-link-secondary"><a href="">КЛУБ ПРИВИЛЕГИЙ</a></li>
+                    <li class="fullscreen-menu__mobile-link fullscreen-menu__mobile-link-secondary"><a href="">ФИЛОСОФИЯ БРЕНДА</a></li>
+                    <li class="fullscreen-menu__mobile-link fullscreen-menu__mobile-link-secondary"><a href="">СПЕЦИАЛИСТЫ</a></li>
+                    <li class="fullscreen-menu__mobile-link fullscreen-menu__mobile-link-secondary"><a href="">СЕРТИФИКАТЫ И ЛИЦЕНЗИИ</a></li>
+                    <li class="fullscreen-menu__mobile-link fullscreen-menu__mobile-link-secondary"><a href="">ОБОРУДОВАНИЕ И ПРЕПАРАТЫ</a></li>
+                    <li class="fullscreen-menu__mobile-link fullscreen-menu__mobile-link-secondary"><a href="">ФРАНШИЗА</a></li>
+
+                </ul>
+
+
+            </section>
+
+            
+
+        </div> 
+
+        
+        
+          
+          
+
+    </div> 
+
+
+
+
+    
+    <div class="club-menu" id="club-menu">
+        <div class="container club-menu__container">
+
+            <nav aria-label="breadcrumb">
+                    
+                <ol class="breadcrumbs">
+                <li class="breadcrumbs__item">
+                    <span class="breadcrumbs__divider">
+
+                        <svg xmlns="http://www.w3.org/2000/svg" width="6" height="11" viewBox="0 0 6 11" fill="none">
+                            <path d="M4.87549 10.3447L0.999903 5.50024L4.87549 0.655761" stroke="#ECE4D7"></path>
+                        </svg>
+
+                    </span>
+                    <a class="breadcrumbs__link breadcrumbs__prev white" href="service.html">Назад</a>
+                </li>
+                </ol>
+            
+            </nav>
+
+            <div class="row club-menu__row club-menu__row-desktop">
+
+                
+                <div class="col-md-12">
+
+                    <div class="cd-dropdown-wrapper">
+                        
+                        <nav class="cd-dropdown dropdown-is-active">
+                          
+                          <ul class="cd-dropdown-content white fullscreen">
+
+                            <li class="has-children white">
+                                <a href=" ">КАРТА ЛОЯЛЬНОСТИ</a>
+                                <ul class="cd-dropdown-icons white is-active club-menu__dropdown">
+                                    <div class="cd-dropdown-subitem-group club-menu__info">
+                                        
+                                        <div class="club-menu__name">
+                                            Позвольте себе больше
+                                            <span>с картой лояльности Deluxe:</span>
+                                        </div>
+
+                                        <div class="club-menu__grid">
+
+                                            <div class="club-menu__item">
+                                            
+                                                <div class="club-menu__title">Кэшбэк 10%</div>
+                                                <div class="club-menu__subtitle">с каждой покупки бонусными рублями на карту лояльности</div>
+    
+                                            </div>
+
+                                            <div class="club-menu__item">
+                                            
+                                                <div class="club-menu__title">Happy B-day</div>
+                                                <div class="club-menu__subtitle">В честь дня рождения начисляем 1500 бонусов в подарок</div>
+    
+                                            </div>
+
+                                            <div class="club-menu__item">
+                                            
+                                                <div class="club-menu__title">Welcome-бонус</div>
+                                                <div class="club-menu__subtitle">вступай в клуб и получи  1000 приветственных  бонусов в подарок</div>
+    
+                                            </div>
+
+                                            <div class="club-menu__item">
+                                            
+                                                <div class="club-menu__title">First</div>
+                                                <div class="club-menu__subtitle">участники клуба привилегий первыми узнают о выгодных спецпредложениях и акцияхи</div>
+    
+                                            </div>
+                                        
+
+                                        </div>
+
+                                        <a href="" class="club-menu__button">Стать участником</a>
+
+                                        <a href="" class="club-menu__more">Подробные условия участия в Клубе привилегий Deluxe</a>
+
+                                    </div>
+                                    <div class="club-menu__img">
+                                        <img src="./img/club/club-phone.png" alt="">
+                                    </div>
+                                    <div class="club-menu__overlay">
+                                        <img src="./img/club/club-bg-1.png" alt="">
+                                    </div>
+                                </ul>
+                                <!-- .cd-dropdown-icons -->
+                            </li>
+
+                            <li class="has-children white">
+                                <a class="is-active">ПОДАРОЧНЫЕ СЕРТИФИКАТЫ</a>
+                                <ul class="cd-dropdown-icons white is-hidden club-menu__dropdown">
+                                    <div class="cd-dropdown-subitem-group club-menu__info">
+                                        
+                                        <div class="club-menu__name">
+                                            Презенты с заботой:
+                                            <span>Подарочные сертификаты от Deluxe</span>
+                                        </div>
+
+                                        <div class="club-menu__grid">
+
+                                            <div class="club-menu__item">
+                                            
+                                                <div class="club-menu__title">Любой номинал</div>
+                                                <div class="club-menu__subtitle">от 500 рублей, а услугу выбирает адресат</div>
+    
+                                            </div>
+
+                                            <div class="club-menu__item">
+                                            
+                                                <div class="club-menu__title">Любое направление</div>
+                                                <div class="club-menu__subtitle">Если точно знаете, что дарить</div>
+    
+                                            </div>
+
+                                            <div class="club-menu__item">
+                                            
+                                                <div class="club-menu__title">12 месяцев</div>
+                                                <div class="club-menu__subtitle">таков срок действия наших сертификатов</div>
+    
+                                            </div>
+
+                                            <div class="club-menu__item">
+                                            
+                                                <div class="club-menu__title"></div>
+                                                <div class="club-menu__subtitle"></div>
+    
+                                            </div>
+                                        
+
+                                        </div>
+
+                                        <a href="" class="club-menu__button">Приобрести сертификат</a>
+
+                                        <p>
+                                            <a href="" class="club-menu__more">Подробные условия приобретения и использования подарочнх сертификатов Deluxe</a>
+                                        </p>
+
+                                    </div>
+                                    <div class="club-menu__img-secondary">
+                                        <img src="./img/club/club-gift.png" alt="">
+                                    </div>
+                                    <div class="club-menu__overlay-secondary">
+                                        <img src="./img/club/club-bg-2.png" alt="">
+                                    </div>
+                                </ul>
+                                <!-- .cd-dropdown-icons -->
+                            </li>
+
+
+                            <li class="has-children white">
+                                <a href="">АКТУАЛЬНЫЕ ПРЕДЛОЖЕНИЯ</a>
+                                <ul class="cd-dropdown-icons is-hidden">
+                                 
+                                    <!-- <div class="club-cards__container">
+
+                                        <div class="row club-cards__row">
+                                            <div class="col-xl-3 col-md-6 club-card">
+
+                                                <div class="club-card__wrapper">
+                                                    
+                                                    <img src="./img/club/club-card-1.png" alt="">
+
+                                                    <div class="special-offer__title">
+                                                        НОВИЧОК
+                                                    </div>
+
+                                                    <div class="club-card__title">НОВИЧОК</div>
+
+                                                    <div class="club-card__subtitle">
+                                                        Промокод для новых клиентов. 500₽ - Любая зона на диодном универсальном лазере 
+                                                        600₽ - На лазере premium-класса (кроме Canlela и александритового) 
+                                                    </div>
+
+                                                    <a href="" class="club-menu__button">Стать участником</a>
+
+                                                </div>
+                                            
+                                            </div> 
+                                            
+                                            <div class="col-xl-3 col-md-6 club-card">
+
+                                                <div class="club-card__wrapper">
+                                                    
+                                                    <img src="./img/club/club-card-1.png" alt="">
+
+                                                    <div class="special-offer__title">
+                                                        НОВИЧОК
+                                                    </div>
+
+                                                    <div class="club-card__title">НОВИЧОК</div>
+
+                                                    <div class="club-card__subtitle">
+                                                        Промокод для новых клиентов. 500₽ - Любая зона на диодном универсальном лазере 
+                                                        600₽ - На лазере premium-класса (кроме Canlela и александритового) 
+                                                    </div>
+
+                                                    <a href="" class="club-menu__button">Стать участником</a>
+
+                                                </div>
+                                            
+                                            </div> 
+
+                                        </div>
+
+                                    </div> -->
+
+                                </ul>
+                                <!-- .cd-dropdown-icons -->
+                            </li>
+
+
+
+
+
+
+                  
+                            <li class="cd-divider white" style="color: #ECE4D7 !important;
+                            border-bottom: 1px solid #ECE4D7 !important;
+                            border-top: 1px solid #ECE4D7 !important;">Про DELUXE</li>
+                  
+                            
+                            <li class="has-children white">
+                                <a href="">ФИЛОСОФИЯ БРЕНДА</a>
+                                <ul class="cd-dropdown-icons white is-hidden club-menu__dropdown">
+                                    <div class="cd-dropdown-subitem-group club-menu__info">
+                                        
+                                        
+
+                                        <div class="club-menu__info">
+
+                                            <div class="club-menu__title-secondary">Каждая женщина по-своему красива. Наша задача ‒ лишь сохранить и подчеркнуть  то, что уже дано природой</div>
+
+                                            <div class="club-menu__paragraph">
+                                                <div>
+                                                    <p>Не секрет, что в настоящее время косметология развивается так быстро, как никогда ранее. Сохранить свою молодость можно и в 25, и в 45 и в 60 лет.</p>
+                                                    <p>Deluxe бережно относится к индивидуальности каждого пациента: мы никогда не навязываем тренды, не пытаемся продавать модные услуги, хоть арсенал оборудования и препапатов и позволяет проводить практически все возможные на данный момент процедуры.</p>
+                                                    <p>Приходя к нам, в Deluxe, вы можете быть уверены в том, что вы остаетесь собой, когда вернетесь домой отдохнувшими, обновленными, наполненными энергией и  уверенными в себе.</p>
+                                                </div>
+                                                
+                                            </div>
+                                            
+
+                                        </div>
+                                        <div class="club-menu__img-paragraph">
+                                            <img src="./img/club/club-img.jpg" alt="">
+                                        </div>
+
+                                        <p href="" class="club-menu__tip">Анастасия Душкина ‒ создатель бренда Deluxe<br>врач дерматовенеролог, косметолог.</p>
+
+                                        <a href="" class="club-menu__button">Записаться в Whatsapp</a>
+
+                                        
+
+                                    </div>
+                                    
+                                    
+                                </ul>
+                                
+                                <!-- .cd-dropdown-icons -->
+                            </li>
+
+                            <li><a href="">СПЕЦИАЛИСТЫ</a></li>
+                            <li><a href="">СЕРТИФИКАТЫ И ЛИЦЕНЗИИ</a></li>
+                            <li><a href="">ОБОРУДОВАНИЕ И ПРЕПАРАТЫ</a></li>
+                            <li><a href="">ФРАНШИЗА</a></li>
+                          </ul>
+                          <!-- .cd-dropdown-content -->
+                        </nav>
+                        <!-- .cd-dropdown -->
+                    </div>
+                    <!-- .cd-dropdown-wrapper -->
+
+                </div>
+
+                
+
+            </div>
+
+            <section class="fullscreen-menu__accordion">
+
+                <div class="tab tab-secondary">
+                <input type="checkbox" name="accordion-1" id="cb10">
+                <label for="cb10" class="tab__label tab__label-secondary">ЭСТЕТИЧЕСКАЯ КОСМЕТОЛОГИЯ</label>
+                <div class="tab__content tab__content-secondary">
+                    <div class="club-menu__name">
+                        Позвольте себе больше
+                        <span>с картой лояльности Deluxe:</span>
+                    </div>
+                    <div class="club-menu__grid">
+
+                        <div class="club-menu__item">
+                        
+                            <div class="club-menu__title">Кэшбэк 10%</div>
+                            <div class="club-menu__subtitle">с каждой покупки бонусными рублями на карту лояльности</div>
+
+                        </div>
+
+                        <div class="club-menu__item">
+                        
+                            <div class="club-menu__title">Happy B-day</div>
+                            <div class="club-menu__subtitle">В честь дня рождения начисляем 1500 бонусов в подарок</div>
+
+                        </div>
+
+                        <div class="club-menu__item">
+                        
+                            <div class="club-menu__title">Welcome-бонус</div>
+                            <div class="club-menu__subtitle">вступай в клуб и получи  1000 приветственных  бонусов в подарок</div>
+
+                        </div>
+
+                        <div class="club-menu__item">
+                        
+                            <div class="club-menu__title">First</div>
+                            <div class="club-menu__subtitle">участники клуба привилегий первыми узнают о выгодных спецпредложениях и акцияхи</div>
+
+                        </div>
+                    
+
+                    </div>
+                    
+                    <div class="club-menu__bottom">
+                        <a href="" class="club-menu__button">Стать участником</a>
+
+                        <a href="" class="club-menu__more">Подробные условия участия в Клубе привилегий Deluxe</a>
+                    </div>
+                    
+                    <div class="club-menu__overlay">
+                        <img src="./img/club/club-bg-1-mobile.png" alt="">
+                    </div>
+                </div>
+                </div>
+
+                <div class="tab tab-secondary">
+                    <input type="checkbox" name="accordion-1" id="cb11">
+                    <label for="cb11" class="tab__label tab__label-secondary">ИНЪЕКЦИОННАЯ КОСМЕТОЛОГИЯ</label>
+                    <div class="tab__content tab__content-secondary">
+                        <div class="club-menu__name">
+                            Позвольте себе больше
+                            <span>с картой лояльности Deluxe:</span>
+                        </div>
+                        <div class="club-menu__grid">
+    
+                            <div class="club-menu__item">
+                            
+                                <div class="club-menu__title">Кэшбэк 10%</div>
+                                <div class="club-menu__subtitle">с каждой покупки бонусными рублями на карту лояльности</div>
+    
+                            </div>
+    
+                            <div class="club-menu__item">
+                            
+                                <div class="club-menu__title">Happy B-day</div>
+                                <div class="club-menu__subtitle">В честь дня рождения начисляем 1500 бонусов в подарок</div>
+    
+                            </div>
+    
+                            <div class="club-menu__item">
+                            
+                                <div class="club-menu__title">Welcome-бонус</div>
+                                <div class="club-menu__subtitle">вступай в клуб и получи  1000 приветственных  бонусов в подарок</div>
+    
+                            </div>
+    
+                            <div class="club-menu__item">
+                            
+                                <div class="club-menu__title">First</div>
+                                <div class="club-menu__subtitle">участники клуба привилегий первыми узнают о выгодных спецпредложениях и акцияхи</div>
+    
+                            </div>
+                        
+    
+                        </div>
+                        
+                        
+                        <div class="club-menu__bottom">
+                            <a href="" class="club-menu__button">Стать участником</a>
+    
+                            <a href="" class="club-menu__more">Подробные условия участия в Клубе привилегий Deluxe</a>
+                        </div>
+                        
+                        <div class="club-menu__overlay">
+                            <img src="./img/club/club-bg-2-mobile.png" alt="">
+                        </div>
+                    </div>
+                </div>
+
+                <div class="tab tab-secondary">
+                    <input type="checkbox" name="accordion-1" id="cb12" checked>
+                    <label for="cb13" class="tab__label tab__label-secondary">АППАРАТНАЯ КОСМЕТОЛОГИЯ</label>
+                    <div class="tab__content tab__content-secondary">
+                        
+                    </div>
+                </div>
+
+                
+
+                <div class="cd-divider" style="color: #ECE4D7 !important;
+                border-bottom: 1px solid #ECE4D7 !important;
+                border-top: 1px solid #ECE4D7 !important;">Про DELUXE</div>
+
+                <ul class="fullscreen-menu__mobile">
+
+
+                    <div class="tab tab-secondary">
+                    <input type="checkbox" name="accordion-1" id="cb14">
+                    <a href="/" class="tab__label tab__label-secondary">ФИЛОСОФИЯ БРЕНДА</a>
+                    
+                </div>
+
+
+                <div class="tab tab-secondary">
+                    <input type="checkbox" name="accordion-1" id="cb15">
+                    <a href="/" class="tab__label tab__label-secondary">СПЕЦИАЛИСТЫ</a>
+                    
+                </div>
+
+
+                <div class="tab tab-secondary">
+                    <input type="checkbox" name="accordion-1" id="cb16">
+                    <a href="/" class="tab__label tab__label-secondary">СЕРТИФИКАТЫ И ЛИЦЕНЗИИ</a>
+                    
+                </div>
+
+                <div class="tab tab-secondary">
+                    <input type="checkbox" name="accordion-1" id="cb16">
+                    <label for="cb16" class="tab__label tab__label-secondary">ОБОРУДОВАНИЕ И ПРЕПАРАТЫ</label>
+                    <div class="tab__content tab__content-secondary">
+                        <ul class="fullscreen-menu__accordion-list">
+                            <li>  <a href="./service.html">Лечение акне</a></li>
+                            <li>  <a href="./service.html">Пигментация</a></li>
+                            <li>  <a href="./service.html">Лазерное омоложение</a></li>
+                            <li>  <a href="./service.html">Интимное отбеливание</a></li>
+                            <li>  <a href="./service.html">Удаление тату и татуажа</a></li>
+                            <li>  <a href="./service.html">Карбоновый пилинг</a></li>
+                            <li>  <a href="./service.html">RF-лифтинг InMode - Израиль</a></li>
+                            <li>  <a href="./service.html">Фотоомоложение InMode - Израиль</a></li>
+                            <li>  <a href="./service.html">Отбеливание зубов</a></li>
+                            <li>  <a href="./service.html">Дополнительные услуги</a></li>
+    
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="tab tab-secondary">
+                    <input type="checkbox" name="accordion-1" id="cb16">
+                    <a href="/" class="tab__label tab__label-secondary">ФРАНШИЗА</a>
+                    
+                </div>
+
+                </ul>
+
+
+            </section>
+
+        </div> 
+
+        
+        
+          
+          
+
+    </div>
+
+
+
+    </main>
+
+    
+    
+
+
+
+
+
+
+    
+      
+
+
+
+
+
+    
+<script src="./js/menu.js"></script>
+
+
+<link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
+
+<script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    
+<script src="./js/bootstrap.bundle.min.js"></script>
+
+<script src="./js/swiper-bundle.min.js"></script>
+
+<script src="./js/index.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,1287 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <link rel="stylesheet" href="/css/bootstrap.min.css">
+
+    <link rel="stylesheet" href="./css/menu.css">
+
+    <link rel="stylesheet" href="./css/style.css">
+
+    
+
+    
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+    <script src="./menu.js"></script>
+
+</head>
+
+<body class="services__body">
+
+    
+
+    <header class="header" id="header">
+        <ul class="menu">
+            <div class="burger-menu" id="burger-menu">
+                <div class="bar"></div>
+                <div class="bar"></div>
+                <div class="bar"></div>
+            </div>
+              
+                
+            <li class="menu-item">
+                    <div class="menu-dropdown">
+                        <div class="selected-menu">
+                            
+                            <div class="selected-menu__title-secondary">НАПРАВЛЕНИЯ И ЦЕНЫ</div>
+                            
+                        </div>
+                        <ul class="menu-list menu-list-secondary">
+                            <li class="menu-list__item"><a href="./services.html"><span>• </span>Врачебный прием</a></li>
+                            <li class="menu-list__item"><a href="./services.html"><span>• </span>Эстетическая косметология</a></li>
+                            <li class="menu-list__item"><a href="./services.html"><span>• </span>Инъекционная косметология</a></li>
+                            <li class="menu-list__item"><a href="./services.html"><span>• </span>Аппаратная косметология</a></li>
+                            <li class="menu-list__item"><a href="./services.html"><span>• </span>ЛАЗЕРНАЯ ЭПИЛЯЦИЯ</a></li>   
+                            <li class="menu-list__item"><a href="./services.html"><span>• </span>SPA-ПРОГРАММЫ И МАССАЖ</a></li>   
+                        </ul>
+                    </div>        
+            </li>
+            <li class="menu-item"><a href="/">ДО И ПОСЛЕ</a></li>
+            <li class="menu-item"><a href="/">КЛУБ ПРИВИЛЕГИЙ</a></li>
+            <li class="menu-item"><a href="/">СЕРТИФИКАТЫ</a></li>
+
+        </ul>
+
+        <div class="container header__container">
+            <div class="row header__row">
+                <nav class="nav" id="nav">
+                    
+                    <div class="burger-menu-mobile" id="burger-menu-mobile">
+                        <div class="bar"></div>
+                        <div class="bar"></div>
+                        <div class="bar"></div>
+                    </div>
+
+                    <a href="/" class="header__logo">
+                        <svg width="290" height="33" viewBox="0 0 290 33" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M0 32.6418V0.732666H13.1933C14.6585 0.732666 16.0839 0.92493 17.4562 1.30283C18.8286 1.68073 20.1081 2.21774 21.2882 2.91387C22.475 3.61 23.5689 4.45198 24.5501 5.41993C25.5379 6.39451 26.3733 7.46853 27.0694 8.64863C27.7655 9.82873 28.3092 11.095 28.6937 12.4608C29.0782 13.8199 29.2705 15.2254 29.2705 16.6972C29.2705 18.1756 29.0782 19.5811 28.6937 20.9402C28.3092 22.2994 27.7655 23.5723 27.0694 24.7524C26.3733 25.9325 25.5313 27.0065 24.5501 27.9811C23.5623 28.9557 22.475 29.7844 21.2882 30.4739C20.1015 31.1634 18.8286 31.7004 17.4562 32.0783C16.0839 32.4562 14.6585 32.6484 13.1933 32.6484H0V32.6418ZM225.181 22.3126C223.285 24.9181 221.395 27.5236 219.499 30.1291C218.909 30.9313 218.199 31.5479 217.377 31.9855C216.555 32.423 215.587 32.6484 214.493 32.6484H208.487L219.592 17.6187C220.188 16.843 220.135 16.127 219.572 15.3447L208.779 0.739292H214.785C215.853 0.739292 216.814 0.95145 217.669 1.37576C218.524 1.80006 219.207 2.41 219.724 3.20557L225.201 10.6773C227.01 8.20443 228.814 5.7249 230.63 3.25199C231.731 1.57465 233.395 0.739292 235.636 0.739292H241.596L230.736 15.4309C230.259 16.1204 230.226 16.8165 230.736 17.506C234.416 22.5844 238.188 27.5965 241.908 32.6484H235.967C234.853 32.6484 233.892 32.423 233.077 31.9788C232.261 31.5346 231.572 30.9313 231.008 30.1755C229.066 27.5568 227.123 24.938 225.181 22.3192V22.3126ZM13.2065 25.3424C14.38 25.3424 15.4938 25.1104 16.5546 24.6596C17.6087 24.2087 18.5435 23.5922 19.3523 22.8098C20.1612 22.0342 20.7976 21.1126 21.275 20.0585C21.7523 19.0043 21.9844 17.8839 21.9844 16.6906C21.9844 15.5038 21.7457 14.3834 21.275 13.3293C20.7976 12.2751 20.1612 11.3536 19.3523 10.5646C18.5435 9.77569 17.6087 9.16575 16.5546 8.7083C15.4938 8.25747 14.38 8.02543 13.2065 8.02543H7.29276V25.3358H13.2065V25.3424ZM79.3784 32.6418H58.1299V0.732666H79.3784V7.54146H65.4293V13.1502H76.7795V19.959H65.4293V25.833H79.3784V32.6418ZM108.536 32.6418V0.732666H115.836V25.833H128.432V32.6418H108.536ZM290 32.6418H268.752V0.732666H290V7.54146H276.044V13.1502H287.395V19.959H276.044V25.833H290V32.6418Z" fill="#2C2A29"/>
+                            <path fill-rule="evenodd" clip-rule="evenodd" d="M180.741 25.833H157.358V32.6418H180.741V25.833Z" fill="#2C2A29"/>
+                            <path d="M163.066 9.84862C163.066 10.6442 163.232 11.4066 163.557 12.116C163.882 12.8254 164.326 13.4486 164.869 13.9856C165.413 14.516 166.05 14.9403 166.766 15.2519C167.475 15.5635 168.244 15.716 169.04 15.716C169.835 15.716 170.598 15.5569 171.307 15.2519C172.023 14.9403 172.666 14.516 173.223 13.9856C173.78 13.4486 174.217 12.8254 174.542 12.116C174.867 11.4066 175.033 10.6508 175.033 9.84862V0.732666H182.332V9.86188C182.332 11.6851 181.981 13.4022 181.285 14.9933C180.589 16.5845 179.641 17.9767 178.434 19.1701C177.234 20.3568 175.828 21.2916 174.224 21.9811C172.613 22.6706 170.883 23.022 169.046 23.022C167.826 23.022 166.653 22.8629 165.532 22.5579C164.405 22.2463 163.351 21.8021 162.37 21.232C161.395 20.6618 160.494 19.9789 159.678 19.1767C158.863 18.3745 158.167 17.4861 157.59 16.5116C157.013 15.5436 156.569 14.4961 156.251 13.3757C155.932 12.2552 155.767 11.0818 155.767 9.86851V0.739292H163.066V9.85524V9.84862Z" fill="#2C2A29"/>
+                        </svg>
+                    </a>
+
+                    <div class="header__info">
+                        <div class="header__tel">
+                            +7 900 000 00 00
+                        </div>
+                        <select class="city-dropdown">
+
+                            <ul class="city-list">
+                                <option>Кемерово</option>
+                                <option>Новокузнецк</option>
+                                <option>Новосибирск</option>
+                                <option>Томск</option>
+                                <option>Тайга</option>    
+                            </ul>
+                        </select>                 
+                    </div>
+
+                </nav>
+
+                
+
+            </div>
+        </div>
+    </header>
+    
+    
+
+
+
+
+
+    
+    <main class="services-main">
+        <div class="hero-overlay"></div>
+
+        <div class="fullscreen-menu" id="fullscreen-menu">
+            <div class="container fullscreen-menu__container">
+    
+                <div class="row fullscreen-menu__row fullscreen-menu__row-desktop">
+    
+                    
+                    <div class="col-md-7">
+    
+                        <div class="cd-dropdown-wrapper">
+                            
+                            <nav class="cd-dropdown dropdown-is-active">
+                              <h2>Title</h2>
+                              
+                              <ul class="cd-dropdown-content">
+    
+                                <li class="has-children">
+                                    <a href="./service.html">ЭСТЕТИЧЕСКАЯ КОСМЕТОЛОГИЯ</a>
+                                    <ul class="cd-dropdown-icons is-hidden">
+                                      <li class="go-back"><a href="#0">Menu</a></li>
+                                      <li class="see-all"><a href="./service.html">Browse Services</a></li>
+                                        <div class="cd-dropdown-subitem-group">
+                                            <li>
+                                                <a class="cd-dropdown-item item-1" href="./service.html">
+                                                <h3>Лечение акне</h3>
+                                                </a>
+                                            </li>
+                                
+                                            <li>
+                                                <a class="cd-dropdown-item item-2" href="./service.html">
+                                                    <h3>Пигментация</h3>
+                                                </a>
+                                            </li>
+                                
+                                            <li>
+                                                <a class="cd-dropdown-item item-3" href="./service.html">
+                                                    <h3>Лазерное омоложение</h3>
+                                                </a>
+                                            </li>
+                                
+                                            <li>
+                                                <a class="cd-dropdown-item item-4" href="./service.html">
+                                                    <h3>Интимное отбеливание</h3>
+                                                </a>
+                                            </li>
+                                
+                                            <li>
+                                                <a class="cd-dropdown-item item-5" href="./service.html">
+                                                    <h3>Удаление тату и татуажа</h3>
+                                                </a>
+                                            </li>
+                                
+                                            <li>
+                                                <a class="cd-dropdown-item item-6" href="./service.html">
+                                                    <h3>Карбоновый пилинг</h3>
+                                                </a>
+                                            </li>
+                                
+                                            <li>
+                                                <a class="cd-dropdown-item item-7" href="./service.html">
+                                                    <h3>RF-лифтинг InMode - Израиль</h3>
+                                                </a>
+                                            </li>
+                                
+                                            <li>
+                                                <a class="cd-dropdown-item item-8" href="./service.html">
+                                                    <h3>Фотоомоложение InMode - Израиль</h3>
+                                                </a>
+                                            </li>
+                                
+                                            <li>
+                                                <a class="cd-dropdown-item item-9" href="./service.html">
+                                                    <h3>Отбеливание зубов</h3>
+                                                </a>
+                                            </li>
+                                
+                                            <li>
+                                                <a class="cd-dropdown-item item-10" href="./service.html">
+                                                    <h3>Дополнительные услуги</h3>
+                                                </a>
+                                            </li>
+                                
+                                        </div>
+                                    </ul>
+                                    <!-- .cd-dropdown-icons -->
+                                </li>
+    
+    
+    
+                                <li class="has-children">
+                                    <a href="./service.html">ЭСТЕТИЧЕСКАЯ КОСМЕТОЛОГИЯ</a>
+                                    <ul class="cd-dropdown-icons is-hidden">
+                                      <li class="go-back"><a href="#0">Menu</a></li>
+                                      <li class="see-all"><a href="./service.html">Browse Services</a></li>
+                                        <div class="cd-dropdown-subitem-group">
+                                            <li>
+                                                <a class="cd-dropdown-item item-1" href="./service.html">
+                                                <h3>Лечение акне</h3>
+                                                </a>
+                                            </li>
+                                
+                                            <li>
+                                                <a class="cd-dropdown-item item-2" href="./service.html">
+                                                    <h3>Пигментация</h3>
+                                                </a>
+                                            </li>
+                                
+                                            <li>
+                                                <a class="cd-dropdown-item item-3" href="./service.html">
+                                                    <h3>Лазерное омоложение</h3>
+                                                </a>
+                                            </li>
+                                
+                                            <li>
+                                                <a class="cd-dropdown-item item-4" href="./service.html">
+                                                    <h3>Интимное отбеливание</h3>
+                                                </a>
+                                            </li>
+                                
+                                            <li>
+                                                <a class="cd-dropdown-item item-5" href="./service.html">
+                                                    <h3>Удаление тату и татуажа</h3>
+                                                </a>
+                                            </li>
+                                
+                                            <li>
+                                                <a class="cd-dropdown-item item-6" href="./service.html">
+                                                    <h3>Карбоновый пилинг</h3>
+                                                </a>
+                                            </li>
+                                
+                                            <li>
+                                                <a class="cd-dropdown-item item-7" href="./service.html">
+                                                    <h3>RF-лифтинг InMode - Израиль</h3>
+                                                </a>
+                                            </li>
+                                
+                                            <li>
+                                                <a class="cd-dropdown-item item-8" href="./service.html">
+                                                    <h3>Фотоомоложение InMode - Израиль</h3>
+                                                </a>
+                                            </li>
+                                
+                                            <li>
+                                                <a class="cd-dropdown-item item-9" href="./service.html">
+                                                    <h3>Отбеливание зубов</h3>
+                                                </a>
+                                            </li>
+                                
+                                            <li>
+                                                <a class="cd-dropdown-item item-10" href="./service.html">
+                                                    <h3>Дополнительные услуги</h3>
+                                                </a>
+                                            </li>
+                                
+                                        </div>
+                                    </ul>
+                                    <!-- .cd-dropdown-icons -->
+                                </li>
+    
+    
+                                <li class="has-children">
+                                    <a href="./service.html">ЭСТЕТИЧЕСКАЯ КОСМЕТОЛОГИЯ</a>
+                                    <ul class="cd-dropdown-icons is-hidden">
+                                      <li class="go-back"><a href="#0">Menu</a></li>
+                                      <li class="see-all"><a href="./service.html">Browse Services</a></li>
+                                        <div class="cd-dropdown-subitem-group">
+                                            <li>
+                                                <a class="cd-dropdown-item item-1" href="./service.html">
+                                                <h3>Лечение акне</h3>
+                                                </a>
+                                            </li>
+                                
+                                            <li>
+                                                <a class="cd-dropdown-item item-2" href="./service.html">
+                                                    <h3>Пигментация</h3>
+                                                </a>
+                                            </li>
+                                
+                                            <li>
+                                                <a class="cd-dropdown-item item-3" href="./service.html">
+                                                    <h3>Лазерное омоложение</h3>
+                                                </a>
+                                            </li>
+                                
+                                            <li>
+                                                <a class="cd-dropdown-item item-4" href="./service.html">
+                                                    <h3>Интимное отбеливание</h3>
+                                                </a>
+                                            </li>
+                                
+                                            <li>
+                                                <a class="cd-dropdown-item item-5" href="./service.html">
+                                                    <h3>Удаление тату и татуажа</h3>
+                                                </a>
+                                            </li>
+                                
+                                            <li>
+                                                <a class="cd-dropdown-item item-6" href="./service.html">
+                                                    <h3>Карбоновый пилинг</h3>
+                                                </a>
+                                            </li>
+                                
+                                            <li>
+                                                <a class="cd-dropdown-item item-7" href="./service.html">
+                                                    <h3>RF-лифтинг InMode - Израиль</h3>
+                                                </a>
+                                            </li>
+                                
+                                            <li>
+                                                <a class="cd-dropdown-item item-8" href="./service.html">
+                                                    <h3>Фотоомоложение InMode - Израиль</h3>
+                                                </a>
+                                            </li>
+                                
+                                            <li>
+                                                <a class="cd-dropdown-item item-9" href="./service.html">
+                                                    <h3>Отбеливание зубов</h3>
+                                                </a>
+                                            </li>
+                                
+                                            <li>
+                                                <a class="cd-dropdown-item item-10" href="./service.html">
+                                                    <h3>Дополнительные услуги</h3>
+                                                </a>
+                                            </li>
+                                
+                                        </div>
+                                    </ul>
+                                    <!-- .cd-dropdown-icons -->
+                                </li>
+    
+    
+                                <li class="has-children">
+                                    <a href="./service.html">ЭСТЕТИЧЕСКАЯ КОСМЕТОЛОГИЯ</a>
+                                    <ul class="cd-dropdown-icons is-hidden">
+                                      <li class="go-back"><a href="#0">Menu</a></li>
+                                      <li class="see-all"><a href="./service.html">Browse Services</a></li>
+                                        <div class="cd-dropdown-subitem-group">
+                                            <li>
+                                                <a class="cd-dropdown-item item-1" href="./service.html">
+                                                <h3>Лечение акне</h3>
+                                                </a>
+                                            </li>
+                                
+                                            <li>
+                                                <a class="cd-dropdown-item item-2" href="./service.html">
+                                                    <h3>Пигментация</h3>
+                                                </a>
+                                            </li>
+                                
+                                            <li>
+                                                <a class="cd-dropdown-item item-3" href="./service.html">
+                                                    <h3>Лазерное омоложение</h3>
+                                                </a>
+                                            </li>
+                                
+                                            <li>
+                                                <a class="cd-dropdown-item item-4" href="./service.html">
+                                                    <h3>Интимное отбеливание</h3>
+                                                </a>
+                                            </li>
+                                
+                                            <li>
+                                                <a class="cd-dropdown-item item-5" href="./service.html">
+                                                    <h3>Удаление тату и татуажа</h3>
+                                                </a>
+                                            </li>
+                                
+                                            <li>
+                                                <a class="cd-dropdown-item item-6" href="./service.html">
+                                                    <h3>Карбоновый пилинг</h3>
+                                                </a>
+                                            </li>
+                                
+                                            <li>
+                                                <a class="cd-dropdown-item item-7" href="./service.html">
+                                                    <h3>RF-лифтинг InMode - Израиль</h3>
+                                                </a>
+                                            </li>
+                                
+                                            <li>
+                                                <a class="cd-dropdown-item item-8" href="./service.html">
+                                                    <h3>Фотоомоложение InMode - Израиль</h3>
+                                                </a>
+                                            </li>
+                                
+                                            <li>
+                                                <a class="cd-dropdown-item item-9" href="./service.html">
+                                                    <h3>Отбеливание зубов</h3>
+                                                </a>
+                                            </li>
+                                
+                                            <li>
+                                                <a class="cd-dropdown-item item-10" href="./service.html">
+                                                    <h3>Дополнительные услуги</h3>
+                                                </a>
+                                            </li>
+                                
+                                        </div>
+                                    </ul>
+                                    <!-- .cd-dropdown-icons -->
+                                </li>
+    
+    
+    
+    
+                                <li class="has-children">
+                                    <a href="./service.html">ЭСТЕТИЧЕСКАЯ КОСМЕТОЛОГИЯ</a>
+                                    <ul class="cd-dropdown-icons is-hidden">
+                                      <li class="go-back"><a href="#0">Menu</a></li>
+                                      <li class="see-all"><a href="./service.html">Browse Services</a></li>
+                                        <div class="cd-dropdown-subitem-group">
+                                            <li>
+                                                <a class="cd-dropdown-item item-1" href="./service.html">
+                                                <h3>Лечение акне</h3>
+                                                </a>
+                                            </li>
+                                
+                                            <li>
+                                                <a class="cd-dropdown-item item-2" href="./service.html">
+                                                    <h3>Пигментация</h3>
+                                                </a>
+                                            </li>
+                                
+                                            <li>
+                                                <a class="cd-dropdown-item item-3" href="./service.html">
+                                                    <h3>Лазерное омоложение</h3>
+                                                </a>
+                                            </li>
+                                
+                                            <li>
+                                                <a class="cd-dropdown-item item-4" href="./service.html">
+                                                    <h3>Интимное отбеливание</h3>
+                                                </a>
+                                            </li>
+                                
+                                            <li>
+                                                <a class="cd-dropdown-item item-5" href="./service.html">
+                                                    <h3>Удаление тату и татуажа</h3>
+                                                </a>
+                                            </li>
+                                
+                                            <li>
+                                                <a class="cd-dropdown-item item-6" href="./service.html">
+                                                    <h3>Карбоновый пилинг</h3>
+                                                </a>
+                                            </li>
+                                
+                                            <li>
+                                                <a class="cd-dropdown-item item-7" href="./service.html">
+                                                    <h3>RF-лифтинг InMode - Израиль</h3>
+                                                </a>
+                                            </li>
+                                
+                                            <li>
+                                                <a class="cd-dropdown-item item-8" href="./service.html">
+                                                    <h3>Фотоомоложение InMode - Израиль</h3>
+                                                </a>
+                                            </li>
+                                
+                                            <li>
+                                                <a class="cd-dropdown-item item-9" href="./service.html">
+                                                    <h3>Отбеливание зубов</h3>
+                                                </a>
+                                            </li>
+                                
+                                            <li>
+                                                <a class="cd-dropdown-item item-10" href="./service.html">
+                                                    <h3>Дополнительные услуги</h3>
+                                                </a>
+                                            </li>
+                                
+                                        </div>
+                                    </ul>
+                                    <!-- .cd-dropdown-icons -->
+                                </li>
+    
+    
+    
+    
+                                <li class="has-children">
+                                    <a href="./service.html">ЭСТЕТИЧЕСКАЯ КОСМЕТОЛОГИЯ</a>
+                                    <ul class="cd-dropdown-icons is-hidden">
+                                      <li class="go-back"><a href="#0">Menu</a></li>
+                                      <li class="see-all"><a href="./service.html">Browse Services</a></li>
+                                        <div class="cd-dropdown-subitem-group">
+                                            <li>
+                                                <a class="cd-dropdown-item item-1" href="./service.html">
+                                                <h3>Лечение акне</h3>
+                                                </a>
+                                            </li>
+                                
+                                            <li>
+                                                <a class="cd-dropdown-item item-2" href="./service.html">
+                                                    <h3>Пигментация</h3>
+                                                </a>
+                                            </li>
+                                
+                                            <li>
+                                                <a class="cd-dropdown-item item-3" href="./service.html">
+                                                    <h3>Лазерное омоложение</h3>
+                                                </a>
+                                            </li>
+                                
+                                            <li>
+                                                <a class="cd-dropdown-item item-4" href="./service.html">
+                                                    <h3>Интимное отбеливание</h3>
+                                                </a>
+                                            </li>
+                                
+                                            <li>
+                                                <a class="cd-dropdown-item item-5" href="./service.html">
+                                                    <h3>Удаление тату и татуажа</h3>
+                                                </a>
+                                            </li>
+                                
+                                            <li>
+                                                <a class="cd-dropdown-item item-6" href="./service.html">
+                                                    <h3>Карбоновый пилинг</h3>
+                                                </a>
+                                            </li>
+                                
+                                            <li>
+                                                <a class="cd-dropdown-item item-7" href="./service.html">
+                                                    <h3>RF-лифтинг InMode - Израиль</h3>
+                                                </a>
+                                            </li>
+                                
+                                            <li>
+                                                <a class="cd-dropdown-item item-8" href="./service.html">
+                                                    <h3>Фотоомоложение InMode - Израиль</h3>
+                                                </a>
+                                            </li>
+                                
+                                            <li>
+                                                <a class="cd-dropdown-item item-9" href="./service.html">
+                                                    <h3>Отбеливание зубов</h3>
+                                                </a>
+                                            </li>
+                                
+                                            <li>
+                                                <a class="cd-dropdown-item item-10" href="./service.html">
+                                                    <h3>Дополнительные услуги</h3>
+                                                </a>
+                                            </li>
+                                
+                                        </div>
+                                    </ul>
+                                    <!-- .cd-dropdown-icons -->
+                                </li>
+    
+    
+    
+    
+                      
+                                <li class="cd-divider">Про DELUXE</li>
+                      
+                                <li class="hasnt-child"><a href="./club.html">КЛУБ ПРИВИЛЕГИЙ</a></li>
+                                <li class="hasnt-child"><a href="./club.html">ФИЛОСОФИЯ БРЕНДА</a></li>
+                                <li class="hasnt-child"><a href="./club.html">СПЕЦИАЛИСТЫ</a></li>
+                                <li class="hasnt-child"><a href="./club.html">СЕРТИФИКАТЫ И ЛИЦЕНЗИИ</a></li>
+                                <li class="hasnt-child"><a href="./club.html">ОБОРУДОВАНИЕ И ПРЕПАРАТЫ</a></li>
+                                <li class="hasnt-child"><a href="./club.html">ФРАНШИЗА</a></li>
+                              </ul>
+                              <!-- .cd-dropdown-content -->
+                            </nav>
+                            <!-- .cd-dropdown -->
+                        </div>
+                        <!-- .cd-dropdown-wrapper -->
+    
+                    </div>
+    
+                    <div class="col-md-5 fullscreen-menu__img">
+                        <img src="./img/menu/menu-img-1.jpg" alt="">
+                    </div>
+    
+                </div>
+    
+                <section class="fullscreen-menu__accordion">
+                    <div class="tab">
+                    <input type="checkbox" name="accordion-1" id="cb1">
+                    <label for="cb1" class="tab__label">ЭСТЕТИЧЕСКАЯ КОСМЕТОЛОГИЯ</label>
+                    <div class="tab__content">
+                        <ul class="fullscreen-menu__accordion-list">
+                            <li><span>•</span><a href="./service.html">Лечение акне</a></li>
+                            <li><span>•</span><a href="./service.html">Пигментация</a></li>
+                            <li><span>•</span><a href="./service.html">Лазерное омоложение</a></li>
+                            <li><span>•</span><a href="./service.html">Интимное отбеливание</a></li>
+                            <li><span>•</span><a href="./service.html">Удаление тату и татуажа</a></li>
+                            <li><span>•</span><a href="./service.html">Карбоновый пилинг</a></li>
+                            <li><span>•</span><a href="./service.html">RF-лифтинг InMode - Израиль</a></li>
+                            <li><span>•</span><a href="./service.html">Фотоомоложение InMode - Израиль</a></li>
+                            <li><span>•</span><a href="./service.html">Отбеливание зубов</a></li>
+                            <li><span>•</span><a href="./service.html">Дополнительные услуги</a></li>
+    
+                        </ul>
+                    </div>
+                    </div>
+    
+                    <div class="tab">
+                        <input type="checkbox" name="accordion-1" id="cb2">
+                        <label for="cb2" class="tab__label">ИНЪЕКЦИОННАЯ КОСМЕТОЛОГИЯ</label>
+                        <div class="tab__content">
+                            <ul class="fullscreen-menu__accordion-list">
+                                <li><span>•</span><a href="./service.html">Лечение акне</a></li>
+                                <li><span>•</span><a href="./service.html">Пигментация</a></li>
+                                <li><span>•</span><a href="./service.html">Лазерное омоложение</a></li>
+                                <li><span>•</span><a href="./service.html">Интимное отбеливание</a></li>
+                                <li><span>•</span><a href="./service.html">Удаление тату и татуажа</a></li>
+                                <li><span>•</span><a href="./service.html">Карбоновый пилинг</a></li>
+                                <li><span>•</span><a href="./service.html">RF-лифтинг InMode - Израиль</a></li>
+                                <li><span>•</span><a href="./service.html">Фотоомоложение InMode - Израиль</a></li>
+                                <li><span>•</span><a href="./service.html">Отбеливание зубов</a></li>
+                                <li><span>•</span><a href="./service.html">Дополнительные услуги</a></li>
+        
+                            </ul>
+                        </div>
+                    </div>
+    
+                    <div class="tab">
+                        <input type="checkbox" name="accordion-1" id="cb3" checked>
+                        <label for="cb3" class="tab__label">АППАРАТНАЯ КОСМЕТОЛОГИЯ</label>
+                        <div class="tab__content">
+                            <ul class="fullscreen-menu__accordion-list">
+                                <li><span>•</span><a href="./service.html">Лечение акне</a></li>
+                                <li><span>•</span><a href="./service.html">Пигментация</a></li>
+                                <li><span>•</span><a href="./service.html">Лазерное омоложение</a></li>
+                                <li><span>•</span><a href="./service.html">Интимное отбеливание</a></li>
+                                <li><span>•</span><a href="./service.html">Удаление тату и татуажа</a></li>
+                                <li><span>•</span><a href="./service.html">Карбоновый пилинг</a></li>
+                                <li><span>•</span><a href="./service.html">RF-лифтинг InMode - Израиль</a></li>
+                                <li><span>•</span><a href="./service.html">Фотоомоложение InMode - Израиль</a></li>
+                                <li><span>•</span><a href="./service.html">Отбеливание зубов</a></li>
+                                <li><span>•</span><a href="./service.html">Дополнительные услуги</a></li>
+        
+                            </ul>
+                        </div>
+                    </div>
+    
+                    <div class="tab">
+                        <input type="checkbox" name="accordion-1" id="cb4">
+                        <label for="cb4" class="tab__label">ЛАЗЕРНАЯ ЭПИЛЯЦИЯ</label>
+                        <div class="tab__content">
+                            <ul class="fullscreen-menu__accordion-list">
+                                <li><span>•</span><a href="./service.html">Лечение акне</a></li>
+                                <li><span>•</span><a href="./service.html">Пигментация</a></li>
+                                <li><span>•</span><a href="./service.html">Лазерное омоложение</a></li>
+                                <li><span>•</span><a href="./service.html">Интимное отбеливание</a></li>
+                                <li><span>•</span><a href="./service.html">Удаление тату и татуажа</a></li>
+                                <li><span>•</span><a href="./service.html">Карбоновый пилинг</a></li>
+                                <li><span>•</span><a href="./service.html">RF-лифтинг InMode - Израиль</a></li>
+                                <li><span>•</span><a href="./service.html">Фотоомоложение InMode - Израиль</a></li>
+                                <li><span>•</span><a href="./service.html">Отбеливание зубов</a></li>
+                                <li><span>•</span><a href="./service.html">Дополнительные услуги</a></li>
+        
+                            </ul>
+                        </div>
+                    </div>
+    
+    
+                    <div class="tab">
+                        <input type="checkbox" name="accordion-1" id="cb5">
+                        <label for="cb5" class="tab__label">SPA-ПРОГРАММЫ</label>
+                        <div class="tab__content">
+                            <ul class="fullscreen-menu__accordion-list">
+                                <li><span>•</span><a href="./service.html">Лечение акне</a></li>
+                                <li><span>•</span><a href="./service.html">Пигментация</a></li>
+                                <li><span>•</span><a href="./service.html">Лазерное омоложение</a></li>
+                                <li><span>•</span><a href="./service.html">Интимное отбеливание</a></li>
+                                <li><span>•</span><a href="./service.html">Удаление тату и татуажа</a></li>
+                                <li><span>•</span><a href="./service.html">Карбоновый пилинг</a></li>
+                                <li><span>•</span><a href="./service.html">RF-лифтинг InMode - Израиль</a></li>
+                                <li><span>•</span><a href="./service.html">Фотоомоложение InMode - Израиль</a></li>
+                                <li><span>•</span><a href="./service.html">Отбеливание зубов</a></li>
+                                <li><span>•</span><a href="./service.html">Дополнительные услуги</a></li>
+        
+                            </ul>
+                        </div>
+                    </div>
+    
+    
+                    <div class="tab">
+                        <input type="checkbox" name="accordion-1" id="cb6">
+                        <label for="cb6" class="tab__label">МАССАЖ</label>
+                        <div class="tab__content">
+                            <ul class="fullscreen-menu__accordion-list">
+                                <li><span>•</span><a href="./service.html">Лечение акне</a></li>
+                                <li><span>•</span><a href="./service.html">Пигментация</a></li>
+                                <li><span>•</span><a href="./service.html">Лазерное омоложение</a></li>
+                                <li><span>•</span><a href="./service.html">Интимное отбеливание</a></li>
+                                <li><span>•</span><a href="./service.html">Удаление тату и татуажа</a></li>
+                                <li><span>•</span><a href="./service.html">Карбоновый пилинг</a></li>
+                                <li><span>•</span><a href="./service.html">RF-лифтинг InMode - Израиль</a></li>
+                                <li><span>•</span><a href="./service.html">Фотоомоложение InMode - Израиль</a></li>
+                                <li><span>•</span><a href="./service.html">Отбеливание зубов</a></li>
+                                <li><span>•</span><a href="./service.html">Дополнительные услуги</a></li>
+        
+                            </ul>
+                        </div>
+                    </div>
+    
+                    <div class="cd-divider">Про DELUXE</div>
+    
+                    <ul class="fullscreen-menu__mobile">
+    
+                        <li class="fullscreen-menu__mobile-link"><a href="./club.html">КЛУБ ПРИВИЛЕГИЙ</a></li>
+                        <li class="fullscreen-menu__mobile-link"><a href="./club.html">ФИЛОСОФИЯ БРЕНДА</a></li>
+                        <li class="fullscreen-menu__mobile-link"><a href="./club.html">СПЕЦИАЛИСТЫ</a></li>
+                        <li class="fullscreen-menu__mobile-link"><a href="./club.html">СЕРТИФИКАТЫ И ЛИЦЕНЗИИ</a></li>
+                        <li class="fullscreen-menu__mobile-link"><a href="./club.html">ОБОРУДОВАНИЕ И ПРЕПАРАТЫ</a></li>
+                        <li class="fullscreen-menu__mobile-link"><a href="./club.html">ФРАНШИЗА</a></li>
+    
+                    </ul>
+    
+    
+                </section>
+    
+            </div> 
+    
+            
+            
+              
+              
+    
+        </div>
+
+        <section class="services">
+
+            <div class="container services__container">
+                
+                <nav aria-label="breadcrumb">
+                    
+                        <ol class="breadcrumbs">
+                        <li class="breadcrumbs__item">
+                            <a class="breadcrumbs__link breadcrumbs__prev" href="/">Главная</a>
+                        </li>
+                        <li class="breadcrumbs__item">
+                            <span class="breadcrumbs__divider">
+
+                                <svg xmlns="http://www.w3.org/2000/svg" width="6" height="11" viewBox="0 0 6 11" fill="none">
+                                    <path d="M1 10.3445L4.87559 5.5L1 0.655517" stroke="#2C2A29"/>
+                                </svg>
+
+                            </span>
+                            <span class="breadcrumbs__current">Услуги</span>
+                        </li>
+                        </ol>
+                    
+                </nav>
+
+                <div class="row services__row">
+
+                    <div class="col-xl-4 col-md-6">
+                        
+                        <div class="services__card">
+
+                            <div class="services__title">Эстетическая косметология
+
+                                <div class="services__toggle">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="15" height="8" viewBox="0 0 15 8" fill="none">
+                                        <path d="M1 1L7.5 6L14 1" stroke="#2C2A29" stroke-width="2"/>
+                                    </svg>
+                                </div>
+                            </div>
+
+                            <div class="services__card-wrapper">
+
+                                <ul class="services__list" data-target="list-1">
+                                    <li class="services__list-item">
+                                        <span>•</span><a href="">Консультация врача</a>
+                                    </li>
+                                    <li class="services__list-item">
+                                        <span>•</span><a href="">Уходовые процедуры</a>
+                                    </li>
+                                    <li class="services__list-item">
+                                        <span>•</span><a href="">Альгинатные маски</a>
+                                    </li>
+                                    <li class="services__list-item">
+                                        <span>•</span><a href="">Пилинг</a>
+                                    </li>
+                                    <li class="services__list-item">
+                                        <span>•</span><a href="">Удаление новообразований</a>
+                                    </li>
+                                </ul>
+
+                                <div class="services__card-bottom">
+                                    <div class="services__show" data-target="list-1">Все</div>
+
+                                    <div class="services__button"><a href="">Записаться</a></div>
+                                </div>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                    <div class="col-xl-4 col-md-6">
+                        
+                        <div class="services__card">
+
+                            <div class="services__title">Аппаратная косметология
+
+                                <div class="services__toggle">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="15" height="8" viewBox="0 0 15 8" fill="none">
+                                        <path d="M1 1L7.5 6L14 1" stroke="#2C2A29" stroke-width="2"/>
+                                    </svg>
+                                </div>
+                            </div>
+
+                            <div class="services__card-wrapper">
+
+                                <ul class="services__list hidden" data-target="list-2">
+                                    <li class="services__list-item">
+                                        <span>•</span><a href="">RF-лифтинг InMode</a>
+                                    </li>
+                                    <li class="services__list-item">
+                                        <span>•</span><a href="">Лечение акне</a>
+                                    </li>
+                                    <li class="services__list-item">
+                                        <span>•</span><a href="">Пигментация</a>
+                                    </li>
+                                    <li class="services__list-item">
+                                        <span>•</span><a href="">Фотоомоложение InMode</a>
+                                    </li>
+                                    <li class="services__list-item">
+                                        <span>•</span><a href="">Лазерное омоложение</a>
+                                    </li>
+                                    <li class="services__list-item">
+                                        <span>•</span><a href="">Удаление татуажа</a>
+                                    </li>
+                                    <li class="services__list-item">
+                                        <span>•</span><a href="">Интимное осветление</a>
+                                    </li>
+                                    <li class="services__list-item">
+                                        <span>•</span><a href="">Карбоновый пилинг</a>
+                                    </li>
+                                    <li class="services__list-item">
+                                        <span>•</span><a href="">Удаление тату</a>
+                                    </li>
+                                </ul>
+
+                                <div class="services__card-bottom">
+                                    <div class="services__show" data-target="list-2">Все</div>
+
+                                    <div class="services__button"><a href="">Записаться</a></div>
+                                </div>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                    <div class="col-xl-4 col-md-6">
+                        
+                        <div class="services__card">
+
+                            <div class="services__title">Инъекционная косметология
+
+                                <div class="services__toggle">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="15" height="8" viewBox="0 0 15 8" fill="none">
+                                        <path d="M1 1L7.5 6L14 1" stroke="#2C2A29" stroke-width="2"/>
+                                    </svg>
+                                </div>
+                            </div>
+
+                            <div class="services__card-wrapper">
+
+                                <ul class="services__list hidden" data-target="list-3">
+                                    <li class="services__list-item">
+                                        <span>•</span><a href="">Биоревитализация</a>
+                                    </li>
+                                    <li class="services__list-item">
+                                        <span>•</span><a href="">Ботулинотерапия</a>
+                                    </li>
+                                    <li class="services__list-item">
+                                        <span>•</span><a href="">Бланширование</a>
+                                    </li>
+                                    <li class="services__list-item">
+                                        <span>•</span><a href="">Плазмотерапия</a>
+                                    </li>
+                                    <li class="services__list-item">
+                                        <span>•</span><a href="">Липолитики (коррекция жировых отложений)</a>
+                                    </li>
+                                    <li class="services__list-item">
+                                        <span>•</span><a href="">Мезотерапия</a>
+                                    </li>
+                                    <li class="services__list-item">
+                                        <span>•</span><a href="">Мезотерапия головы</a>
+                                    </li>
+                                    <li class="services__list-item">
+                                        <span>•</span><a href="">Контурная пластика</a>
+                                    </li>
+                                </ul>
+
+                                <div class="services__card-bottom">
+                                    <div class="services__show" data-target="list-3">Все</div>
+
+                                    <div class="services__button"><a href="">Записаться</a></div>
+                                </div>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                    <div class="col-xl-4 col-md-6">
+                        
+                        <div class="services__card">
+
+                            <div class="services__title">Лазерная эпиляция
+
+                                <div class="services__toggle">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="15" height="8" viewBox="0 0 15 8" fill="none">
+                                        <path d="M1 1L7.5 6L14 1" stroke="#2C2A29" stroke-width="2"/>
+                                    </svg>
+                                </div>
+                            </div>
+
+                            <div class="services__card-wrapper">
+
+                                <ul class="services__list  hidden" data-target="list-4">
+                                    <li class="services__list-item">
+                                        <span>•</span><a href="">Magic One</a>
+                                    </li>
+                                    <li class="services__list-item">
+                                        <span>•</span><a href="">Razorlaser</a>
+                                    </li>
+                                    <li class="services__list-item">
+                                        <span>•</span><a href="">Candela</a>
+                                    </li>
+                                    <li class="services__list-item">
+                                        <span>•</span><a href="">Magic One с александритовой волной</a>
+                                    </li>
+                                    <li class="services__list-item">
+                                        <span>•</span><a href="">MedioStar NextPro</a>
+                                    </li>
+                                    <li class="services__list-item">
+                                        <span>•</span><a href="">Soprano Spa Accord</a>
+                                    </li>
+                                </ul>
+
+                                <div class="services__card-bottom">
+                                    <div class="services__show" data-target="list-4">Все</div>
+
+                                    <div class="services__button"><a href="">Записаться</a></div>
+                                </div>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                    <div class="col-xl-4 col-md-6">
+                        
+                        <div class="services__card">
+
+                            <div class="services__title">SPA-программы
+
+                                <div class="services__toggle">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="15" height="8" viewBox="0 0 15 8" fill="none">
+                                        <path d="M1 1L7.5 6L14 1" stroke="#2C2A29" stroke-width="2"/>
+                                    </svg>
+                                </div>
+                            </div>
+
+                            <div class="services__card-wrapper">
+
+                                <ul class="services__list  hidden" data-target="list-5">
+                                    <li class="services__list-item">
+                                        <span>•</span><a href="">Relax SPA программы</a>
+                                    </li>
+                                    <li class="services__list-item">
+                                        <span>•</span><a href="">Собери свой SPA</a>
+                                    </li>
+                                </ul>
+
+                                <div class="services__card-bottom">
+                                    <div class="services__show" data-target="list-5">Все</div>
+
+                                    <div class="services__button"><a href="">Записаться</a></div>
+                                </div>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                    <div class="col-xl-4 col-md-6">
+                        
+                        <div class="services__card">
+
+                            <div class="services__title">Массаж
+
+                                <div class="services__toggle">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="15" height="8" viewBox="0 0 15 8" fill="none">
+                                        <path d="M1 1L7.5 6L14 1" stroke="#2C2A29" stroke-width="2"/>
+                                    </svg>
+                                </div>
+                            </div>
+
+                            <div class="services__card-wrapper">
+
+                                <ul class="services__list  hidden" data-target="list-6">
+                                    <li class="services__list-item">
+                                        <span>•</span><a href="">Ручной массаж</a>
+                                    </li>
+                                    <li class="services__list-item">
+                                        <span>•</span><a href="">Лечебный массаж</a>
+                                    </li>
+                                    <li class="services__list-item">
+                                        <span>•</span><a href="">Аппаратный массаж</a>
+                                    </li>
+                                </ul>
+
+                                <div class="services__card-bottom">
+                                    <div class="services__show" data-target="list-6">Все</div>
+
+                                    <div class="services__button"><a href="">Записаться</a></div>
+                                </div>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+
+
+                </div>
+
+            </div>
+
+        </section>
+
+        <section class="page-cta services__page-cta">
+
+            <div class="container page-cta__container">
+
+                <div class="row page-cta__row">
+
+                    <div class="page-cta__wrapper">
+
+                        <div class="page-cta__img">
+                            <img src="./img/ad/ad-img.png" alt="">
+                        </div>
+
+                        <div class="page-cta__paragraph">
+
+                            <div class="page-cta__title">
+                                Сложно определиться с выбором процедуры?
+                            </div>
+
+                            <div class="page-cta__subtitle">
+                                Наши компентные специалисты подберут то, что нужно именно Вашей коже.
+                            </div>
+
+                        </div>
+
+                        <div class="page-cta__button">
+
+                            <a href="">
+                                Записаться на консультацию
+                            </a>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+    </main>
+
+    
+    
+
+
+
+
+
+
+    <footer class="footer">
+
+        <div class="footer__outside">
+
+            <div class="container footer__container">
+
+                <div class="footer__wrapper">
+                
+                
+
+                    <div class="footer-nav__wrapper">
+
+                        
+                        <div class="footer__column">
+                            <div class="footer__city">КЕМЕРОВО
+                                <div class="footer__toggle">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="15" height="8" viewBox="0 0 15 8" fill="none">
+                                        <path d="M1 1L7.5 6L14 1" stroke="#2C2A29" stroke-width="2"/>
+                                    </svg>
+                                </div>
+                            </div>
+                            <p class="footer__address">б-р Строителей, 53А ежедневно, 9:00 - 20:00</p>
+                            <a href="" class="footer__tel">+7 923 512-33-13</a>
+                            <p class="footer__address">б-р Строителей, 53А ежедневно, 9:00 - 20:00</p>
+                            <a href="" class="footer__tel">+7 923 512-33-13</a>
+                            
+                        </div>
+                        
+                        <div class="footer__column">
+                            <div class="footer__city">НОВОКУЗНЕЦК
+                                <div class="footer__toggle">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="15" height="8" viewBox="0 0 15 8" fill="none">
+                                        <path d="M1 1L7.5 6L14 1" stroke="#2C2A29" stroke-width="2"/>
+                                    </svg>
+                                </div>
+                            </div>
+                            <p class="footer__address">ул. Павловского, 1 ежедневно, 9:00 - 20:00</p>
+                            <a href="" class="footer__tel">+7 923 512-33-13</a>
+                            
+                        </div>
+            
+                        <div class="footer__column">
+                            <div class="footer__city">НОВОСИБИРСК
+                                <div class="footer__toggle">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="15" height="8" viewBox="0 0 15 8" fill="none">
+                                        <path d="M1 1L7.5 6L14 1" stroke="#2C2A29" stroke-width="2"/>
+                                    </svg>
+                                </div>
+                            </div>
+                            <p class="footer__address">ул. Октябрьская, 45 ежедневно, 9:00 - 20:00</p>
+                            <a href="" class="footer__tel">+7 923 512-33-13</a>
+                            
+                        </div>
+            
+                        <div class="footer__column">
+                            <div class="footer__city">ТОМСК
+                                <div class="footer__toggle">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="15" height="8" viewBox="0 0 15 8" fill="none">
+                                        <path d="M1 1L7.5 6L14 1" stroke="#2C2A29" stroke-width="2"/>
+                                    </svg>
+                                </div>
+                            </div>
+                            <p class="footer__address">ул. Энтузиастов, 43 ежедневно, 9:00 - 20:00</p>
+                            <a href="" class="footer__tel">+7 923 512-33-13</a>
+                            
+                        </div>
+
+                        <div class="footer__column">
+                            <div class="footer__city">ТАЙГА
+                                <div class="footer__toggle">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="15" height="8" viewBox="0 0 15 8" fill="none">
+                                        <path d="M1 1L7.5 6L14 1" stroke="#2C2A29" stroke-width="2"/>
+                                    </svg>
+                                </div>
+                            </div>
+                            <p class="footer__address">ул. Октябрьская, 45 ежедневно, 9:00 - 20:00</p>
+                            <a href="" class="footer__tel">+7 923 512-33-13</a>
+                            
+                        </div>
+
+                        <div class="footer__column footer__column-desktop">
+                            
+                            <div class="footer__socials">
+                                <a href="">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 40 40" fill="none">
+                                        <path fill-rule="evenodd" clip-rule="evenodd" d="M11.754 0.120336C13.8872 0.023043 14.5683 0 20.0001 0C25.4317 0 26.1128 0.023043 28.246 0.120336C30.3748 0.21745 31.8286 0.555592 33.1007 1.04991C34.4159 1.56103 35.5313 2.24493 36.6432 3.35677C37.7551 4.46861 38.439 5.58408 38.9501 6.89926C39.4444 8.17139 39.7826 9.62524 39.8797 11.754C39.977 13.8872 40 14.5683 40 20.0001C40 25.4317 39.977 26.1128 39.8797 28.246C39.7826 30.3748 39.4444 31.8286 38.9501 33.1007C38.439 34.4159 37.7551 35.5313 36.6432 36.6432C35.5313 37.7551 34.4159 38.439 33.1007 38.9501C31.8286 39.4444 30.3748 39.7826 28.246 39.8797C26.1128 39.977 25.4317 40 20.0001 40C14.5683 40 13.8872 39.977 11.754 39.8797C9.62524 39.7825 8.17139 39.4444 6.8992 38.9501C5.58402 38.439 4.46873 37.7551 3.35683 36.6432C2.24499 35.5313 1.56109 34.4159 1.04997 33.1007C0.555532 31.8286 0.217509 30.3748 0.120276 28.246C0.0229834 26.1128 0 25.4317 0 20.0001C0 14.5683 0.0229834 13.8872 0.120276 11.754C0.217509 9.62524 0.555532 8.17139 1.04997 6.89926C1.56103 5.58408 2.24493 4.46861 3.35683 3.35677C4.46867 2.24493 5.58402 1.56103 6.8992 1.04991C8.17139 0.555592 9.62524 0.21745 11.754 0.120336ZM28.0817 3.72022C25.9728 3.624 25.3402 3.60358 20.0001 3.60358C14.6599 3.60358 14.0272 3.624 11.9183 3.72022C9.96832 3.80912 8.9093 4.13494 8.20455 4.40883C7.27104 4.77168 6.60476 5.20503 5.9049 5.90496C5.20509 6.60476 4.77168 7.27098 4.40883 8.20461C4.13494 8.9093 3.80918 9.96826 3.72022 11.9183C3.624 14.0272 3.60358 14.6598 3.60358 20C3.60358 25.3402 3.624 25.9728 3.72022 28.0817C3.80918 30.0317 4.13494 31.0907 4.40883 31.7954C4.77168 32.729 5.20509 33.3952 5.90496 34.095C6.60476 34.795 7.27098 35.2283 8.20461 35.5912C8.9093 35.8651 9.96826 36.1909 11.9183 36.2797C14.027 36.376 14.6594 36.3964 20 36.3964C25.3406 36.3964 25.9731 36.376 28.0817 36.2798C30.0317 36.1909 31.0907 35.8651 31.7954 35.5912C32.729 35.2283 33.3952 34.795 34.095 34.095C34.795 33.3952 35.2283 32.729 35.5912 31.7954C35.8651 31.0907 36.1909 30.0317 36.2798 28.0817C36.376 25.9728 36.3964 25.3402 36.3964 20C36.3964 14.6598 36.376 14.0272 36.2798 11.9183C36.1909 9.96832 35.8651 8.9093 35.5912 8.20455C35.2283 7.27104 34.795 6.60476 34.095 5.9049C33.3952 5.20503 32.729 4.77168 31.7954 4.40883C31.0907 4.13494 30.0317 3.80912 28.0817 3.72022ZM13.3333 20C13.3333 23.6819 16.3181 26.6666 20.0001 26.6666C23.6819 26.6666 26.6667 23.6819 26.6667 20C26.6667 16.318 23.6819 13.3332 20.0001 13.3332C16.3181 13.3332 13.3333 16.318 13.3333 20ZM9.72974 20C9.72974 14.3278 14.3279 9.72965 20.0001 9.72965C25.6721 9.72965 30.2703 14.3278 30.2703 20C30.2703 25.6721 25.6721 30.2702 20.0001 30.2702C14.3279 30.2702 9.72974 25.6721 9.72974 20ZM30.676 11.7239C32.0015 11.7239 33.0761 10.6494 33.0761 9.32387C33.0761 7.99839 32.0015 6.92383 30.676 6.92383C29.3506 6.92383 28.2761 7.99839 28.2761 9.32387C28.2761 10.6494 29.3506 11.7239 30.676 11.7239Z" fill="#2C2A29"/>
+                                    </svg>
+                                </a>
+                                <a href="">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="41" height="40" viewBox="0 0 41 40" fill="none">
+                                        <path fill-rule="evenodd" clip-rule="evenodd" d="M12.254 0.120336C14.3872 0.023043 15.0683 0 20.5001 0C25.9317 0 26.6128 0.023043 28.746 0.120336C30.8748 0.21745 32.3286 0.555592 33.6007 1.04991C34.9159 1.56103 36.0313 2.24493 37.1432 3.35677C38.2551 4.46861 38.939 5.58408 39.4501 6.89926C39.9444 8.17139 40.2826 9.62524 40.3797 11.754C40.477 13.8872 40.5 14.5683 40.5 20.0001C40.5 25.4317 40.477 26.1128 40.3797 28.246C40.2826 30.3748 39.9444 31.8286 39.4501 33.1007C38.939 34.4159 38.2551 35.5313 37.1432 36.6432C36.0313 37.7551 34.9159 38.439 33.6007 38.9501C32.3286 39.4444 30.8748 39.7826 28.746 39.8797C26.6128 39.977 25.9317 40 20.5001 40C15.0683 40 14.3872 39.977 12.254 39.8797C10.1252 39.7825 8.67139 39.4444 7.3992 38.9501C6.08402 38.439 4.96873 37.7551 3.85683 36.6432C2.74499 35.5313 2.06109 34.4159 1.54997 33.1007C1.05553 31.8286 0.717509 30.3748 0.620276 28.246C0.522983 26.1128 0.5 25.4317 0.5 20.0001C0.5 14.5683 0.522983 13.8872 0.620276 11.754C0.717509 9.62524 1.05553 8.17139 1.54997 6.89926C2.06103 5.58408 2.74493 4.46861 3.85683 3.35677C4.96867 2.24493 6.08402 1.56103 7.3992 1.04991C8.67139 0.555592 10.1252 0.21745 12.254 0.120336ZM28.5817 3.72022C26.4728 3.624 25.8402 3.60358 20.5001 3.60358C15.1599 3.60358 14.5272 3.624 12.4183 3.72022C10.4683 3.80912 9.4093 4.13494 8.70455 4.40883C7.77104 4.77168 7.10476 5.20503 6.4049 5.90496C5.70509 6.60476 5.27168 7.27098 4.90883 8.20461C4.63494 8.9093 4.30918 9.96826 4.22022 11.9183C4.124 14.0272 4.10358 14.6598 4.10358 20C4.10358 25.3402 4.124 25.9728 4.22022 28.0817C4.30918 30.0317 4.63494 31.0907 4.90883 31.7954C5.27168 32.729 5.70509 33.3952 6.40496 34.095C7.10476 34.795 7.77098 35.2283 8.70461 35.5912C9.4093 35.8651 10.4683 36.1909 12.4183 36.2797C14.527 36.376 15.1594 36.3964 20.5 36.3964C25.8406 36.3964 26.4731 36.376 28.5817 36.2798C30.5317 36.1909 31.5907 35.8651 32.2954 35.5912C33.229 35.2283 33.8952 34.795 34.595 34.095C35.295 33.3952 35.7283 32.729 36.0912 31.7954C36.3651 31.0907 36.6909 30.0317 36.7798 28.0817C36.876 25.9728 36.8964 25.3402 36.8964 20C36.8964 14.6598 36.876 14.0272 36.7798 11.9183C36.6909 9.96832 36.3651 8.9093 36.0912 8.20455C35.7283 7.27104 35.295 6.60476 34.595 5.9049C33.8952 5.20503 33.229 4.77168 32.2954 4.40883C31.5907 4.13494 30.5317 3.80912 28.5817 3.72022ZM8.5 13C8.69488 21.7447 13.3719 27 21.5718 27H22.0366V21.997C25.0497 22.2773 27.3281 24.3373 28.2425 27H32.5C31.3307 23.02 28.2575 20.8198 26.3387 19.979C28.2575 18.9419 30.9558 16.4194 31.6004 13H27.7328C26.8933 15.7748 24.4051 18.2973 22.0366 18.5355V13H18.1689V22.6977C15.7704 22.1371 12.7423 19.4184 12.6074 13H8.5Z" fill="#2C2A29"/>
+                                    </svg>
+                                </a>
+                                <a href="">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 40 40" fill="none">
+                                        <path fill-rule="evenodd" clip-rule="evenodd" d="M20.0001 0C14.5683 0 13.8872 0.023043 11.754 0.120336C9.62524 0.21745 8.17139 0.555592 6.8992 1.04991C5.58402 1.56103 4.46867 2.24493 3.35683 3.35677C2.24493 4.46861 1.56103 5.58408 1.04997 6.89926C0.555532 8.17139 0.217509 9.62524 0.120276 11.754C0.0229834 13.8872 0 14.5683 0 20.0001C0 25.4317 0.0229834 26.1128 0.120276 28.246C0.217509 30.3748 0.555532 31.8286 1.04997 33.1007C1.56109 34.4159 2.24499 35.5313 3.35683 36.6432C4.46873 37.7551 5.58402 38.439 6.8992 38.9501C8.17139 39.4444 9.62524 39.7825 11.754 39.8797C13.8872 39.977 14.5683 40 20.0001 40C25.4317 40 26.1128 39.977 28.246 39.8797C30.3748 39.7826 31.8286 39.4444 33.1007 38.9501C34.4159 38.439 35.5313 37.7551 36.6432 36.6432C37.7551 35.5313 38.439 34.4159 38.9501 33.1007C39.4444 31.8286 39.7826 30.3748 39.8797 28.246C39.977 26.1128 40 25.4317 40 20.0001C40 14.5683 39.977 13.8872 39.8797 11.754C39.7826 9.62524 39.4444 8.17139 38.9501 6.89926C38.439 5.58408 37.7551 4.46861 36.6432 3.35677C35.5313 2.24493 34.4159 1.56103 33.1007 1.04991C31.8286 0.555592 30.3748 0.21745 28.246 0.120336C26.1128 0.023043 25.4317 0 20.0001 0ZM20.0001 3.60358C25.3402 3.60358 25.9728 3.624 28.0817 3.72022C30.0317 3.80912 31.0907 4.13494 31.7954 4.40883C32.729 4.77168 33.3952 5.20503 34.095 5.9049C34.795 6.60476 35.2283 7.27104 35.5912 8.20455C35.8651 8.9093 36.1909 9.96832 36.2798 11.9183C36.376 14.0272 36.3964 14.6598 36.3964 20C36.3964 25.3402 36.376 25.9728 36.2798 28.0817C36.1909 30.0317 35.8651 31.0907 35.5912 31.7954C35.2283 32.729 34.795 33.3952 34.095 34.095C33.3952 34.795 32.729 35.2283 31.7954 35.5912C31.0907 35.8651 30.0317 36.1909 28.0817 36.2798C25.9731 36.376 25.3406 36.3964 20 36.3964C14.6594 36.3964 14.027 36.376 11.9183 36.2797C9.96826 36.1909 8.9093 35.8651 8.20461 35.5912C7.27098 35.2283 6.60476 34.795 5.90496 34.095C5.20509 33.3952 4.77168 32.729 4.40883 31.7954C4.13494 31.0907 3.80918 30.0317 3.72022 28.0817C3.624 25.9728 3.60358 25.3402 3.60358 20C3.60358 14.6598 3.624 14.0272 3.72022 11.9183C3.80918 9.96826 4.13494 8.9093 4.40883 8.20461C4.77168 7.27098 5.20509 6.60476 5.9049 5.90496C6.60476 5.20503 7.27104 4.77168 8.20455 4.40883C8.9093 4.13494 9.96832 3.80912 11.9183 3.72022C14.0272 3.624 14.6599 3.60358 20.0001 3.60358ZM25.984 23.8494C26.2251 23.1743 26.2251 22.5956 26.1527 22.475C26.0957 22.3799 25.9636 22.3148 25.7683 22.2186C25.7161 22.1928 25.6593 22.1648 25.5982 22.1334C25.3088 21.9887 23.8862 21.2895 23.6209 21.193C23.3557 21.0966 23.1628 21.0484 22.9699 21.3377C22.777 21.627 22.2224 22.2781 22.0536 22.471C21.8849 22.6639 21.7161 22.688 21.4267 22.5433C21.3795 22.5197 21.3151 22.4918 21.2356 22.4573C20.8282 22.2808 20.0245 21.9324 19.0999 21.1086C18.2399 20.3411 17.6572 19.3926 17.4884 19.1033C17.3196 18.8139 17.4723 18.6572 17.617 18.5125C17.7027 18.4268 17.8027 18.3054 17.9027 18.1839L17.9028 18.1838L17.9028 18.1838C17.9528 18.1231 18.0028 18.0624 18.051 18.0062C18.1741 17.8626 18.2273 17.7539 18.2999 17.6059L18.2999 17.6059C18.3126 17.5799 18.3259 17.5527 18.3403 17.5239C18.4368 17.331 18.3886 17.1622 18.3162 17.0176C18.2689 16.9229 18.0047 16.2791 17.7602 15.6833C17.631 15.3688 17.5074 15.0675 17.4241 14.8676C17.2118 14.3581 16.9995 14.3719 16.8366 14.3825C16.8145 14.3839 16.7932 14.3853 16.773 14.3853C16.6915 14.3853 16.6043 14.3797 16.5141 14.3739C16.4178 14.3676 16.3181 14.3612 16.2185 14.3612C16.0256 14.3612 15.7121 14.4335 15.4469 14.7229C15.4304 14.7409 15.412 14.7605 15.392 14.7818C15.0914 15.1026 14.4342 15.8041 14.4342 17.1381C14.4342 18.5571 15.4598 19.9244 15.6132 20.1289L15.6157 20.1321C15.6267 20.1467 15.6476 20.1777 15.6781 20.223C16.049 20.7732 17.8407 23.431 20.5587 24.5004C22.9966 25.4596 23.4141 25.3589 23.7876 25.2688C23.8647 25.2502 23.94 25.2321 24.0309 25.2238C24.5613 25.1756 25.7428 24.5245 25.984 23.8494ZM8.37786 19.7544C8.37786 13.232 13.6665 7.94336 20.1889 7.94336C26.7113 7.94336 31.9999 13.232 31.9999 19.7584C31.9999 26.2768 26.7113 31.5654 20.1889 31.5654C18.1192 31.5654 16.1742 31.0309 14.4823 30.0945L7.94385 32.1883L10.0738 25.8508C8.99675 24.0705 8.37786 21.9848 8.37786 19.7544ZM14.7275 28.041C16.2948 29.0818 18.1715 29.6847 20.1889 29.6847C25.6624 29.6847 30.1192 25.2279 30.1272 19.7544C30.1272 14.2809 25.6704 9.82816 20.1969 9.82816C14.7194 9.82816 10.2667 14.2809 10.2667 19.7544C10.2667 21.9285 10.9659 23.9419 12.1555 25.5775L10.9137 29.2627L14.7275 28.041Z" fill="#2C2A29"/>
+                                    </svg>
+                                </a>
+                            </div>
+
+                            <div class="footer__logo">
+                                <svg width="290" height="33" viewBox="0 0 290 33" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M0 32.6418V0.732666H13.1933C14.6585 0.732666 16.0839 0.92493 17.4562 1.30283C18.8286 1.68073 20.1081 2.21774 21.2882 2.91387C22.475 3.61 23.5689 4.45198 24.5501 5.41993C25.5379 6.39451 26.3733 7.46853 27.0694 8.64863C27.7655 9.82873 28.3092 11.095 28.6937 12.4608C29.0782 13.8199 29.2705 15.2254 29.2705 16.6972C29.2705 18.1756 29.0782 19.5811 28.6937 20.9402C28.3092 22.2994 27.7655 23.5723 27.0694 24.7524C26.3733 25.9325 25.5313 27.0065 24.5501 27.9811C23.5623 28.9557 22.475 29.7844 21.2882 30.4739C20.1015 31.1634 18.8286 31.7004 17.4562 32.0783C16.0839 32.4562 14.6585 32.6484 13.1933 32.6484H0V32.6418ZM225.181 22.3126C223.285 24.9181 221.395 27.5236 219.499 30.1291C218.909 30.9313 218.199 31.5479 217.377 31.9855C216.555 32.423 215.587 32.6484 214.493 32.6484H208.487L219.592 17.6187C220.188 16.843 220.135 16.127 219.572 15.3447L208.779 0.739292H214.785C215.853 0.739292 216.814 0.95145 217.669 1.37576C218.524 1.80006 219.207 2.41 219.724 3.20557L225.201 10.6773C227.01 8.20443 228.814 5.7249 230.63 3.25199C231.731 1.57465 233.395 0.739292 235.636 0.739292H241.596L230.736 15.4309C230.259 16.1204 230.226 16.8165 230.736 17.506C234.416 22.5844 238.188 27.5965 241.908 32.6484H235.967C234.853 32.6484 233.892 32.423 233.077 31.9788C232.261 31.5346 231.572 30.9313 231.008 30.1755C229.066 27.5568 227.123 24.938 225.181 22.3192V22.3126ZM13.2065 25.3424C14.38 25.3424 15.4938 25.1104 16.5546 24.6596C17.6087 24.2087 18.5435 23.5922 19.3523 22.8098C20.1612 22.0342 20.7976 21.1126 21.275 20.0585C21.7523 19.0043 21.9844 17.8839 21.9844 16.6906C21.9844 15.5038 21.7457 14.3834 21.275 13.3293C20.7976 12.2751 20.1612 11.3536 19.3523 10.5646C18.5435 9.77569 17.6087 9.16575 16.5546 8.7083C15.4938 8.25747 14.38 8.02543 13.2065 8.02543H7.29276V25.3358H13.2065V25.3424ZM79.3784 32.6418H58.1299V0.732666H79.3784V7.54146H65.4293V13.1502H76.7795V19.959H65.4293V25.833H79.3784V32.6418ZM108.536 32.6418V0.732666H115.836V25.833H128.432V32.6418H108.536ZM290 32.6418H268.752V0.732666H290V7.54146H276.044V13.1502H287.395V19.959H276.044V25.833H290V32.6418Z" fill="#2C2A29"></path>
+                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M180.741 25.833H157.358V32.6418H180.741V25.833Z" fill="#2C2A29"></path>
+                                    <path d="M163.066 9.84862C163.066 10.6442 163.232 11.4066 163.557 12.116C163.882 12.8254 164.326 13.4486 164.869 13.9856C165.413 14.516 166.05 14.9403 166.766 15.2519C167.475 15.5635 168.244 15.716 169.04 15.716C169.835 15.716 170.598 15.5569 171.307 15.2519C172.023 14.9403 172.666 14.516 173.223 13.9856C173.78 13.4486 174.217 12.8254 174.542 12.116C174.867 11.4066 175.033 10.6508 175.033 9.84862V0.732666H182.332V9.86188C182.332 11.6851 181.981 13.4022 181.285 14.9933C180.589 16.5845 179.641 17.9767 178.434 19.1701C177.234 20.3568 175.828 21.2916 174.224 21.9811C172.613 22.6706 170.883 23.022 169.046 23.022C167.826 23.022 166.653 22.8629 165.532 22.5579C164.405 22.2463 163.351 21.8021 162.37 21.232C161.395 20.6618 160.494 19.9789 159.678 19.1767C158.863 18.3745 158.167 17.4861 157.59 16.5116C157.013 15.5436 156.569 14.4961 156.251 13.3757C155.932 12.2552 155.767 11.0818 155.767 9.86851V0.739292H163.066V9.85524V9.84862Z" fill="#2C2A29"></path>
+                                </svg>
+                            </div>
+
+                        </div>
+
+                        
+
+                        
+                    </div>
+
+                        
+                    
+                    <div class="footer__column-mobile">
+                            
+                        <div class="footer__logo">
+                            <svg width="290" height="33" viewBox="0 0 290 33" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M0 32.6418V0.732666H13.1933C14.6585 0.732666 16.0839 0.92493 17.4562 1.30283C18.8286 1.68073 20.1081 2.21774 21.2882 2.91387C22.475 3.61 23.5689 4.45198 24.5501 5.41993C25.5379 6.39451 26.3733 7.46853 27.0694 8.64863C27.7655 9.82873 28.3092 11.095 28.6937 12.4608C29.0782 13.8199 29.2705 15.2254 29.2705 16.6972C29.2705 18.1756 29.0782 19.5811 28.6937 20.9402C28.3092 22.2994 27.7655 23.5723 27.0694 24.7524C26.3733 25.9325 25.5313 27.0065 24.5501 27.9811C23.5623 28.9557 22.475 29.7844 21.2882 30.4739C20.1015 31.1634 18.8286 31.7004 17.4562 32.0783C16.0839 32.4562 14.6585 32.6484 13.1933 32.6484H0V32.6418ZM225.181 22.3126C223.285 24.9181 221.395 27.5236 219.499 30.1291C218.909 30.9313 218.199 31.5479 217.377 31.9855C216.555 32.423 215.587 32.6484 214.493 32.6484H208.487L219.592 17.6187C220.188 16.843 220.135 16.127 219.572 15.3447L208.779 0.739292H214.785C215.853 0.739292 216.814 0.95145 217.669 1.37576C218.524 1.80006 219.207 2.41 219.724 3.20557L225.201 10.6773C227.01 8.20443 228.814 5.7249 230.63 3.25199C231.731 1.57465 233.395 0.739292 235.636 0.739292H241.596L230.736 15.4309C230.259 16.1204 230.226 16.8165 230.736 17.506C234.416 22.5844 238.188 27.5965 241.908 32.6484H235.967C234.853 32.6484 233.892 32.423 233.077 31.9788C232.261 31.5346 231.572 30.9313 231.008 30.1755C229.066 27.5568 227.123 24.938 225.181 22.3192V22.3126ZM13.2065 25.3424C14.38 25.3424 15.4938 25.1104 16.5546 24.6596C17.6087 24.2087 18.5435 23.5922 19.3523 22.8098C20.1612 22.0342 20.7976 21.1126 21.275 20.0585C21.7523 19.0043 21.9844 17.8839 21.9844 16.6906C21.9844 15.5038 21.7457 14.3834 21.275 13.3293C20.7976 12.2751 20.1612 11.3536 19.3523 10.5646C18.5435 9.77569 17.6087 9.16575 16.5546 8.7083C15.4938 8.25747 14.38 8.02543 13.2065 8.02543H7.29276V25.3358H13.2065V25.3424ZM79.3784 32.6418H58.1299V0.732666H79.3784V7.54146H65.4293V13.1502H76.7795V19.959H65.4293V25.833H79.3784V32.6418ZM108.536 32.6418V0.732666H115.836V25.833H128.432V32.6418H108.536ZM290 32.6418H268.752V0.732666H290V7.54146H276.044V13.1502H287.395V19.959H276.044V25.833H290V32.6418Z" fill="#2C2A29"></path>
+                                <path fill-rule="evenodd" clip-rule="evenodd" d="M180.741 25.833H157.358V32.6418H180.741V25.833Z" fill="#2C2A29"></path>
+                                <path d="M163.066 9.84862C163.066 10.6442 163.232 11.4066 163.557 12.116C163.882 12.8254 164.326 13.4486 164.869 13.9856C165.413 14.516 166.05 14.9403 166.766 15.2519C167.475 15.5635 168.244 15.716 169.04 15.716C169.835 15.716 170.598 15.5569 171.307 15.2519C172.023 14.9403 172.666 14.516 173.223 13.9856C173.78 13.4486 174.217 12.8254 174.542 12.116C174.867 11.4066 175.033 10.6508 175.033 9.84862V0.732666H182.332V9.86188C182.332 11.6851 181.981 13.4022 181.285 14.9933C180.589 16.5845 179.641 17.9767 178.434 19.1701C177.234 20.3568 175.828 21.2916 174.224 21.9811C172.613 22.6706 170.883 23.022 169.046 23.022C167.826 23.022 166.653 22.8629 165.532 22.5579C164.405 22.2463 163.351 21.8021 162.37 21.232C161.395 20.6618 160.494 19.9789 159.678 19.1767C158.863 18.3745 158.167 17.4861 157.59 16.5116C157.013 15.5436 156.569 14.4961 156.251 13.3757C155.932 12.2552 155.767 11.0818 155.767 9.86851V0.739292H163.066V9.85524V9.84862Z" fill="#2C2A29"></path>
+                            </svg>
+                        </div>
+
+                        <div class="footer__socials">
+                            <a href="">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 40 40" fill="none">
+                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M11.754 0.120336C13.8872 0.023043 14.5683 0 20.0001 0C25.4317 0 26.1128 0.023043 28.246 0.120336C30.3748 0.21745 31.8286 0.555592 33.1007 1.04991C34.4159 1.56103 35.5313 2.24493 36.6432 3.35677C37.7551 4.46861 38.439 5.58408 38.9501 6.89926C39.4444 8.17139 39.7826 9.62524 39.8797 11.754C39.977 13.8872 40 14.5683 40 20.0001C40 25.4317 39.977 26.1128 39.8797 28.246C39.7826 30.3748 39.4444 31.8286 38.9501 33.1007C38.439 34.4159 37.7551 35.5313 36.6432 36.6432C35.5313 37.7551 34.4159 38.439 33.1007 38.9501C31.8286 39.4444 30.3748 39.7826 28.246 39.8797C26.1128 39.977 25.4317 40 20.0001 40C14.5683 40 13.8872 39.977 11.754 39.8797C9.62524 39.7825 8.17139 39.4444 6.8992 38.9501C5.58402 38.439 4.46873 37.7551 3.35683 36.6432C2.24499 35.5313 1.56109 34.4159 1.04997 33.1007C0.555532 31.8286 0.217509 30.3748 0.120276 28.246C0.0229834 26.1128 0 25.4317 0 20.0001C0 14.5683 0.0229834 13.8872 0.120276 11.754C0.217509 9.62524 0.555532 8.17139 1.04997 6.89926C1.56103 5.58408 2.24493 4.46861 3.35683 3.35677C4.46867 2.24493 5.58402 1.56103 6.8992 1.04991C8.17139 0.555592 9.62524 0.21745 11.754 0.120336ZM28.0817 3.72022C25.9728 3.624 25.3402 3.60358 20.0001 3.60358C14.6599 3.60358 14.0272 3.624 11.9183 3.72022C9.96832 3.80912 8.9093 4.13494 8.20455 4.40883C7.27104 4.77168 6.60476 5.20503 5.9049 5.90496C5.20509 6.60476 4.77168 7.27098 4.40883 8.20461C4.13494 8.9093 3.80918 9.96826 3.72022 11.9183C3.624 14.0272 3.60358 14.6598 3.60358 20C3.60358 25.3402 3.624 25.9728 3.72022 28.0817C3.80918 30.0317 4.13494 31.0907 4.40883 31.7954C4.77168 32.729 5.20509 33.3952 5.90496 34.095C6.60476 34.795 7.27098 35.2283 8.20461 35.5912C8.9093 35.8651 9.96826 36.1909 11.9183 36.2797C14.027 36.376 14.6594 36.3964 20 36.3964C25.3406 36.3964 25.9731 36.376 28.0817 36.2798C30.0317 36.1909 31.0907 35.8651 31.7954 35.5912C32.729 35.2283 33.3952 34.795 34.095 34.095C34.795 33.3952 35.2283 32.729 35.5912 31.7954C35.8651 31.0907 36.1909 30.0317 36.2798 28.0817C36.376 25.9728 36.3964 25.3402 36.3964 20C36.3964 14.6598 36.376 14.0272 36.2798 11.9183C36.1909 9.96832 35.8651 8.9093 35.5912 8.20455C35.2283 7.27104 34.795 6.60476 34.095 5.9049C33.3952 5.20503 32.729 4.77168 31.7954 4.40883C31.0907 4.13494 30.0317 3.80912 28.0817 3.72022ZM13.3333 20C13.3333 23.6819 16.3181 26.6666 20.0001 26.6666C23.6819 26.6666 26.6667 23.6819 26.6667 20C26.6667 16.318 23.6819 13.3332 20.0001 13.3332C16.3181 13.3332 13.3333 16.318 13.3333 20ZM9.72974 20C9.72974 14.3278 14.3279 9.72965 20.0001 9.72965C25.6721 9.72965 30.2703 14.3278 30.2703 20C30.2703 25.6721 25.6721 30.2702 20.0001 30.2702C14.3279 30.2702 9.72974 25.6721 9.72974 20ZM30.676 11.7239C32.0015 11.7239 33.0761 10.6494 33.0761 9.32387C33.0761 7.99839 32.0015 6.92383 30.676 6.92383C29.3506 6.92383 28.2761 7.99839 28.2761 9.32387C28.2761 10.6494 29.3506 11.7239 30.676 11.7239Z" fill="#2C2A29"/>
+                                </svg>
+                            </a>
+                            <a href="">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="41" height="40" viewBox="0 0 41 40" fill="none">
+                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M12.254 0.120336C14.3872 0.023043 15.0683 0 20.5001 0C25.9317 0 26.6128 0.023043 28.746 0.120336C30.8748 0.21745 32.3286 0.555592 33.6007 1.04991C34.9159 1.56103 36.0313 2.24493 37.1432 3.35677C38.2551 4.46861 38.939 5.58408 39.4501 6.89926C39.9444 8.17139 40.2826 9.62524 40.3797 11.754C40.477 13.8872 40.5 14.5683 40.5 20.0001C40.5 25.4317 40.477 26.1128 40.3797 28.246C40.2826 30.3748 39.9444 31.8286 39.4501 33.1007C38.939 34.4159 38.2551 35.5313 37.1432 36.6432C36.0313 37.7551 34.9159 38.439 33.6007 38.9501C32.3286 39.4444 30.8748 39.7826 28.746 39.8797C26.6128 39.977 25.9317 40 20.5001 40C15.0683 40 14.3872 39.977 12.254 39.8797C10.1252 39.7825 8.67139 39.4444 7.3992 38.9501C6.08402 38.439 4.96873 37.7551 3.85683 36.6432C2.74499 35.5313 2.06109 34.4159 1.54997 33.1007C1.05553 31.8286 0.717509 30.3748 0.620276 28.246C0.522983 26.1128 0.5 25.4317 0.5 20.0001C0.5 14.5683 0.522983 13.8872 0.620276 11.754C0.717509 9.62524 1.05553 8.17139 1.54997 6.89926C2.06103 5.58408 2.74493 4.46861 3.85683 3.35677C4.96867 2.24493 6.08402 1.56103 7.3992 1.04991C8.67139 0.555592 10.1252 0.21745 12.254 0.120336ZM28.5817 3.72022C26.4728 3.624 25.8402 3.60358 20.5001 3.60358C15.1599 3.60358 14.5272 3.624 12.4183 3.72022C10.4683 3.80912 9.4093 4.13494 8.70455 4.40883C7.77104 4.77168 7.10476 5.20503 6.4049 5.90496C5.70509 6.60476 5.27168 7.27098 4.90883 8.20461C4.63494 8.9093 4.30918 9.96826 4.22022 11.9183C4.124 14.0272 4.10358 14.6598 4.10358 20C4.10358 25.3402 4.124 25.9728 4.22022 28.0817C4.30918 30.0317 4.63494 31.0907 4.90883 31.7954C5.27168 32.729 5.70509 33.3952 6.40496 34.095C7.10476 34.795 7.77098 35.2283 8.70461 35.5912C9.4093 35.8651 10.4683 36.1909 12.4183 36.2797C14.527 36.376 15.1594 36.3964 20.5 36.3964C25.8406 36.3964 26.4731 36.376 28.5817 36.2798C30.5317 36.1909 31.5907 35.8651 32.2954 35.5912C33.229 35.2283 33.8952 34.795 34.595 34.095C35.295 33.3952 35.7283 32.729 36.0912 31.7954C36.3651 31.0907 36.6909 30.0317 36.7798 28.0817C36.876 25.9728 36.8964 25.3402 36.8964 20C36.8964 14.6598 36.876 14.0272 36.7798 11.9183C36.6909 9.96832 36.3651 8.9093 36.0912 8.20455C35.7283 7.27104 35.295 6.60476 34.595 5.9049C33.8952 5.20503 33.229 4.77168 32.2954 4.40883C31.5907 4.13494 30.5317 3.80912 28.5817 3.72022ZM8.5 13C8.69488 21.7447 13.3719 27 21.5718 27H22.0366V21.997C25.0497 22.2773 27.3281 24.3373 28.2425 27H32.5C31.3307 23.02 28.2575 20.8198 26.3387 19.979C28.2575 18.9419 30.9558 16.4194 31.6004 13H27.7328C26.8933 15.7748 24.4051 18.2973 22.0366 18.5355V13H18.1689V22.6977C15.7704 22.1371 12.7423 19.4184 12.6074 13H8.5Z" fill="#2C2A29"/>
+                                </svg>
+                            </a>
+                            <a href="">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 40 40" fill="none">
+                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M20.0001 0C14.5683 0 13.8872 0.023043 11.754 0.120336C9.62524 0.21745 8.17139 0.555592 6.8992 1.04991C5.58402 1.56103 4.46867 2.24493 3.35683 3.35677C2.24493 4.46861 1.56103 5.58408 1.04997 6.89926C0.555532 8.17139 0.217509 9.62524 0.120276 11.754C0.0229834 13.8872 0 14.5683 0 20.0001C0 25.4317 0.0229834 26.1128 0.120276 28.246C0.217509 30.3748 0.555532 31.8286 1.04997 33.1007C1.56109 34.4159 2.24499 35.5313 3.35683 36.6432C4.46873 37.7551 5.58402 38.439 6.8992 38.9501C8.17139 39.4444 9.62524 39.7825 11.754 39.8797C13.8872 39.977 14.5683 40 20.0001 40C25.4317 40 26.1128 39.977 28.246 39.8797C30.3748 39.7826 31.8286 39.4444 33.1007 38.9501C34.4159 38.439 35.5313 37.7551 36.6432 36.6432C37.7551 35.5313 38.439 34.4159 38.9501 33.1007C39.4444 31.8286 39.7826 30.3748 39.8797 28.246C39.977 26.1128 40 25.4317 40 20.0001C40 14.5683 39.977 13.8872 39.8797 11.754C39.7826 9.62524 39.4444 8.17139 38.9501 6.89926C38.439 5.58408 37.7551 4.46861 36.6432 3.35677C35.5313 2.24493 34.4159 1.56103 33.1007 1.04991C31.8286 0.555592 30.3748 0.21745 28.246 0.120336C26.1128 0.023043 25.4317 0 20.0001 0ZM20.0001 3.60358C25.3402 3.60358 25.9728 3.624 28.0817 3.72022C30.0317 3.80912 31.0907 4.13494 31.7954 4.40883C32.729 4.77168 33.3952 5.20503 34.095 5.9049C34.795 6.60476 35.2283 7.27104 35.5912 8.20455C35.8651 8.9093 36.1909 9.96832 36.2798 11.9183C36.376 14.0272 36.3964 14.6598 36.3964 20C36.3964 25.3402 36.376 25.9728 36.2798 28.0817C36.1909 30.0317 35.8651 31.0907 35.5912 31.7954C35.2283 32.729 34.795 33.3952 34.095 34.095C33.3952 34.795 32.729 35.2283 31.7954 35.5912C31.0907 35.8651 30.0317 36.1909 28.0817 36.2798C25.9731 36.376 25.3406 36.3964 20 36.3964C14.6594 36.3964 14.027 36.376 11.9183 36.2797C9.96826 36.1909 8.9093 35.8651 8.20461 35.5912C7.27098 35.2283 6.60476 34.795 5.90496 34.095C5.20509 33.3952 4.77168 32.729 4.40883 31.7954C4.13494 31.0907 3.80918 30.0317 3.72022 28.0817C3.624 25.9728 3.60358 25.3402 3.60358 20C3.60358 14.6598 3.624 14.0272 3.72022 11.9183C3.80918 9.96826 4.13494 8.9093 4.40883 8.20461C4.77168 7.27098 5.20509 6.60476 5.9049 5.90496C6.60476 5.20503 7.27104 4.77168 8.20455 4.40883C8.9093 4.13494 9.96832 3.80912 11.9183 3.72022C14.0272 3.624 14.6599 3.60358 20.0001 3.60358ZM25.984 23.8494C26.2251 23.1743 26.2251 22.5956 26.1527 22.475C26.0957 22.3799 25.9636 22.3148 25.7683 22.2186C25.7161 22.1928 25.6593 22.1648 25.5982 22.1334C25.3088 21.9887 23.8862 21.2895 23.6209 21.193C23.3557 21.0966 23.1628 21.0484 22.9699 21.3377C22.777 21.627 22.2224 22.2781 22.0536 22.471C21.8849 22.6639 21.7161 22.688 21.4267 22.5433C21.3795 22.5197 21.3151 22.4918 21.2356 22.4573C20.8282 22.2808 20.0245 21.9324 19.0999 21.1086C18.2399 20.3411 17.6572 19.3926 17.4884 19.1033C17.3196 18.8139 17.4723 18.6572 17.617 18.5125C17.7027 18.4268 17.8027 18.3054 17.9027 18.1839L17.9028 18.1838L17.9028 18.1838C17.9528 18.1231 18.0028 18.0624 18.051 18.0062C18.1741 17.8626 18.2273 17.7539 18.2999 17.6059L18.2999 17.6059C18.3126 17.5799 18.3259 17.5527 18.3403 17.5239C18.4368 17.331 18.3886 17.1622 18.3162 17.0176C18.2689 16.9229 18.0047 16.2791 17.7602 15.6833C17.631 15.3688 17.5074 15.0675 17.4241 14.8676C17.2118 14.3581 16.9995 14.3719 16.8366 14.3825C16.8145 14.3839 16.7932 14.3853 16.773 14.3853C16.6915 14.3853 16.6043 14.3797 16.5141 14.3739C16.4178 14.3676 16.3181 14.3612 16.2185 14.3612C16.0256 14.3612 15.7121 14.4335 15.4469 14.7229C15.4304 14.7409 15.412 14.7605 15.392 14.7818C15.0914 15.1026 14.4342 15.8041 14.4342 17.1381C14.4342 18.5571 15.4598 19.9244 15.6132 20.1289L15.6157 20.1321C15.6267 20.1467 15.6476 20.1777 15.6781 20.223C16.049 20.7732 17.8407 23.431 20.5587 24.5004C22.9966 25.4596 23.4141 25.3589 23.7876 25.2688C23.8647 25.2502 23.94 25.2321 24.0309 25.2238C24.5613 25.1756 25.7428 24.5245 25.984 23.8494ZM8.37786 19.7544C8.37786 13.232 13.6665 7.94336 20.1889 7.94336C26.7113 7.94336 31.9999 13.232 31.9999 19.7584C31.9999 26.2768 26.7113 31.5654 20.1889 31.5654C18.1192 31.5654 16.1742 31.0309 14.4823 30.0945L7.94385 32.1883L10.0738 25.8508C8.99675 24.0705 8.37786 21.9848 8.37786 19.7544ZM14.7275 28.041C16.2948 29.0818 18.1715 29.6847 20.1889 29.6847C25.6624 29.6847 30.1192 25.2279 30.1272 19.7544C30.1272 14.2809 25.6704 9.82816 20.1969 9.82816C14.7194 9.82816 10.2667 14.2809 10.2667 19.7544C10.2667 21.9285 10.9659 23.9419 12.1555 25.5775L10.9137 29.2627L14.7275 28.041Z" fill="#2C2A29"/>
+                                </svg>
+                            </a>
+                        </div>
+
+                        
+
+                    </div>
+                    
+
+                </div>
+
+                
+
+            </div>
+
+        </div>
+
+        <div class="container">
+            <div class="footer__policy">
+                1995 - 2023. ООО «КОСМО». Все права защищены. Информация на сайте не является публичной офертой, сайт не содержит рекламных материалов, размещенные на сайте материалы носят информативный характер согласно Постановлению Правительства РФ от 11.05.2023 №736
+                <a href="">Политика обработки персональных данных.</a>
+            </div>
+        </div>
+        
+    </footer>
+      
+
+
+
+
+
+    
+
+
+<link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
+<script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    
+<script src="./js/bootstrap.bundle.min.js"></script>
+
+<script src="./js/swiper-bundle.min.js"></script>
+
+
+
+<script src="./js/index.js"></script>
+</body>
+</html>

@@ -1,0 +1,2806 @@
+
+
+
+
+
+
+
+@import "fonts.scss";
+@import "normalize.scss";
+@import "modules/variables.scss";
+@import "modules/custom.scss";
+@import "modules/animation.scss";
+@import "modules/header.scss";
+@import "modules/footer.scss";
+
+
+
+
+
+  
+
+
+
+
+
+
+
+.slider-button-prev {
+    background-image: url(../../img/svg/slider-button-prev.svg);
+    background-repeat: no-repeat;
+    height: 35px;
+    width: 130px;
+    transition: .2s ease-in;
+
+    @media (max-width:567px) {
+        background-image: url(../../img/svg/slider-button-mobile-prev.svg) !important;
+
+        height: 22px;
+        width: 22px;
+    }    
+}
+
+.slider-button-prev.swiper-button-disabled {
+    background-image: url(../../img/svg/slider-button-prev-disabled.svg);
+    background-repeat: no-repeat;
+    height: 35px;
+    width: 65px;
+    transition: .2s ease-in;
+    opacity: .5;
+
+    @media (max-width:567px) {
+        background-image: url(../../img/svg/slider-button-mobile-prev-disabled.svg) !important;
+
+        height: 22px;
+        width: 22px;
+    }    
+}
+
+.slider-button-next {
+    background-image: url(../../img/svg/slider-button-next.svg);
+    background-repeat: no-repeat;
+    height: 35px;
+    width: 130px;
+    transition: .2s ease-in;
+
+    @media (max-width:567px) {
+        background-image: url(../../img/svg/slider-button-mobile-next.svg) !important;
+
+        height: 22px;
+        width: 22px;
+    }  
+}
+
+.slider-button-next.swiper-button-disabled {
+    background-image: url(../../img/svg/slider-button-next-disabled.svg);
+    background-repeat: no-repeat;
+    height: 35px;
+    width: 65px;
+    transition: .2s ease-in;
+
+    @media (max-width:567px) {
+        background-image: url(../../img/svg/slider-button-mobile-next-disabled.svg) !important;
+
+        height: 22px;
+        width: 22px;
+    }    
+}
+
+.whatsapp__cta {
+    position: absolute;
+    right: 2.5%;
+    bottom: 2.5%;
+    z-index: 9;
+
+    svg {
+        path {
+            fill: #2C2A29;
+            opacity: .5;
+            transition: fill 0.3s ease, opacity 0.3s ease; /* Добавленные свойства transition */
+        }
+    }
+
+    &:hover {
+        svg {
+            path {
+                fill: #2C2A29;
+                opacity: .75;
+            }
+        }
+    }
+}
+
+
+.bg-decoration {
+    display: flex;
+    position: absolute;
+    gap: 64px;
+    left: -25px;
+    @media (max-width:2400px) {
+        display: none;
+    }
+    @media (max-width:991px) {
+        display: flex;
+        left: unset;
+        right: -25px;
+    }
+    @media (max-width:567px) {
+        display: none;
+    }
+
+}
+
+
+
+  
+  /* Core styles/functionality */
+
+  
+
+  .tab input {
+    position: absolute;
+    opacity: 0;
+    z-index: -1;
+  }
+  .tab__content {
+    max-height: 0;
+    overflow: hidden;
+    transition: all 0.35s;
+    // padding: 0 1rem;
+    &-secondary {
+        background-color: rgba(28, 28, 28, 0.8352941176);
+        padding: 0 1rem;
+        position: relative;
+    }
+  }
+  .tab input:checked ~ .tab__content {
+    max-height: fit-content;
+  }
+  
+  /* Visual styles */
+  .accordion {
+    color: var(--theme);
+    border: 2px solid;
+    border-radius: 0.5rem;
+    overflow: hidden;
+  }
+  .tab__label,
+  .tab__close {
+    display: flex;
+    color: white;
+    background: var(--theme);
+    cursor: pointer;
+  }
+  .tab__label {
+    justify-content: space-between;
+    padding: 1rem;
+
+    color: var(--Black, #2C2A29);
+    font-family: 'Avenir Next Cyr';
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    
+    &:hover {
+        font-weight: 700;
+        background-color: #BB9767;  
+    }
+
+    &-secondary {
+        color: var(--White, #FFF);
+        font-family: 'Avenir Next Cyr';
+        font-size: 18px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+
+        margin-top: 20px;
+
+        &:hover {
+            font-weight: 700;
+            background-color: #1C1C1C; 
+        }
+    }
+  }
+  
+  .tab__label::after {
+    content: "";
+    background: url('../../../img/svg/dropdown-toggler.svg') center center no-repeat; /* Укажите путь к вашей иконке и стиль отображения */
+    width: 1em;
+    height: 1em;
+    text-align: center;
+    transform: rotate(-90deg);
+    transition: all 0.35s;
+  }
+  .tab input:checked + .tab__label::after {
+    transform: rotate(90deg);
+  }
+  .tab input:checked + .tab__label {
+    font-weight: 700;
+    background-color: #BB9767;
+  }
+  .tab-secondary input:checked + .tab__label {
+    font-weight: 700;
+    background-color: #1C1C1C;
+    }
+  .tab__content p {
+    margin: 0;
+    padding: 1rem;
+  }
+  .tab__close {
+    justify-content: flex-end;
+    padding: 0.5rem 1rem;
+    font-size: 0.75rem;
+  }
+  .accordion--radio {
+    --theme: var(--secondary);
+  }
+  
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+// breadcrumbs 
+
+.breadcrumbs {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    gap: 10px;
+    
+    padding: 80px 0 50px 0;
+  
+    @media (max-width:991px) {
+      padding: 30px 0 80px 0;
+    }
+    @media (max-width:767px) {
+      padding: 27.5px 0 60px 0;
+    }
+    @media (max-width:567px) {
+      padding: 25px 0 40px 0;
+    }
+    @media (max-width:425px) {
+      padding: 20px 0 20px 0;
+    }
+  
+    &__item {
+      display: flex;
+      gap: 10px;
+      transition: .2s ease-in;
+    }
+    &__item:hover {
+        transition: .2s ease-in;
+    }
+    &__divider {
+      
+    }
+    &__current {
+        
+    }
+
+  }
+
+
+
+
+
+
+
+.index {
+    &-main {
+        
+        z-index: -10;
+    }
+}
+
+.hero-overlay {
+    background: url(../../img/bg/bg-element.png);
+    background-position: right;
+    background-size: auto;
+    background-repeat: no-repeat;
+    opacity: 0.25;
+
+    // opacity: 0.5; /* Настройте уровень прозрачности по вашему усмотрению */
+    position: fixed;
+    top: 7.5%;
+    left: 23%;
+    width: calc(2560px + 5vw);
+    height: 100%;
+    // z-index: 1; /* Помещаем псевдоэлемент под контентом */
+    /* Добавьте другие стили, такие как размер и позиционирование, в зависимости от ваших требований */
+
+    z-index: -10;
+
+    
+    @media (max-width:991px) {
+        top: -18.5%;
+        left: -30%;
+        transform: scale(.65);
+    }
+    @media (max-width:567px) {
+        top: -31.5%;
+        left: -155%;
+        transform: scale(0.4);
+    }
+    @media (max-width:425px) {
+        top: -37.5%;
+        left: -216%;
+        transform: scale(0.25);
+    }
+}
+
+
+    
+// <~~~~~~~~~~~~~~~~~~ Стили Main Slide ~~~~~~~~~~~~~~~~~~> 
+
+
+
+
+/* Установите высоту HTML и body на 100% */
+html {
+    margin: 0;
+    // overflow: hidden;
+    overflow-x: hidden;
+
+    
+}
+body {
+    margin: 0;
+    overflow: unset;
+    overflow-x: hidden;
+
+    background: url(../../img/bg/bg-secondary.jpg);
+}
+
+
+.slide-main {
+    height: calc(100vh - 74px); /* Учитываем высоту хедера */
+
+    position: relative;
+    // width: 100vw;
+    display: flex; /* Используйте flexbox для размещения дочерних элементов горизонтально */
+
+    &__container {
+        flex: 1; /* Расширьте, чтобы заполнить доступную ширину */
+        height: calc(100vh - 74px); /* Учитываем высоту хедера */
+        display: flex;
+        align-items: center;
+        
+    }
+    &__wrapper {
+        display: flex;
+    }
+    &__row {
+        z-index: 5;
+    }
+
+    &__block {
+        height: 100%;
+        // max-width: 860px;
+
+        @media (max-width:991px) {
+            bottom: -200px;
+            position: relative;
+        }
+    }
+
+    &__img {
+        z-index: 1;
+        position: absolute;
+        bottom: 0px;
+        right: 0;
+
+        @media (max-width:1600px) {
+            right: -200px;
+        }
+        @media (max-width:991px) {
+            right: -250px;
+        }
+    }
+
+    &__photo {
+        flex: 1; /* Расширьте, чтобы заполнить доступную ширину */
+        overflow: hidden; /* Скрыть выходящий контент */
+        
+        right: 0;
+    }
+
+    &__photo  {
+        width: 100%;
+        height: 100%;
+        object-fit: cover; /* Сохраняйте соотношение сторон и обрезайте при необходимости */
+        z-index: -100;
+        max-height: 100%;
+
+        & > img {
+            width: calc(1400px - 73px);
+            height: 1400px;
+
+            @media (max-height:1440px) {
+                height:1300px;
+                width: 1300px;
+            }
+
+            @media (max-height:1199px) {
+                height:1000px;
+                width: 1000px;
+            }
+            @media (max-height:991px) {
+                height:800px;
+                width: 800px;
+            }
+            @media (max-height:991px) {
+                height:800px;
+                width: 800px;
+            }
+            @media (max-height:767px) {
+                height:550px;
+                width: 550px;
+            }
+            @media (max-height:567px) {
+                height:350px;
+                width: 350px;
+            }
+        }
+    }
+    
+    
+    // &__photo::before {
+    //     content: "";
+    //     position: absolute;
+    //     background-image: url(../../img/slide/fitwoman.png);
+    //     background-repeat: no-repeat;
+    //     width: 100%; /* ширина подложки равна 100% от родительского элемента */
+    //     height: 100%; /* высота подложки равна 100% от родительского элемента */
+    //     top: 0;
+    //     left: 0;
+    //     z-index: 5;
+    // }
+    
+
+    /* Вам может потребоваться настроить отступы и поля по мере необходимости для создания интервала */
+    &__block {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        width: 100%;
+    }
+
+    .slide__title {
+        margin-bottom: 15px;
+        span {
+            /* Настройте стили текста по мере необходимости */
+        }
+    }
+}
+
+
+.hashtag {
+    background-color: #BB9767;
+    padding: 7px;
+    margin-bottom: 40px;
+
+    width: fit-content;
+}
+
+.slide {
+    &__benefits {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+        margin-bottom: 75px;
+        @media (max-width:991px) {
+            gap: 15px;
+        }
+        @media (max-width:425px) {
+            gap: 10px;
+        }
+    }
+}
+
+// <~~~~~~~~~~~~~~~~~~ Стили Main Slide ( --- END --- ) ~~~~~~~~~~~~~~~~~~> 
+
+
+
+
+
+// <~~~~~~~~~~~~~~~~~~ Стили Hero  ~~~~~~~~~~~~~~~~~~> 
+
+
+.hero {
+    position: relative;
+
+    &__container {
+        padding-top: 200px;
+        padding-bottom: 25px;
+
+        @media (max-width:1920px) {
+            padding-top: 150px;
+            padding-bottom: 100px;
+        }
+        @media (max-width:1199px) {
+            padding-top: 120px;
+        }
+        @media (max-width:567px) {
+            padding-top: 70px;
+        }
+
+    }
+    &__row {
+
+    }
+    &__wrapper {
+        display: flex;
+        flex-direction: column;
+        height: 100%;
+        justify-content: space-between;
+    }
+    &__block-left {
+
+    }
+    &__block-right {
+        @media (max-width:575px) {
+            padding-left: 0;
+            padding-right: 0;
+        }
+    }
+    &__block-right > img {
+        width: 100%;
+        object-fit: contain;
+        height: 100%;
+    }
+
+
+    &__top {
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 100px;
+        @media (max-width:991px) {
+            margin-bottom: 60px;
+        }
+        @media (max-width:567px) {
+            margin-bottom: 40px;
+        }
+    }
+    &__bottom {
+        display: flex;
+        flex-direction: column;
+    }
+    
+
+    &__info {
+        margin-bottom: 20px;
+        max-width: 465px;
+    }
+    &__title {
+
+    }
+    &__subtitle {
+        margin-bottom: 20px;
+    }
+    &__author {
+        margin-bottom: 50px;
+        max-width: 405px;
+    }
+
+
+    &__button {
+        display: flex;
+        align-items: center;
+        justify-items: center;
+        justify-content: center;
+        
+        max-width: 200px;
+
+        background-color: $black;
+        
+        padding: 15px 0;
+
+        cursor: pointer;
+        font-family: "Avenir Next Cyr";
+       
+        left: 0;
+        right: 0;
+        bottom: 5%;
+
+        
+        transition: .1s ease-in;
+
+        &:hover {
+            background-color: #BB9767;
+            
+            
+        }
+
+        @media (max-width:567px) {
+            width: 90%;
+            max-width: unset;
+        }
+    }
+
+    &__button > a {
+        color: $white;
+    }
+
+    &__more {
+        text-decoration: none !important;
+    }
+
+    &__button-desktop {
+        @media (max-width:1199px) {
+            display: none;
+        }
+    }
+    &__button-mobile {
+        flex: 1;
+        @media (max-width:1199px) {
+            display: flex;
+        }
+    }
+
+    &__callback-desktop {
+        display: flex;
+        align-items: baseline;
+        gap: 25px;
+        margin-right: 100px;
+        @media (max-width:1720px) {
+            margin-right: unset;
+        }
+        @media (max-width:1199px) {
+            display: none;
+        }
+    }
+
+    &__callback-mobile {
+        display: none;
+        align-items: baseline;
+        justify-content: space-between;
+        gap: 50px;
+        margin-top: 30px;
+        @media (max-width:1199px) {
+            display: flex;
+        }
+        @media (max-width:567px) {
+            flex-direction: column;
+            gap: 0;
+            align-items: center;
+        }
+    }
+    &__more.show-more-button {
+        display: flex;
+        flex: 1;
+        justify-content: flex-end;
+    }
+    &__arrow {
+        @media (max-width:567px) {
+            display: none;
+        }
+    }
+
+}
+
+
+
+
+
+
+
+// <~~~~~~~~~~~~~~~~~~ Стили Hero ( --- END --- ) ~~~~~~~~~~~~~~~~~~> 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+// <~~~~~~~~~~~~~~~~~~ Стили benefits ~~~~~~~~~~~~~~~~~~> 
+
+
+.benefits {
+    &__container {
+        
+	}
+	&__row {
+        padding: 100px 0 200px 0;
+        row-gap: 50px;
+
+        @media (max-width:1199px) {
+            padding: 50px 0 100px 0;
+        }
+	}
+    &__block {
+        display: flex;
+        gap: 25px;
+        // padding: 15px 70px 50px 25px;
+        @media (max-width:1800px) {
+            width: 50%;
+        }
+        @media (max-width:767px) {
+            width: 100%;
+        }
+    }
+    &__info {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+    }
+	&__icon {
+        position: relative;
+        bottom: 30%;
+        max-width: 70px;
+        max-height: 70px;
+        @media (max-width:1800px) {
+            bottom: 20%;
+        }
+        @media (max-width:567px) {
+            width: 60px;
+            height: 60px;
+            bottom: unset;
+        }
+	}
+	&__title {
+        // max-width:170px;
+        width: fit-content;
+	}
+	&__subtitle {
+		
+	}
+    &__row > div:nth-child(3) > div > div.benefits__title {
+        // max-width: 230px;
+
+    }
+}
+
+
+// <~~~~~~~~~~~~~~~~~~ Стили benefits ( <--- END ---> )~~~~~~~~~~~~~~~~~~> 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+// <~~~~~~~~~~~~~~~~~~ Стили service ~~~~~~~~~~~~~~~~~~> 
+
+
+
+
+
+.service {
+    &__container {
+      // Стили для контейнера
+    }
+  
+    &__item {
+        max-width: fit-content;
+        display: flex !important;
+        flex-direction: column;
+        gap: 20px;
+
+        max-width: 450px;
+
+        margin: 0 100px 0 0;
+
+        @media (max-width:991px) {
+            width: 250px !important;
+        }
+
+        @media (max-width:767px) {
+            width: 150px !important;
+            gap: 0;
+            margin: 0 10px 0 0;
+        }
+        @media (max-width:567px) {
+            width: 120px !important;
+        }
+        @media (max-width:425px) {
+            
+        }
+    }
+
+    &__img {
+        cursor: pointer;
+        // width: fit-content;
+    }
+
+    &__img > svg > path{
+        transition: .2s ease-in;
+    }
+    &__img > svg {
+        @media (max-width:767px) {
+            width: 80px;
+        }
+    }
+
+    &__item:hover &__img svg path,
+    &__item:hover &__img svg rect {
+    fill: #2c2a295c; /* Измените на нужный вам цвет при наведении */
+    transition: .2s ease-in;
+}
+    
+
+    &__info {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+
+        
+    }
+    
+    &__title {
+
+    }
+
+    &__section-title {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    
+    }
+
+    &__subtitle {
+        @media (max-width:767px) {
+            display: none;
+        }
+    }
+
+
+    &__slider {
+        padding: 0px 0 150px 0;
+        @media (max-width:1199px) {
+            padding:    0px 0 100px 0;
+        }
+
+
+      &-wrapper {
+        margin: 85px 0 40px 0;
+        @media (max-width:991px) {
+            margin: 90px 0 50px 0;
+        }
+        
+      }
+  
+      &-slide {
+        // Стили для каждого слайда
+      }
+  
+      &-pagination {
+        // Стили для пагинации (по желанию)
+      }
+      &-buttons {
+        position: relative;
+        display: flex;
+        justify-content: flex-end;
+        z-index: 5;
+        gap: 40px;
+        
+        @media (max-width:567px) {
+            gap: 15px;
+        }
+      }
+    }
+    &__show {
+        @media (max-width:991px) {
+            display: none !important;
+        }
+    }
+    &__show-mobile {
+        display: none !important;
+        flex: 1;
+        justify-content: flex-start !important;
+        align-items: center !important;
+        margin-top: unset !important; 
+        @media (max-width:991px) {
+            display: flex !important;
+        }
+    }
+
+
+
+
+
+    &__slider-button-next.swiper-button-disabled {
+        
+    }
+  }
+  
+
+
+
+/* Удаляем маркеры по умолчанию у списка ul */
+.service__subtitle ul {
+    list-style: none;
+    padding: 0;
+    margin: 0 0 0 15px;
+    
+}
+
+/* Стили для элементов списка li */
+.service__subtitle ul li {
+    display: inline-block; /* Размещаем элементы в строку */
+    margin-right: 20px; /* Добавляем отступ между элементами списка */
+    position: relative; /* Устанавливаем позицию для кругового маркера */
+    line-height: 1.5; /* Задаем высоту строки для центрирования кругового маркера */
+
+    
+    &:hover {
+        text-shadow: 0px 0px 1px #2C2A29;
+        color: #2C2A29;
+        transition: 0.1s ease-in;
+    }
+    & > a {
+        color: #2C2A29 ;
+        font-family: "Avenir Next Cyr";
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 300;
+        line-height: normal;
+        
+        transition: 0.1s ease-in;
+    }
+}
+
+/* Стили для кругового маркера */
+.service__subtitle ul li:before {
+    content: ''; /* Добавляем контент для псевдоэлемента */
+    display: block;
+    width: 6px; /* Размер круга */
+    height: 6px; /* Размер круга */
+    border-radius: 50%; /* Создаем круг */
+    background-color: black; /* Цвет круга */
+    position: absolute;
+    left: -15px; /* Располагаем круг слева от текста */
+    top: 50%; /* Располагаем круг по центру по вертикали */
+    transform: translateY(-50%); /* Центрируем по вертикали */
+}
+
+
+// <~~~~~~~~~~~~~~~~~~ Стили service ( <--- END ---> )~~~~~~~~~~~~~~~~~~> 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+// <~~~~~~~~~~~~~~~~~~ Стили special-offer ~~~~~~~~~~~~~~~~~~> 
+
+
+.special-offer {
+    @media(max-width:767px) {
+        display: none;
+    }
+    &__mobile {
+        display: none;
+        @media (max-width:767px) {
+            display: inherit;
+        }
+    }
+    &__container {
+
+    }
+    &__row {
+        row-gap: 20px;
+        margin: 60px 0 150px 0;
+        
+        @media (max-width:767px) {
+            margin: 40px 0 40px 0;
+        }
+    }
+    &__block {
+
+        @media (max-width:1920px) {
+            width: 50%;
+        }
+
+        @media (max-width:767px) {
+            padding: unset;
+        }
+    }
+    &__card {
+        
+        background-color: rgba(255, 255, 255, 0.3);
+
+        display: flex;
+        flex-direction: column;
+        gap: 15px;
+
+        padding: 40px 34px 100px;
+
+        
+        max-height: 450px;
+
+        width: 100%;
+
+        height: 450px;
+
+        position: relative;
+
+        cursor: pointer;
+
+        transition: .2s ease-in;
+
+        overflow: hidden;
+
+
+        @media (max-width:1920px) {
+            height: 350px;
+            padding-top: 20px;
+        }
+
+        @media (max-width:1199px) {
+            gap: 10px;
+            padding: 25px;
+            height: 240px;
+        }
+        @media (max-width:991px) {
+            padding: 20px;
+        }
+        @media (max-width:767px) {
+            max-width: 100%;
+        }
+
+        &::before {
+            content: "";
+            position: absolute;
+            top: 33.3%;
+            left: 10%;
+            width: 100%;
+            height: 100%;
+            
+            background-repeat: no-repeat;
+            object-fit: cover;
+            
+            opacity: 0.3;
+            
+            
+            transition: opacity 0.2s ease-in;
+
+            background-position: bottom;
+
+            transform: scale(1.5);
+
+            @media (max-width:1920px) {
+                top: 50%;
+                left: 30%;
+            
+
+            }
+
+            @media (max-width:1440px) {
+                transform: scale(1.5);
+
+            }
+
+            @media (max-width:1199px) {
+                transform: scale(1);
+                background-position: unset;
+                top: 55%;
+                left: 45%;
+            }
+        }
+        &:hover::before {
+            opacity: 1;
+        }
+    }
+    &__card:hover {
+        box-shadow: 20px 20px 30px 0px rgba(219, 202, 181, 0.50);
+        transition: .2s ease-in;
+        background-color: rgba(255, 255, 255, 0.5); /* Непрозрачный фон при наведении */
+    }
+    &__card:hover &__button {
+        opacity: 1;
+        transition: .2s ease-in;
+    }
+    &__card-1::before {
+        background-image: url(../../img/special-offer/special-offer-1.png);
+    }
+    &__card-2::before {
+        background-image: url(../../img/special-offer/special-offer-2.png);
+    }
+    &__card-3::before {
+        background-image: url(../../img/special-offer/special-offer-3.png);
+    }
+    &__card-4::before {
+        background-image: url(../../img/special-offer/special-offer-4.png);
+    }
+
+
+    &__section-title {
+        display: flex;
+        justify-content: space-between;
+        align-items: baseline
+    }
+
+    &__show {
+        color: #2C2A29;
+        font-family: "Avenir Next Cyr";
+        font-size: 14px;
+        font-style: normal;
+        font-weight: 300;
+        line-height: normal;
+        text-decoration-line: underline;
+        border: none;
+        background-color: transparent;
+        margin-top: 20px;
+    }
+
+	&__title {
+        // white-space: nowrap;
+	}
+	&__subtitle {
+        display: flex;
+        flex-direction: column;
+        gap: 15px;
+        @media (max-width:991px) {
+            gap: 10px;
+        }
+	}
+    &__subtile > span {
+        
+    }
+    
+
+    &__button {
+        display: flex;
+        align-items: center;
+        justify-items: center;
+        justify-content: center;
+        
+        // max-width: 380px;
+
+        background-color: $black;
+        
+        padding: 15px 0;
+
+        cursor: pointer;
+        
+        position: absolute;
+        margin: 0 35px;
+       
+        left: 0;
+        right: 0;
+        bottom: 5%;
+
+        opacity: 0;
+        transition: .1s ease-in;
+        
+        @media (max-width:991px) {
+            width: 125px;
+            position: absolute;
+            margin: unset;
+            max-height: 45px;
+            right: auto;
+            margin: 0 0 10px 20px;
+        }
+
+        @media (max-width:767px) {
+            opacity: 1;
+        }
+    }
+
+    &__pagination {
+        left: 85% !important;
+        height: 20px;
+        top: 5px !important;
+    }
+    &__show.show-all-button {
+        justify-content: flex-end;
+        @media (max-width:767px) {
+            justify-content: flex-start;
+        }
+    }
+    &__show-mobile {
+        position: relative;
+        bottom: 15px;
+        @media (max-width:767px) {
+            margin-bottom: 35px;
+        }
+    }   
+}
+
+
+  
+
+// <~~~~~~~~~~~~~~~~~~ Стили special-offer ( <--- END ---> )~~~~~~~~~~~~~~~~~~> 
+
+
+
+
+
+
+
+
+
+
+
+
+// <~~~~~~~~~~~~~~~~~~ Стили табов ~~~~~~~~~~~~~~~~~~> 
+
+.section-title {
+    margin-top: 20px;
+  }
+  
+  .tabs {
+    display: flex;
+    z-index: 5;
+    position: relative;
+    align-items: baseline;
+    &__item {
+      display: inline;
+    }
+  
+    &__link {
+      text-decoration: none;
+      margin: 0 20px 0 0;
+      color: $black;
+      font-family: 'Avenir Next Cyr';
+      font-size: 36px;
+      font-style: normal;
+      font-weight: 300;
+      line-height: normal;
+        @media (max-width:991px) {
+            font-size: 24px;
+        }
+        @media (max-width:567px) {
+            margin: 0 10px 0 0;
+        }
+        @media (max-width:425px) {
+            font-size: 18px;
+        }
+
+      &--active {
+
+        font-weight: 700;
+        
+        
+        border-bottom: 2px solid $black;
+      }
+    &:hover {
+        
+        border-bottom: 2px solid $black;
+        color: $black;
+    }
+    }
+  }
+  
+  .tab-content {
+    padding: 150px 0 140px 0;
+    @media (max-width:1920px) {
+        padding: 70px 0 100px 0;
+    }
+    transition: opacity 0.3s; // Добавить анимацию появления
+    .tab-pane {
+        
+      &--active {
+        display: block;
+        animation: fadeIn 0.3s; // Примените анимацию при активации
+      }
+    }
+  }
+
+  // Добавьте стили анимации
+@keyframes fadeIn {
+    from {
+      opacity: 0;
+      transform: translateY(20px); // Смещение по вертикали
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+
+  .tab {
+    &__row {
+        row-gap: 30px;
+    }
+    &__block {
+        gap: 50px;
+        display: flex;
+        @media (max-width:1920px) {
+            flex-direction: column;
+            justify-items: center;
+            align-items: center;
+            
+        }
+        @media (max-width:767px) {
+            flex-direction: row;
+        }
+        @media (max-width:425px) {
+            gap: 37px;
+        }
+    }
+    &__block > img {
+        width: 250px;
+        height: 250px;
+        @media (max-width:991px) {
+            width: 200px;
+            height: 200px;
+        }
+        @media (max-width:767px) {
+            width: 100px;
+            height: 100px;
+        }
+    &::after {
+        background-color: #BB9767;
+        border-radius: 50%;
+        top: 100px;
+    }
+    }
+    &__title {
+        margin-bottom: 10px;
+        transition: 0.2s ease-in;
+        &:hover {
+            text-shadow: 0px 0px 1px #2C2A29;
+            color: #2C2A29;
+            transition: 0.2s ease-in;
+        }
+
+        @media (max-width:567px) {
+            margin-bottom: 0;
+        }
+    }
+    &__info {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        align-content: flex-start;
+        align-items: flex-start;
+    }
+  }
+  
+  .tab__block > a > {
+    background-image: url(../../img/tabs/tab-bg.png);
+  }
+
+
+  .tab__block {
+    /* Стили для блока, в котором находится изображение */
+    position: relative;
+    /* Другие необходимые стили */
+}
+
+.tab__image-container {
+    position: relative;
+    overflow: hidden;
+    /* Другие стили для контейнера изображений */
+    overflow: unset;
+    
+}
+
+.tab__img {
+    @media (max-width:991px) {
+        width: 200px;
+    }
+    @media (max-width:767px) {
+        width: 150px;
+    }
+    @media (max-width:567px) {
+        width: 125px;
+    }
+    @media (max-width:425px) {
+        width: 75px;
+    }
+}
+
+
+.tab__hover-image {
+    position: absolute;
+    top: 35px;
+    left: 0;
+    opacity: 0;
+    animation: rotateImage 12s infinite linear; /* Запуск бесконечной анимации */
+    /* Другие стили для изображения, которое будет появляться при наведении */
+
+    transition: .25s ease-in;
+
+    z-index: -5;
+
+    @media (max-width:991px) {
+        width: 200px;
+    }
+    @media (max-width:767px) {
+        width: 150px;
+        top: 20px
+    }
+    @media (max-width:567px) {
+        width: 125px;
+        top: 15px;
+    }
+    @media (max-width:425px) {
+        width: 75px;
+        top: 10px;
+    }
+}
+
+.tab__block:hover .tab__hover-image {
+    opacity: 1;
+    /* Другие стили для изображения при наведении */
+}
+
+@keyframes rotateImage {
+    to {
+        transform: rotate(360deg); /* Поворот на 360 градусов */
+    }
+}
+
+
+
+  .tab__subtitle {
+    max-height: none;
+    display: -webkit-box;
+    -webkit-line-clamp: unset;
+    -webkit-box-orient: vertical;
+    -webkit-mask-size: 100% 200%;
+    overflow: hidden;
+    transition: max-height 0.3s, -webkit-line-clamp 0.3s;
+  }
+  
+  .show-more-button {
+    display: none;
+    color: $black;
+    font-family: 'Avenir Next Cyr';
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: normal;
+    text-decoration-line: underline;
+    border: none;
+    background-color: transparent;
+    margin-top: 20px;
+    padding: unset;
+
+    transition: 0.1s ease-in;
+
+    &:hover {
+        text-shadow: 0px 0px 1px #2C2A29;
+        color: #2C2A29;
+        transition: 0.1s ease-in;
+    }
+  }
+  .show-all-button {
+    color: $black;
+    font-family: 'Avenir Next Cyr';
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: normal;
+    text-decoration-line: underline;
+    border: none;
+    background-color: transparent;
+
+    padding: unset;
+
+
+    flex: 3;
+    display: flex;
+    justify-content: flex-end;
+
+    transition: 0.1s ease-in;
+
+    &:hover {
+        text-shadow: 0px 0px 1px #2C2A29;
+        color: #2C2A29;
+        transition: 0.1s ease-in;
+    }
+  }
+  
+  // При разрешении <1920px, применяем ограничение высоты и кнопку "Показать больше"
+  @media (max-width: 1919px) {
+    .tab__subtitle {
+      max-height: 8em;
+      overflow: hidden;
+      transition: max-height 0.3s, -webkit-line-clamp 0.3s;
+      -webkit-line-clamp: 3;
+    }
+  
+    .show-more-button {
+      display: block;
+      @media (max-width:767px) {
+        display: none;
+      }
+    }
+  }
+  
+  
+  // <~~~~~~~~~~~~~~~~~~ Стили табов ( <--- END ---> )~~~~~~~~~~~~~~~~~~> 
+
+
+
+
+
+
+
+
+
+
+
+
+
+// <~~~~~~~~~~~~~~~~~~ Стили blog ~~~~~~~~~~~~~~~~~~> 
+
+
+
+
+
+.blog {
+    &__container {
+      // Стили для контейнера
+    }
+  
+    &__item {
+        max-width: fit-content;
+        display: flex !important;
+        flex-direction: column;
+        gap: 20px;
+
+        max-width: 450px;
+
+        margin: 0 30px 0 0;
+    }
+
+    &__img {
+        cursor: pointer;
+        // width: fit-content;
+    }
+
+    &__img > img {
+        width: 100%;
+    }
+    
+
+    &__item:hover &__img svg path,
+    &__item:hover &__img svg rect {
+    fill: #2c2a295c; /* Измените на нужный вам цвет при наведении */
+    transition: .2s ease-in;
+}
+    
+
+    &__info {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+
+        
+    }
+    
+    &__title {
+        display: flex;
+        justify-content: center;
+        @media (max-width:991px) {
+            justify-content: flex-start;
+        }
+    }
+
+    &__section-title {
+        display: flex;
+        justify-content: space-between;
+        align-items: baseline;
+    }
+
+    &__subtitle {
+        overflow: hidden;
+
+
+        @media (max-width:991px) {
+            display: -webkit-box;
+            -webkit-line-clamp: unset;
+            -webkit-box-orient: vertical;
+            -webkit-mask-size: 100% 200%;
+            -webkit-line-clamp: 2;
+        }
+    }
+
+
+    &__slider {
+        padding: 0px 0 150px 0;
+        @media (max-width:1199px) {
+            padding: 0px 0 100px 0;
+        }
+
+
+      &-wrapper {
+        margin: 30px 0 40px 0;
+        @media (max-width:425px) {
+            margin: 20px 0;
+        }
+      }
+  
+      &-slide {
+        // Стили для каждого слайда
+      }
+  
+      &-pagination {
+        // Стили для пагинации (по желанию)
+      }
+      &-buttons {
+        position: relative;
+        display: flex;
+        justify-content: flex-end;
+        z-index: 1;
+        gap: 40px;
+
+        @media (max-width:567px) {
+            gap: 15px;
+        }
+      }
+    }
+
+    &__show {
+        flex: 1;
+        justify-content: flex-end;
+        align-items: center;
+        display: flex;
+        @media (max-width:767px) {
+            display: none;
+        }
+    }
+    &__show-mobile {
+        display: none;
+        @media (max-width:767px) {
+            display: flex;
+            align-items: center;
+            justify-content: flex-start;
+        }
+    }
+    
+  }
+  
+
+/* Удаляем маркеры по умолчанию у списка ul */
+.blog__subtitle ul {
+    list-style: none;
+    padding: 0;
+    margin: 0 0 0 15px;
+    
+}
+
+/* Стили для элементов списка li */
+.blog__subtitle ul li {
+    display: inline-block; /* Размещаем элементы в строку */
+    margin-right: 20px; /* Добавляем отступ между элементами списка */
+    position: relative; /* Устанавливаем позицию для кругового маркера */
+    line-height: 1.5; /* Задаем высоту строки для центрирования кругового маркера */
+
+    
+    &:hover {
+        text-shadow: 0px 0px 1px #2C2A29;
+        color: #2C2A29;
+        transition: 0.1s ease-in;
+    }
+    & > a {
+        color: #2C2A29 ;
+        font-family: "Avenir Next Cyr";
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 300;
+        line-height: normal;
+        
+        transition: 0.1s ease-in;
+    }
+}
+
+/* Стили для кругового маркера */
+.blog__subtitle ul li:before {
+    content: ''; /* Добавляем контент для псевдоэлемента */
+    display: block;
+    width: 6px; /* Размер круга */
+    height: 6px; /* Размер круга */
+    border-radius: 50%; /* Создаем круг */
+    background-color: black; /* Цвет круга */
+    position: absolute;
+    left: -15px; /* Располагаем круг слева от текста */
+    top: 50%; /* Располагаем круг по центру по вертикали */
+    transform: translateY(-50%); /* Центрируем по вертикали */
+}
+
+
+
+
+// <~~~~~~~~~~~~~~~~~~ Стили blog ( <--- END ---> )~~~~~~~~~~~~~~~~~~> 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+// <~~~~~~~~~~~~~~~~~~ Стили services (single-page) ~~~~~~~~~~~~~~~~~~> 
+
+.services {
+    &__body {
+
+        
+
+    }
+    // &-overlay {
+    //     background: url(../../img/bg/bg-element.png);
+    //     background-position: right;
+    //     background-size: auto;
+    //     background-repeat: no-repeat;
+    //     opacity: 0.25;
+    //     position: fixed;
+    //     top: -0.5%;
+    //     left: 50%;
+    //     width: calc(2560px + 5vw);
+    //     height: 100%;
+    // }
+    &__container {
+        padding-bottom: 100px;
+    }
+    &__row {
+        row-gap: 40px;
+
+        width: 100%;
+        margin: 0 auto;
+
+        @media (max-width:767px) {
+            row-gap: 10px;
+        }
+    }
+    &__card {
+        position: relative;
+
+        transition: .2s ease-in;
+
+        padding: 25px 30px 30px 35px;
+
+        height: 100%;
+        
+        @media (max-width:991px) {
+            height: unset;
+        }
+
+        @media (max-width:767px) {
+            padding: 20px 20px 20px 20px;
+        }
+    }
+    &__card:hover {
+        background-color: rgba(255, 255, 255, 0.3); /* Непрозрачный фон при наведении */
+
+        box-shadow: 5px 5px 15px 0px rgba(171, 153, 128, 0.50);     
+
+        transition: .2s ease-in;
+    }
+    &__card:hover &__button {
+        opacity: 1;
+        
+    }
+
+    &__card-wrapper {
+        height: 100%;
+
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        padding-bottom: 30px;
+
+        @media (max-width:991px) {
+            padding-bottom: 0px;
+        }
+
+        @media (max-width:767px) {
+			display: none;
+		}
+        @media (max-width:567px) {
+            padding-bottom: 20px;
+        }
+    }
+
+    &__title {
+        display: flex;
+        justify-content: space-between;
+        
+    }
+    &__toggle {
+        display: none;
+        align-items: center;
+        transition: .1s ease-in;
+        cursor: pointer;
+        @media (max-width:767px) {
+            display: flex;
+        }
+    }
+    &__list {
+        margin-top: 5px ;
+        // max-height: 160px;
+        overflow: hidden;
+
+        background: -webkit-linear-gradient(top, #2C2A29 70%, transparent 95%);
+        -webkit-background-clip: text;
+
+        height: 100%;
+
+        @media (max-width:991px) {
+            margin-top: 15px;
+            margin-bottom: 15px;
+        }
+        @media (max-width:767px) {
+            background: unset;
+        }
+    }
+    &__list.hidden {
+        max-height: 160px;
+        @media (max-width:767px) {
+            max-height: unset;
+        }
+    }
+    &__list-item {
+        display: flex;
+		align-items: center;
+		gap: 5px;
+       
+
+    }
+    &__list-item {
+        -webkit-text-fill-color: transparent;
+        @media (max-width:767px) {
+            -webkit-text-fill-color: unset;
+            color: $black;
+        }
+    }
+    &__list-item > a:hover {
+		border-bottom: 1px solid $black;
+    }
+    &__card-bottom {
+		display: flex;
+		justify-content: space-between;
+		align-items: flex-end;
+        @media (max-width:991px) {
+            align-items: center;
+        }
+        @media (max-width:567px) {
+            align-items: center;
+        }
+	}
+    &__show {
+        cursor: pointer;
+    }
+    &__button {
+        opacity: 0;
+        padding: 15px 30px;
+        transition: .2s ease-in;
+        @media (max-width:1920px) {
+            padding: unset;
+        }
+    }
+
+    
+
+}
+
+.cd-divder-white {
+    color: #ECE4D7 !important;
+    border-bottom: 1px solid #ECE4D7 !important;
+    border-top: 1px solid #ECE4D7 !important;
+}
+
+
+
+
+.page-cta {
+
+	&__container {
+        padding-bottom:100px;
+        @media (max-width:991px) {
+            padding-bottom: 100px;
+        }
+	}
+	&__row {
+
+	}
+	&__wrapper {
+		display: flex;
+		align-items: center;
+        justify-content: flex-end;
+		gap: 40px;
+
+        @media (max-width:1440px) {
+            gap: 20px;
+        }
+
+        @media (max-width:991px) {
+            gap: 0px;
+        }
+
+
+        @media (max-width:767px) {
+            flex-direction: column;
+            gap: 10px;
+        }
+	}
+	&__img {
+
+	}
+	&__paragraph {
+        display: flex;
+        flex-direction: column;
+        width: 50%;
+
+        @media (max-width:991px) and (min-width:767px) {
+            margin-left: 10px;
+        }
+
+        @media (max-width:767px) {
+            width: 100%;
+            text-align: center;
+            padding-bottom: 20px;
+        }
+	}
+	&__title {
+        @media (max-width:767px) {
+            padding-bottom: 10px;
+        }
+	}
+	&__subtitle {
+
+	}
+	&__button {
+        background-color: $black;
+        width: 100%;
+        flex: 1;
+        display: flex;
+        justify-content: center;
+        max-width: 600px;
+
+
+        font-family: "Avenir Next Cyr";
+        transition: .15s ease-in;
+
+        &:hover {
+            background-color: #BB9767;
+            
+            
+        }
+
+        @media (max-width:567px) {
+            max-width: 250px;   
+        }
+	}
+	&__button > a {
+        display: flex;
+        justify-content: center;    
+        width: 100%;
+        
+        padding: 15px ;
+        font-size: 24px;
+
+        @media (max-width:1440px) {
+            font-size: 20px;
+        }
+
+        @media (max-width:991px) {
+            font-size: 16px;
+        }
+
+        @media (max-width:567px) {
+            font-size: 14px;
+        }
+	}
+}
+
+
+
+
+
+
+// <~~~~~~~~~~~~~~~~~~ Стили services ( <--- END ---> )~~~~~~~~~~~~~~~~~~> 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.inner-page {
+	&__title {
+		margin-bottom: 50px;
+		@media (max-width:991px) {
+            margin-bottom: 30px;
+        }
+	}
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+// <~~~~~~~~~~~~~~~~~~ Стили service-single (inner-page) ~~~~~~~~~~~~~~~~~~> 
+
+
+.services__page-cta {
+    padding-bottom: 100px;
+}
+
+.service-single {
+	&-main {
+
+	}
+    &__info {
+        padding: 40px 0 30px 0;
+
+        border-top: 1px solid black;
+        
+        @media (max-width:991px) {
+            padding: 0 0 100px 0;
+        }
+
+    
+    }
+	&__top {
+
+	}
+	&__top-container {
+
+	}
+	&__top-row {
+        row-gap: 50px;
+        margin-bottom: 100px;
+        @media (max-width:991px) {
+            margin-bottom: 60px;
+        }
+	}
+	&__list {
+        display: flex;
+        flex-direction: column;
+        gap: 15px;
+        padding-left: unset;
+        padding-right: unset;
+	}
+	&__list-item {
+
+		
+		transition: .2s ease-in;
+	}
+	&__list-item:hover {
+		background-color: #BB9767;
+		transition: .2s ease-in;
+	}
+    &__list-item > a > span {
+        margin: 0 10px 0 10px;
+
+    }
+	&__list-item.current {
+		background-color: #BB9767;
+		transition: .2s ease-in;
+	}
+    &__img {
+        padding-left: unset;
+        padding-right: unset;
+    }
+    &__img > img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+    &__info-title {
+        padding-bottom: 35px;
+
+        
+
+		@media (max-width:991px) {
+			padding-bottom: 10px;;
+		}
+
+        @media (max-width:767px) {
+            text-align: left;
+        }
+    }
+}
+
+/* Для разрешения менее 991px */
+@media (max-width: 1440px) and (min-width:768px) {
+    .service-single__list.col-md-4,
+    .service-single__img.col-md-8 {
+        /* Измените классы на col-md-6 */
+        width: 50%;
+    }
+
+}
+
+
+
+.info-paragraph {
+    & > p > span > a {
+        text-decoration-line: underline;
+        color: #2C2A29;
+        transition: .2s ease-in;
+
+        &:hover {
+            text-shadow: 0px 0px 1px #2C2A29;
+            color: #2C2A29;
+            transition: 0.2s ease-in;
+
+        }
+    }
+}
+
+// <~~~~~~~~~~~~~~~~~~ Стили service ( <--- END ---> )~~~~~~~~~~~~~~~~~~> 
+
+
+
+
+
+
+
+
+
+
+// <~~~~~~~~~~~~~~~~~~ Стили price ~~~~~~~~~~~~~~~~~~> 
+
+
+.price {
+    color: $black;
+    font-family: 'Avenir Next Cyr';
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 200%; /* 36px */
+
+    &__row {
+        margin: 0 0 100px 0;
+        @media (max-width:991px) {
+            margin: 0 0 70px 0;
+        }
+        @media (max-width:567px) {
+            margin: 0 0 30px 0;
+        }
+    }
+
+    &__block {
+        margin: 0 auto;
+    }
+
+    &__table-cell {
+        border-bottom: 1px solid var(--Middle, #BB9767);
+        transition: .2s ease-in;
+    }
+    
+    &__table-cell:hover {
+        background-color: #bb97676f;
+        transition: .2s ease-in;
+    }
+
+    &__table-cell > td {
+        padding: 7.5px 0;
+    }
+
+    &__table-cell > td:last-child {
+        color: $black;
+        font-family: 'Avenir Next Cyr';
+        font-size: 18px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: 200%; /* 36px */
+
+
+        padding: 0 7.5vw 0 0;
+
+        @media (max-width:390px) {
+            font-size: 12px;
+        }
+    }
+    &__table-header {
+        border-bottom: 2px solid var(--Middle, #BB9767);
+    }
+    &__table-code {
+        @media (max-width:567px) {
+            display: none;
+        }
+    }
+    &__table-zone {
+        @media (max-width:567px) {
+            width: 50%;
+
+        }
+    }
+
+    &__row-body {
+        display: flex;
+        justify-content: space-between;
+        gap: 5%;
+    }
+
+    &__table-special-offer {
+        text-transform: uppercase;
+        color: #2C2A29 !important;
+        
+        &:hover {
+            text-shadow: 0px 0px 1px #2C2A29;
+            color: #2C2A29;
+            transition: 0.2s ease-in;
+            color: #2C2A29;
+        }
+
+        & > a {
+            color: #2C2A29;
+        }
+    }
+}
+
+
+// <~~~~~~~~~~~~~~~~~~ Стили price ( <--- END ---> )~~~~~~~~~~~~~~~~~~> 
+
+
+
+
+
+
+
+
+
+
+
+
+// <~~~~~~~~~~~~~~~~~~ Стили treatment ~~~~~~~~~~~~~~~~~~> 
+
+
+.treatment {
+    &__container {
+
+    }
+    &__row {
+
+    }
+    &__block-mobile {
+        display: none;
+        @media (max-width:1440px) {
+            display: flex;
+        }
+    }
+    &__top {
+        display: flex;
+        flex-direction: column;
+    }
+    &__img > img {
+        width: 100%;
+        max-width: 640px;
+        object-fit: contain;
+    }
+    &__img {
+        @media(max-width:767px) {
+            display: none;
+        }
+    }
+
+    &__title {
+        margin-bottom: 35px;
+        @media (max-width:991px) {
+            margin-bottom: 30px;
+        }
+        @media (max-width:767px) {
+            margin-bottom: 20px;
+        }
+    }
+
+    &__paragraph {
+        margin-bottom: 60px; 
+        @media (max-width:991px) {
+            margin-bottom: 30px;
+        }
+        @media (max-width:767px) {
+            margin-bottom: 10px;
+        }
+    }
+
+    &__benefits-desktop {
+     display: flex;   
+        @media (max-width:1440px) {
+            display: none;
+        }
+    }
+    &__benefits-mobile {
+        display: none;   
+           @media (max-width:1440px) {
+               display: flex;
+               flex: 1;
+               margin-top: 100px;
+               gap: 60px;
+               
+           }
+           @media (max-width:1199px) {
+            margin-top: 50px;
+           }
+           
+           @media (max-width:991px) {
+            margin-top: unset;
+           }
+
+           @media (max-width:767px) {
+                flex-direction: column;
+                row-gap: 25px;
+           }
+    }
+    &__benefits-title {
+        display: flex;
+        justify-content: space-between;
+
+        margin-bottom: 30px;
+        @media (max-width:991px) {
+            margin-bottom: 10px;
+            margin-top: 15px;
+        }
+    }
+
+    &__toggle {
+        display: none;
+        @media (max-width:767px) {
+            display: block;
+        }
+    }
+
+    &__list {
+        
+        @media (max-width:767px) {
+            display: none;
+        }
+    }
+
+    &__list.active {
+        @media (max-width:767px) {
+            display: unset;
+        }
+    }
+
+    &__positive {
+        padding: 0 0 10px 0;
+        @media (max-width:767px) {
+            border-top: 1px solid var(--Middle, #BB9767);
+            border-bottom: 1px solid var(--Middle, #BB9767);
+        }
+    }
+    &__negative {
+        padding: 0 0 10px 0; 
+        @media (max-width:767px) {
+            border-top: 1px solid var(--Middle, #BB9767);
+            border-bottom: 1px solid var(--Middle, #BB9767);
+        }
+    }
+}
+
+
+
+
+// <~~~~~~~~~~~~~~~~~~ Стили treatment ( <--- END ---> )~~~~~~~~~~~~~~~~~~> 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.club {
+    &__body {
+        width: 100%;
+        margin: 0;
+        overflow-x: unset;
+        background: url(../../img/bg/bg-alt.jpg);
+        object-fit: cover;
+        // background-repeat: no-repeat;
+    }
+}
+
+
+.club-menu {
+    // height: auto;
+    padding: 0 0 300px 0;
+    &__container {
+        // margin-top: 11vh;
+        
+    }
+    &__row {
+        @media (max-width:1024px) {
+          display: none;
+        }
+    }
+    &__dropdown {
+        display: flex;
+        width: 250%;
+        // overflow: hidden !important;
+        padding: 50px !important;
+        height: 900px !important;
+        @media (max-width:1920px) {
+            width: 225%;
+        }
+        @media (max-width:1440px) {
+            padding: 25px !important;
+        }
+        
+    }
+    &__info {
+        max-width: 650px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+
+        width: 100%;
+    }
+    &__name {
+        display: flex;
+        flex-direction: column;
+    }
+    &__grid {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        margin: 75px 0 140px 0;
+        
+        gap: 80px;
+        @media (max-width:1820px) {
+            margin: 75px 0 75px 0;
+        }
+        @media (max-width:1440px) {
+            gap: 40px;
+            display: flex;
+            flex-direction: column;
+        }
+        @media (max-width:991px) {
+            gap: 40px;
+            margin: 50px 0 50px 0;
+        }
+    }
+    &__bottom {
+        display: flex;
+        gap: 20px;
+        flex-direction: column;
+        margin-bottom: 60px;
+        @media (max-width:991px) {
+            align-items: center;
+        }
+    }
+    &__item {
+       
+    }
+    &__button {
+        padding: 0px 55px;
+        background-color: #BB9767;
+        // flex: 1;
+        width: fit-content;
+        max-height: 60px;
+        height: 60px;
+        display: flex !important;
+        align-items: center;
+    }
+    &__more {
+        
+    }
+    &__img {
+        position: absolute;
+        right: -5%;
+        
+    }
+    &__overlay {
+        position: absolute;
+        z-index: -5;
+        bottom: 0;
+        right: 0;
+    }
+    &__img-secondary {
+        position: absolute;
+        right: -15%;
+        bottom: -10%;
+        
+    }
+    &__img-secondary > img {
+        
+    }
+    &__overlay-secondary {
+        position: absolute;
+        z-index: -5;
+        bottom: -15%;
+    }
+    &__overlay-mobile {
+        position: absolute;
+    }
+    &__img-paragraph {
+        position: absolute;
+        right: 3%;
+        bottom: 5%;
+
+        
+    }
+    &__img-paragraph > img {
+        @media (max-width:1920px) {
+            width: 300px;
+        }
+        @media (max-width:1900px) {
+            display: none;
+        }
+    }
+    &__title-secondary {
+        margin-bottom: 50px;
+    }
+
+
+
+
+
+
+
+
+
+
+    
+    &__dropdown {
+        @media (max-width:1900px) {
+            overflow: hidden;
+            width: 150%;
+        }
+        @media (max-width:1440px) {
+            width: 100%;
+        }
+    }
+
+    &__img {
+        @media (max-width:1900px) {
+            display: none;
+        }
+    }
+    &__img-secondary {
+        @media (max-width:1900px) {
+            display: none;
+        }
+    }
+
+    &__overlay {
+        @media (max-width:1900px) {
+            display: none;
+        }
+    }
+    &__overlay-secondary {
+        @media (max-width:1900px) {
+            display: none;
+        }
+    }
+
+}
+
+
+
+.club {
+    &-card {
+        width: 100%;
+        padding: 0 5px;
+    }
+}
+
+
+
+
+// <~~~~~~~~~~~~~~~~~~ Стили work ~~~~~~~~~~~~~~~~~~> 
+
+.work {
+    &__container {
+
+    }
+    &__row {
+        margin: 50px 0 70px 0;
+        @media (max-width:991px) {
+            margin: 30px 0 80px 0;
+        }
+        @media (max-width:767px) {
+            margin: 30px 0 50px 0;
+        }
+
+    }
+    &__slider {
+
+        
+    }
+    &__wrapper {
+
+    }
+    &__slide.swiper-slide > a > img {
+        width: 100%;
+        object-fit: cover;
+    }
+    &__slide.swiper-slide {
+        width: fit-content;
+        opacity: 0.5;
+        @media (max-width:991px) {
+            width: 300px;
+
+        }
+
+        @media (max-width:567px) {
+            opacity: 0;
+        }
+        
+
+        // Исключаем активные слайды
+        &.swiper-slide-active {
+            opacity: 1; // Возвращаем полную прозрачность для активных слайдов
+        }
+    }
+    &__control {
+        display: flex;
+        z-index: 5;
+        position: relative;
+        bottom: 310px;
+        @media (max-width:991px) {
+            bottom: 225px;
+        }
+        @media (max-width:767px) {
+            bottom: 220px;
+        }
+        @media (max-width:567px) {
+            bottom: 227px;
+        }
+        
+    }
+    &__slider-button-prev {
+        position: absolute;
+        left: 0;
+        @media (max-width:991px) {
+            transform: scale(.75);
+        }
+        @media (max-width:567px) {
+            transform: scale(.55);
+        }
+        @media (max-width:425px) {
+            left: -20px;
+        }
+    }
+    &__slider-button-next {
+        position: absolute;
+        right: 0;
+        @media (max-width:991px) {
+            transform: scale(.75);
+        }
+        @media (max-width:567px) {
+            transform: scale(.55);
+        }
+        @media (max-width:425px) {
+            right: -20px;
+        }
+    }
+    
+    &__section-title {
+        margin-bottom: 50px;
+    }
+
+}
+
+.gallery__title {
+    margin-bottom: 40px;
+}
+
+// <~~~~~~~~~~~~~~~~~~ Стили work ( <--- END ---> )~~~~~~~~~~~~~~~~~~> 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+// reviews
+
+
+.reviews {
+
+    &__title {
+        color: $black;
+        font-family: 'Avenir Next Cyr';
+        font-size: 36px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: normal;
+        opacity: .3;
+
+
+        margin: 200px 0;
+
+        @media (max-width:991px) {
+            margin: 150px 0 ;
+        }
+
+        @media (max-width:567px) {
+            margin: 70px 0;
+        }
+    }
+}
+
+
+

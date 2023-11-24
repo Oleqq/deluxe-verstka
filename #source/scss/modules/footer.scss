@@ -1,0 +1,136 @@
+.footer {
+    
+    position: relative;
+    bottom: 0;
+    .footer-nav__wrapper {
+      display: flex;
+      grid-template-columns: repeat(auto-fill, minmax(278px, 1fr));
+      gap: 30px;
+
+     padding: 45px 0;
+
+      
+
+      @media (max-width:1920px) {
+        grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+        padding: 2.5vw 0 2.5vw 0;
+      }
+      @media (max-width:991px) {
+        display: grid;
+      }
+      @media (max-width:1920px) and (min-width:567px) {
+        margin-bottom: 50px;
+      }
+      @media (max-width:567px) {
+        margin-top: 50px;
+      }
+
+    }
+
+    .footer__outside {
+      border-top: 1px solid #000;
+
+      border-bottom: 1px solid #000;
+    }
+
+    .footer__wrapper {
+        @media (max-width:767px) {
+            display: flex;
+            flex-direction: column-reverse;
+        }
+    }
+
+    .footer__column-desktop {
+        display: flex;
+        justify-content: space-between;   
+        align-items: flex-end;
+
+        @media (max-width:1920px) {
+            display: none !important;
+        }
+    }
+
+    .footer__column-mobile {
+        display: none;
+        margin-bottom: 15px;
+        margin-top: 15px;
+        @media (max-width:1920px) {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+
+            
+        }
+    }
+
+    .footer__policy {
+      margin-top: 50px;
+      margin-bottom: 5vw;
+    }
+
+    .footer__socials {
+        display: flex;
+        justify-content: flex-end;
+        gap: 25px;
+    }
+
+    .footer__logo > svg {
+        @media (max-width:567px) {
+          width: 200px;
+        }
+        @media (max-width:425px) {
+          width: 150px;
+        }
+    }
+
+    .footer__column {
+      display: flex;
+      flex-direction: column;
+      align-items: left;
+      gap: 10px;
+      
+      
+  
+      .footer__city {
+        font-weight: bold;
+        margin-bottom: 5px;
+
+
+        display: flex;
+        justify-content: space-between;
+        
+      }
+  
+      .footer__address {
+        display: block;
+        margin: unset;
+        
+        @media (max-width:567px) {
+        display: none;
+        }
+      }
+
+      .footer__tel {
+        
+        @media (max-width:567px) {
+            display: none;
+        }
+      }
+  
+      .footer__toggle {
+        display: none;
+        cursor: pointer;
+        transition: .1s ease-in;
+        @media (max-width: 767px) {
+          display: block;
+        }
+      }
+  
+      &.active {
+        .footer__address {
+          display: block;
+        }
+      }
+    }
+  }
+  

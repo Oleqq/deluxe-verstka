@@ -1,0 +1,1640 @@
+@import "modules/variables.scss";
+
+@font-face {
+	font-family: 'Avenir Next Cyr';
+	src: url('AvenirNextCyr-Light.eot');
+	src: local('Avenir Next Cyr Light'), local('AvenirNextCyr-Light'),
+		url('../fonts/AvenirNextCyr-Light.eot?#iefix') format('embedded-opentype'),
+		url('../fonts/AvenirNextCyr-Light.woff') format('woff'),
+		url('../fonts/AvenirNextCyr-Light.ttf') format('truetype');
+	font-weight: 300;
+	font-style: normal;
+}
+@font-face {
+	font-family: 'Avenir Next Cyr';
+	src: url('AvenirNextCyr-Demi.eot');
+	src: local('Avenir Next Cyr Demi'), local('AvenirNextCyr-Demi'),
+		url('../fonts/AvenirNextCyr-Demi.eot?#iefix') format('embedded-opentype'),
+		url('../fonts/AvenirNextCyr-Demi.woff') format('woff'),
+		url('../fonts/AvenirNextCyr-Demi.ttf') format('truetype');
+	font-weight: bold;
+	font-style: normal;
+}
+@font-face {
+	font-family: 'Avenir Next Cyr';
+	src: url('AvenirNextCyr-Medium.eot');
+	src: local('Avenir Next Cyr Medium'), local('AvenirNextCyr-Medium'),
+		url('../fonts/AvenirNextCyr-Medium.eot?#iefix') format('embedded-opentype'),
+		url('../fonts/AvenirNextCyr-Medium.woff') format('woff'),
+		url('../fonts/AvenirNextCyr-Medium.ttf') format('truetype');
+	font-weight: 500;
+	font-style: normal;
+}
+@font-face {
+	font-family: 'Avenir Next Cyr';
+	src: url('AvenirNextCyr-Regular.eot');
+	src: local('Avenir Next Cyr Regular'), local('AvenirNextCyr-Regular'),
+		url('../fonts/AvenirNextCyr-Regular.eot?#iefix') format('embedded-opentype'),
+		url('../fonts/AvenirNextCyr-Regular.woff') format('woff'),
+		url('../fonts/AvenirNextCyr-Regular.ttf') format('truetype');
+	font-weight: normal;
+	font-style: normal;
+}
+@font-face {
+	font-family: 'Avenir Next Cyr';
+	src: url('AvenirNextCyr-Bold.eot');
+	src: local('Avenir Next Cyr Bold'), local('AvenirNextCyr-Bold'),
+		url('../fonts/AvenirNextCyr-Bold.eot?#iefix') format('embedded-opentype'),
+		url('../fonts/AvenirNextCyr-Bold.woff') format('woff'),
+		url('../fonts/AvenirNextCyr-Bold.ttf') format('truetype');
+	font-weight: bold;
+	font-style: normal;
+}
+@font-face {
+	font-family: 'Avenir Next Cyr';
+	src: url('AvenirNextCyr-Thin.eot');
+	src: local('Avenir Next Cyr Thin'), local('AvenirNextCyr-Thin'),
+		url('AvenirNextCyr-Thin.eot?#iefix') format('embedded-opentype'),
+		url('../fonts/AvenirNextCyr-Thin.woff') format('woff'),
+		url('../fonts/AvenirNextCyr-Thin.ttf') format('truetype');
+	font-weight: 100;
+	font-style: normal;
+}
+
+
+
+// хлебные крошки 
+
+
+.breadcrumbs {
+	&__link {
+		color: $black;
+		font-family: 'Avenir Next Cyr';
+		font-size: 16px;
+		font-style: normal;
+		font-weight: 300;
+		line-height: normal;
+		@media (max-width:767px) {
+			font-size: 14px;
+		}
+		@media (max-width:567px) {
+			font-size: 12px;
+		}
+	}
+
+	&__link.white {
+		color: #ECE4D7;
+	}
+	&__link.white:hover {
+		color: #ECE4D7;
+	}
+
+	&__link:hover {
+		color: $black;
+	}
+	&__prev {
+
+	}
+	&__current {
+		color: #BB9767;
+		font-family: 'Avenir Next Cyr';
+		font-size: 16px;
+		font-style: normal;
+		font-weight: 300;
+		line-height: normal;
+		@media (max-width:767px) {
+			font-size: 14px;
+		}
+		@media (max-width:567px) {
+			font-size: 12px;
+		}
+	}
+	&__current:hover {
+
+	}
+	&__divider {
+		display: flex;
+		align-items: center;
+	}
+	
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.page-cta {
+
+	&__container {
+		
+	}
+	&__row {
+
+	}
+	&__wrapper {
+
+	}
+	&__img > img {
+		@media (max-width:991px) {
+			width: 80px;
+		}
+	}
+	&__paragraph {
+
+	}
+	&__title {
+		color: $black;
+		font-family: 'Avenir Next Cyr';
+		font-size: 24px;
+		font-style: normal;
+		font-weight: 450;
+		line-height: 150%; /* 36px */
+		@media (max-width:1920px) {
+			font-size: 20px;
+		}
+		@media (max-width:991px) {
+			font-size: 16px;
+		}
+	}
+	&__subtitle {
+		color: $black;
+		font-family: 'Avenir Next Cyr';
+		font-size: 18px;
+		font-style: normal;
+		font-weight: 450;
+		line-height: 150%; /* 36px */
+		@media (max-width:1920px) {
+			font-size: 15px;
+		}
+		@media (max-width:991px) {
+			font-size: 12px;
+		}
+	}
+	&__button {
+
+	}
+	&__button > a {
+		color: $white;
+	}
+}
+
+
+
+
+.cta-single {
+	display: flex;
+	gap: 15px;
+	margin: 50px 0 100px 0;
+	align-items: center;
+	@media (max-width:991px) {
+		margin: 30px 0 80px 0 ;
+	}
+	@media (max-width:767px) {
+		margin: 30px 0 50px 0 ;
+
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		justify-content: center;
+
+		gap: 30px;
+	}
+	&__info {
+		
+	}
+	&__mobile {
+		display: none;
+		@media (max-width:767px) {
+			display: flex;
+			align-items: center;
+			justify-content: center;
+			flex-direction: column;
+			
+		}
+	}
+	&__mobile-title {
+		color: $black;
+		text-align: center;
+		font-family: 'Avenir Next Cyr';
+		font-size: 18px;
+		font-style: normal;
+		font-weight: 450;
+		line-height: 100%; /* 18px */
+	}
+	&__button > a {
+		padding: 15px 40px;
+		background-color: $black;
+
+		color: var(--White, #FFF);
+		font-family: 'Avenir Next Cyr';
+		font-size: 24px;
+		font-style: normal;
+		font-weight: 400;
+		line-height: normal;
+
+		@media (max-width:991px) {
+			font-size: 16px;
+		}
+		@media (max-width:567px) {
+			font-size: 14px;
+		}
+	}
+	&__price {
+		color: $black;
+		font-family: 'Avenir Next Cyr';
+		font-size: 16px;
+		font-style: normal;
+		font-weight: 450;
+		line-height: normal;
+	}
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+a {
+	text-decoration: none;
+	&:hover {
+		color: unset;
+	}
+}
+
+
+
+
+
+.section {
+	&__title {
+		color: $black;
+		font-family: 'Avenir Next Cyr';
+		font-size: 36px;
+		font-style: normal;
+		font-weight: 700;
+		line-height: normal;
+		@media (max-width:1920px) {
+			font-size: 32px;
+		}
+		@media (max-width:1440px) {
+			font-size: 28px;
+		}
+		@media (max-width:991px) {
+			font-size: 24px;
+		}
+		@media (max-width:767px) {
+			font-size: 20px;
+		}
+		@media (max-width:567px) {
+			font-size: 18px;
+		}
+	}
+}
+
+
+
+
+
+
+
+.hashtag {
+	color: $black;
+	font-family: 'Avenir Next Cyr';
+	font-size: 24px;
+	font-style: normal;
+	font-weight: 450;
+	line-height: normal;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+// <~~~~~~~~~~~~~~~~~~ Типографика Main Slide ~~~~~~~~~~~~~~~~~~> 
+
+
+.slide {
+
+	&__title {
+		color: $black;
+		font-family: 'Avenir Next Cyr';
+		font-size: 96px;
+		font-style: normal;
+		font-weight: 275;
+		line-height: normal;
+
+		@media (max-width:1440px) {
+			font-size: 86px;
+		}
+
+		@media (max-width:1280px) {
+			font-size: 78px;
+		}
+
+		@media (max-width:991px) {
+			font-size: 50px;
+		}
+		@media (max-width:767px) {
+			font-size: 46px;
+		}
+		@media (max-width:567px) {
+			font-size: 42px;
+		}
+		@media (max-width:425px) {
+			font-size: 36px;
+		}
+
+		& > span {
+			@media (max-width:1299px) {
+				background-color: #2C2A29;
+				color: #ECE4D7;
+			}
+		}
+	}
+
+	&__benefits {
+		color: $black;
+		font-family: 'Avenir Next Cyr';
+		font-size: 24px;
+		font-style: normal;
+		font-weight: 450;
+		line-height: 100%; /* 24px */
+		list-style: none;
+
+		margin: 0;
+		padding: 0;
+
+		@media (max-width:991px) {
+			font-size: 16px;
+		}
+		@media (max-width:767px) {
+			font-size: 15px;
+		}
+		@media (max-width:567px) {
+			font-size: 14px;
+		}
+		@media (max-width:425px) {
+			font-size: 12px;
+		}
+	}
+
+	&__buttons {
+		display: flex;
+		gap: 25px;
+	}
+	&__button-primary {
+		display: flex;
+		& > a { 
+			color: #2C2A29;
+			font-family: 'Avenir Next Cyr';
+			font-size: 24px;
+			font-style: normal;
+			font-weight: 400;
+			line-height: normal;
+
+			
+			background-color: #FFF;
+			padding: 20px 40px;
+			transition: .2s ease-in;
+			&:hover {
+				color: #fff;
+				background-color: #BB9767;
+				transition: .2s ease-in;
+		   }
+
+		   	@media (max-width:991px) {
+				font-size: 16px;
+				padding: 15px 40px;
+			}
+			@media (max-width:567px) {
+				padding: 15px 20px;
+			}
+			@media (max-width:425px) {
+				font-size: 14px;
+			}
+		}
+	}
+	&__button-secondary {
+		display: flex;
+		& > a { 
+
+			color: #fff;
+			font-family: 'Avenir Next Cyr';
+			font-size: 24px;
+			font-style: normal;
+			font-weight: 400;
+			line-height: normal;
+
+			background-color: #2C2A29;
+			padding: 20px 40px;
+			transition: .2s ease-in;
+
+			&:hover {
+				color: #2C2A29;
+				background-color: #BB9767;
+				transition: .2s ease-in;
+		   }
+		   
+		   	@media (max-width:991px) {
+				font-size: 16px;
+				padding: 15px 30px;
+			}
+			@media (max-width:576px) {
+				padding: 15px;
+			}
+			@media (max-width:425px) {
+				font-size: 14px;
+			}
+		}
+	}
+
+}
+
+.hashtag {
+	font-size: 24px;
+    @media (max-width:991px) {
+		font-size: 14px;
+	}
+	@media (max-width:425px) {
+		font-size: 12px;
+	}
+}
+
+// <~~~~~~~~~~~~~~~~~~ Типографика Main Slide ( <--- END ---> )~~~~~~~~~~~~~~~~~~> 
+
+
+
+
+
+
+
+
+
+
+
+// <~~~~~~~~~~~~~~~~~~ Типографика Hero  ~~~~~~~~~~~~~~~~~~> 
+
+
+.hero {
+
+
+    &__container {
+
+    }
+    &__row {
+
+    }
+	&__info {
+		color: $black;
+		font-family: 'Avenir Next Cyr';
+		font-size: 24px;
+		font-style: normal;
+		font-weight: 400;
+		line-height: normal;
+		@media (max-width:991px) {
+			font-size: 16px;
+		}
+		@media (max-width:567px) {
+			font-size: 14px;
+		}
+	}
+	&__title {
+		color: $black;
+		font-family: 'Avenir Next Cyr';
+		font-size: 48px;
+		font-style: normal;
+		font-weight: 700;
+		line-height: normal;
+		@media (max-width:991px) {
+			font-size: 36px;
+		}
+		@media (max-width:567px) {
+			font-size: 24px;
+		}
+	}
+	&__subtitle {
+		color: $black;
+		font-family: 'Avenir Next Cyr';
+		font-size: 36px;
+		font-style: normal;
+		font-weight: 300;
+		line-height: normal;
+		@media (max-width:991px) {
+			
+		}
+		@media (max-width:567px) {
+			font-size: 24px;
+		}
+	}
+	&__author {
+		color: $black;
+		font-family: 'Avenir Next Cyr';
+		font-size: 18px;
+		font-weight: 300;
+		line-height: 22px;
+		letter-spacing: 0em;
+		text-align: left;	
+		@media (max-width:567px) {
+			font-size: 14px;
+		}
+	}
+	&__button > a {
+
+	}
+
+}
+
+
+
+
+
+
+
+// <~~~~~~~~~~~~~~~~~~ Типографика Hero ( --- END --- ) ~~~~~~~~~~~~~~~~~~> 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+// <~~~~~~~~~~~~~~~~~~ Типографика benefits ~~~~~~~~~~~~~~~~~~> 
+
+
+
+.benefits {
+	&__container {
+
+	}
+	&__row {
+
+	}
+	&__icon {
+
+	}
+	&__title {
+		color: $black;
+		font-family: 'Avenir Next Cyr';
+		font-size: 24px;
+		font-style: normal;
+		font-weight: 700;
+		line-height: 100%; /* 24px */
+		@media (max-width:1920px) {
+			font-size: 20px;
+		}
+		@media (max-width:991px) {
+			font-size: 16px;
+		}
+	}
+	&__subtitle {
+		color: $black;
+		font-family: 'Avenir Next Cyr';
+		font-size: 16px;
+		font-style: normal;
+		font-weight: 300;
+		line-height: normal;
+		@media (max-width:991px) {
+			font-size: 14px;
+		}
+	}
+}
+
+
+
+// <~~~~~~~~~~~~~~~~~~ Типографика benefits ( <--- END ---> )~~~~~~~~~~~~~~~~~~> 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+// <~~~~~~~~~~~~~~~~~~ Типографика service ~~~~~~~~~~~~~~~~~~> 
+
+
+
+
+
+
+
+
+.service {
+	&__title > a {
+		color: $black;
+		font-family: 'Avenir Next Cyr';
+		font-size: 24px;
+		font-style: normal;
+		font-weight: 700;
+		line-height: normal;
+		transition: .1s ease-in;
+		@media (max-width:1920px) {
+			font-size: 22px;
+		}
+		@media (max-width:1440px) {
+			font-size: 20px;
+		}
+		@media (max-width:991px) {
+			font-size: 16px;
+		}
+		@media (max-width:767px) {
+			font-size: 15px;
+		}
+		@media (max-width:567px) {
+			
+		}
+		@media (max-width:425px) {
+			font-size: 14px;
+		}
+		@media (max-width:390px) {
+			
+		}
+	}
+	&__title > a:hover {
+		transition: .1s ease-in;
+		color: #2c2a296c;
+	}
+	&__subtitle {
+		color: $black;
+		font-family: 'Avenir Next Cyr';
+		font-size: 16px;
+		font-style: normal;
+		font-weight: 300;
+		line-height: normal;
+
+		 
+	}
+
+	
+}
+
+
+
+
+
+
+
+
+
+// <~~~~~~~~~~~~~~~~~~ Типографика services ( <--- END ---> )~~~~~~~~~~~~~~~~~~> 
+
+
+
+
+
+
+
+
+
+
+
+
+
+// <~~~~~~~~~~~~~~~~~~ Типографика blog ~~~~~~~~~~~~~~~~~~> 
+
+
+
+
+
+
+
+
+.blog {
+	&__title > a {
+		color: $black;
+		font-family: 'Avenir Next Cyr';
+		font-size: 24px;
+		font-style: normal;
+		font-weight: 700;
+		line-height: normal;
+		transition: .1s ease-in;
+		@media (max-width:1920px) {
+			font-size: 22px;
+		}
+		@media (max-width:1440px) {
+			font-size: 20px;
+		}
+		@media (max-width:991px) {
+			text-align: left;
+			font-size: 16px;
+		}
+		@media (max-width:767px) {
+			font-size: 15px;
+		}
+		@media (max-width:567px) {
+			
+		}
+		@media (max-width:425px) {
+			font-size: 14px;
+		}
+		@media (max-width:390px) {
+			
+		}
+
+	}
+	&__title > a:hover {
+		transition: .1s ease-in;
+		color: #2c2a296c;
+	}
+	&__subtitle {
+		color: $black;
+		font-family: 'Avenir Next Cyr';
+		font-size: 16px;
+		font-style: normal;
+		font-weight: 300;
+		line-height: normal;
+
+		text-align: center;
+
+		@media (max-width:991px) {
+			text-align: left;
+		}
+
+		 
+	}
+
+	
+}
+
+
+
+
+
+
+
+
+
+// <~~~~~~~~~~~~~~~~~~ Типографика blog ( <--- END ---> )~~~~~~~~~~~~~~~~~~> blog
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+// <~~~~~~~~~~~~~~~~~~ Типографика special-offer ~~~~~~~~~~~~~~~~~~> 
+
+
+.special-offer {
+	&__title {
+		color: $black;
+		font-family: 'Avenir Next Cyr';
+		font-size: 36px;
+		font-style: normal;
+		font-weight: 700;
+		line-height: normal;
+		@media(max-width:1920px) {
+			font-size: clamp(0.875rem, 0.716rem + 0.65vw, 1.5rem);
+		}
+		@media (max-width:991px) {
+			font-size: clamp(1rem, 0.676rem + 1.33vw, 1.5rem);
+		}
+	}
+	&__subtitle {
+		color: $black;
+		font-family: 'Avenir Next Cyr';
+		font-size: 24px;
+		font-style: normal;
+		font-weight: 300;
+		line-height: normal;
+		@media (max-width:1920px) {
+			font-size: 18px;
+		}
+		@media (max-width:991px) {
+			font-size: 14px;
+		}
+	}
+
+	&__button {
+		color: $white;
+		font-family: 'Avenir Next Cyr';
+		font-size: clamp(0.875rem, 0.763rem + 0.46vw, 1.5rem);
+		font-style: normal;
+		font-weight: 400;
+		line-height: normal;
+	}
+}
+
+
+// <~~~~~~~~~~~~~~~~~~ Типографика special-offer ( <--- END ---> )~~~~~~~~~~~~~~~~~~> 
+
+
+
+
+
+
+
+
+// <~~~~~~~~~~~~~~~~~~ Типографика табов ~~~~~~~~~~~~~~~~~~> 
+
+
+.tab {
+	&__title {
+		color: $black;
+		font-family: 'Avenir Next Cyr';
+		font-size: 18px;
+		font-style: normal;
+		font-weight: 700;
+		line-height: normal;
+	}
+	&__subtitle {
+		color: $black;
+		font-family: 'Avenir Next Cyr';
+		font-size: 16px;
+		font-style: normal;
+		font-weight: 300;
+		line-height: 150%; /* 24px */
+	}
+}
+
+
+
+
+// <~~~~~~~~~~~~~~~~~~ Типографика табов ( <--- END ---> )~~~~~~~~~~~~~~~~~~> 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+// <~~~~~~~~~~~~~~~~~~ Типографика services (single-page) ~~~~~~~~~~~~~~~~~~> 
+
+.services {
+    &__container {
+
+    }
+    &__row {
+
+    }
+    &__card {
+		
+    }
+	&__card-wrapper {
+		
+	}
+    &__title {
+		color: $black;
+		font-family: 'Avenir Next Cyr';
+		font-size: 24px;
+		font-style: normal;
+		font-weight: 700;
+		line-height: normal;
+		
+		// white-space: nowrap;
+		
+		@media (max-width:1600px) {
+			font-size: 22px;
+		}
+
+		@media (max-width:1440px) {
+			font-size: 18px;
+		}
+
+		@media (max-width:991px) {
+			font-size: 18px;
+		}
+    }
+    &__list {
+		
+    }
+	&__list-item {
+		
+	}
+    &__list-item > a {
+		color: $black;
+		font-family: 'Avenir Next Cyr';
+		font-size: 16px;
+		font-style: normal;
+		font-weight: 300;
+		line-height: normal;
+    }
+	&__list-item > a:hover {
+		font-family: 'Avenir Next Cyr';
+		font-size: 16px;
+		font-style: normal;
+		font-weight: 450;
+		line-height: normal;
+    }
+	&__list-item > span {
+		color: $black;
+	}
+	&__card-bottom {
+
+	}
+    &__show {
+		color: $black;
+		font-family: 'Avenir Next Cyr';
+		font-size: 16px;
+		font-style: normal;
+		font-weight: 450;
+		line-height: normal;
+    }
+    &__button > a {
+		color: $black !important;
+		font-family: 'Avenir Next Cyr';
+		font-size: 24px;
+		font-style: normal;
+		font-weight: 500;
+		line-height: normal;
+		@media (max-width:1920px) {
+			
+		}
+		@media (max-width:1440px) {
+			
+		}
+		@media (max-width:991px) {
+			font-size: 18px;
+		}
+		@media (max-width:767px) {
+			
+		}
+		@media (max-width:567px) {
+			
+		}
+		@media (max-width:425px) {
+			
+		}
+		// position: absolute;
+    }
+
+}
+
+
+// <~~~~~~~~~~~~~~~~~~ Типографика services ( <--- END ---> )~~~~~~~~~~~~~~~~~~> 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.inner-page {
+	&__title {
+		color: $black;
+		font-family: 'Avenir Next Cyr';
+		font-size: 36px;
+		font-style: normal;
+		font-weight: 300;
+		line-height: normal;
+
+		text-align: center;
+
+		@media (max-width:991px) {
+			font-size: 24px;
+		}
+		@media (max-width:567px) {
+			font-size: 18px;
+		}
+		
+	}
+}
+
+
+
+
+// <~~~~~~~~~~~~~~~~~~ Типографика service-single (inner-page) ~~~~~~~~~~~~~~~~~~> 
+
+
+.service-single {
+	&-main {
+
+	}
+	&__top {
+
+	}
+	&__top-container {
+
+	}
+	&__top-row {
+
+	}
+	&__list {
+
+	}
+	&__list-item {
+
+
+	}
+	&__list-item > a {
+		color: $black;
+		font-family: 'Avenir Next Cyr';
+		font-size: 24px;
+		font-style: normal;
+		font-weight: 400;
+		line-height: 200%; /* 48px */
+		@media (max-width:991px) {
+			font-size: 16px;
+		}
+	}
+	&__list-item.current {
+
+	}
+
+
+	&__info-title {
+		color: $black;
+		text-align: center;
+		font-family:'Avenir Next Cyr';
+		font-size: 24px;
+		font-style: normal;
+		font-weight: 700;
+		line-height: normal;
+	}
+}
+
+
+// <~~~~~~~~~~~~~~~~~~ Типографика service ( <--- END ---> )~~~~~~~~~~~~~~~~~~> 
+
+
+
+
+
+
+
+
+
+
+
+
+
+.info-paragraph {
+	&-more {
+		padding-bottom: 10px;
+	}
+	&__title {
+		color: $black;
+		font-family: 'Avenir Next Cyr';
+		font-size: 24px;
+		font-style: normal;
+		font-weight: 300;
+		line-height: 150%; /* 36px */
+
+		margin-bottom: 20px;
+
+		
+	}
+	& > p {
+		color: $black;
+		font-family: 'Avenir Next Cyr';
+		font-size: 18px;
+		font-style: normal;
+		font-weight: 300;
+		line-height: 150%; /* 27px */
+	}
+	& > p > span {
+
+	}
+	& > ul > li {
+		color: $black;
+		font-family: 'Avenir Next Cyr';
+		font-size: 18px;
+		font-style: normal;
+		font-weight: 300;
+		line-height: 150%;
+	}
+	& > ul > li > span {
+		margin: 0 10px 0 10px;
+	}
+
+	& > ul {
+		margin-bottom: 20px;
+	}
+
+	&__show {
+		color:#BB9767;
+		font-family: 'Avenir Next Cyr';
+		font-size: 16px;
+		font-style: normal;
+		font-weight: 700;
+		line-height: normal;
+	}
+	&__show:hover {
+		color:#BB9767;
+
+	}
+	&.visible > p {
+		@media (max-width:991px) {
+			display: -webkit-box;
+			-webkit-line-clamp: 4;
+			-webkit-box-orient: vertical;
+			overflow: hidden;
+			text-overflow: ellipsis;
+		}
+	}
+	&-more {
+		@media (max-width:991px) {
+			display: none;
+		}
+	}
+	
+}
+
+
+
+  
+  
+
+
+
+
+
+
+
+
+
+
+
+// <~~~~~~~~~~~~~~~~~~ Типографика treatment ~~~~~~~~~~~~~~~~~~> 
+
+
+.treatment {
+    &__container {
+
+    }
+    &__row {
+
+    }
+    &__img > img {
+
+    }
+
+    &__benefits {
+
+    }
+	&__title {
+		color: $black;
+		text-align: center;
+		font-family: 'Avenir Next Cyr';
+		font-size: 24px;
+		font-style: normal;
+		font-weight: 300;
+		line-height: normal;
+		text-align: left;
+		@media (max-width:567px) {
+			text-align: center;
+		}
+	}
+	&__paragraph {
+		color: $black;
+		font-family: 'Avenir Next Cyr';
+		font-size: 18px;
+		font-style: normal;
+		font-weight: 300;
+		line-height: 150%; /* 27px */
+		@media (max-width:991px) {
+			font-size: 16px;
+		}
+	}
+	&__benefits-title {
+		color: $black;
+		font-family: 'Avenir Next Cyr';
+		font-size: 16px;
+		font-style: normal;
+		font-weight: 700;
+		line-height: normal;
+	}
+	&__item {
+		color: $black;
+		font-family: 'Avenir Next Cyr';
+		font-size: 18px;
+		font-style: normal;
+		font-weight: 300;
+		line-height: normal;
+
+		margin-left: 25px;
+
+		list-style-type: disc;
+
+		@media (max-width:991px) {
+			font-size: 16px;
+		}
+	}
+	&__item > span {
+		margin: 0 5px 0 5px;
+	}
+}
+
+
+
+// <~~~~~~~~~~~~~~~~~~ Типографика treatment ( <--- END ---> )~~~~~~~~~~~~~~~~~~> 
+
+
+
+
+
+
+
+
+
+// product
+
+
+.product {
+	&__name {
+		color: var(--Black, #2C2A29);
+		text-align: center;
+		font-family: 'Avenir Next Cyr';
+		font-size: 36px;
+		font-style: normal;
+		font-weight: 700;
+		line-height: normal;
+
+		text-align: left;
+
+
+
+		margin-bottom: 20px;
+
+		@media (max-width:1440px) {
+			font-size: 30px;
+		}
+
+
+		@media (max-width:991px) {
+			font-size: 24px;
+		}
+
+		@media (max-width:567px) {
+			font-size: 20px;
+		}
+
+		@media (max-width:425px) {
+			font-size: 18px;
+		}
+	}
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+// <~~~~~~~~~~~~~~~~~~ Типографика gallery ~~~~~~~~~~~~~~~~~~> 
+
+.gallery {
+	&__title {
+		color: $black;
+		text-align: center;
+		font-family: 'Avenir Next Cyr';
+		font-size: 36px;
+		font-style: normal;
+		font-weight: 300;
+		line-height: normal;
+		text-align: left;
+		@media (max-width:1440px) {
+			font-size: 22px;
+			text-align: center;
+		}
+		@media (max-width:991px) {
+			font-size: 24px;
+			text-align: center;
+		}
+		@media (max-width:767px) {
+			font-size: 20px;
+		}
+		@media (max-width:567px) {
+			font-size: 18px;
+		}
+	}
+}
+
+// <~~~~~~~~~~~~~~~~~~ Типографика gallery ( <--- END ---> )~~~~~~~~~~~~~~~~~~> 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+// <~~~~~~~~~~~~~~~~~~ Типографика club-menu ~~~~~~~~~~~~~~~~~~> 
+
+.club-menu {
+
+    &__container {
+
+        
+    }
+    &__row {
+
+        
+    }
+    &__grid {
+        
+    }
+	&__name {
+		color: var(--White, #FFF);
+		font-family: 'Avenir Next Cyr';
+		font-size: 18px;
+		font-style: normal;
+		font-weight: 400;
+		line-height: 120%; /* 21.6px */
+		@media (max-width:767px) {
+			font-size: 16px;
+		}
+	}
+	&__name > span {
+		color: var(--White, #FFF);
+		font-family: 'Avenir Next Cyr';
+		font-size: 24px;
+		font-style: normal;
+		font-weight: 400;
+		line-height: 120%;
+		@media (max-width:991px) {
+			
+		}
+		@media (max-width:767px) {
+			font-size: 20px;
+		}
+	}
+	&__title {
+		color: var(--White, #FFF);
+		font-family: 'Avenir Next Cyr';
+		font-size: 24px;
+		font-style: normal;
+		font-weight: 450;
+		line-height: 150%; /* 36px */
+		@media (max-width:991px) {
+			font-size: 20px;
+		}
+		@media (max-width:567px) {
+			font-size: 16px;
+		}
+	}
+	&__subtitle {
+		color: var(--Light, #ECE4D7);
+		font-family: 'Avenir Next Cyr';
+		font-size: 18px;
+		font-style: normal;
+		font-weight: 400;
+		line-height: 150%;
+		@media (max-width:991px) {
+			font-size: 16px;
+		}
+		@media (max-width:567px) {
+			font-size: 14px;
+		}
+	}
+	&__more {
+        color: var(--Light, #ECE4D7);
+		font-family: 'Avenir Next Cyr';
+		font-size: 16px;
+		font-style: normal;
+		font-weight: 400;
+		line-height: 150%; /* 24px */
+		text-decoration-line: underline;
+    }
+	&__title-secondary {
+		color: var(--Light, #ECE4D7);
+		font-family: 'Avenir Next Cyr';
+		font-size: 36px;
+		font-style: normal;
+		font-weight: 300;
+		line-height: normal;
+	}
+	&__paragraph {
+		color: var(--Light, #ECE4D7);
+		font-family: 'Avenir Next Cyr';
+		font-size: 18px;
+		font-style: normal;
+		font-weight: 400;
+		line-height: 150%; /* 27px */
+	}
+	&__tip {
+		color: var(--Light, #ECE4D7);
+		font-family: 'Avenir Next Cyr';
+		font-size: 16px;
+		font-style: normal;
+		font-weight: 300;
+		line-height: normal;
+	}
+
+	&__button {
+		color: #2C2A29 !important;
+		font-size: 24px ;
+		@media (max-width:991px) {
+			font-size: 16px;
+		}
+		@media (max-width:390px) {
+			font-size: 14px;
+		}
+	}
+}
+
+
+// <~~~~~~~~~~~~~~~~~~ Типографика club-menu ( <--- END ---> )~~~~~~~~~~~~~~~~~~> 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+// <~~~~~~~~~~~~~~~~~~ Типографика footer ~~~~~~~~~~~~~~~~~~> 
+
+
+.footer {
+	&__city {
+		color: $black;
+		font-family: 'Avenir Next Cyr';
+		font-size: 18px;
+		font-style: normal;
+		font-weight: 750;
+		line-height: normal;
+		&.white {
+			color: #ECE4D7;
+		}
+	}
+	&__address {
+		color: $black;
+		font-family: 'Avenir Next Cyr';
+		font-size: 18px;
+		font-style: normal;
+		font-weight: 400;
+		line-height: normal;
+		&.white {
+			color: #ECE4D7;
+		}
+	}
+	&__toggle {
+		
+	}
+	&__tel {
+		color: $black;
+        text-align: justify;
+        font-family: 'Avenir Next Cyr';
+        font-size: 18px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+		&.white {
+			color: #ECE4D7;
+		}
+	}
+	&__tel:hover {
+		color: $black;
+		font-weight: 400;
+		&.white {
+			color: #ECE4D7;
+			
+		}
+	}
+	&__policy {
+		color: $black;
+		font-family: 'Avenir Next Cyr';
+		font-size: 14px;
+		font-style: normal;
+		font-weight: 300;
+		line-height: normal;
+	}
+	&__policy > a {
+		border-bottom: 1px solid $black;
+		color: $black;
+		transition: 0.1s ease-in;
+		&:hover {
+			text-shadow: 0px 0px 1px #2C2A29;
+			color: #2C2A29;
+			transition: 0.1s ease-in;
+		}
+	}
+}
+
+
+// <~~~~~~~~~~~~~~~~~~ Типографика footer ( <--- END ---> )~~~~~~~~~~~~~~~~~~> 

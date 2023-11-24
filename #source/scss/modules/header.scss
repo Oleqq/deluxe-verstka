@@ -1,0 +1,838 @@
+// body {
+//   @media (max-width:1820px) {
+//     height: auto !important;
+//   }
+// }
+
+
+
+
+ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+
+
+
+
+.menu {
+    
+    &-item > a {
+        color: $black;
+        font-family: 'Avenir Next Cyr';
+        font-size: 18px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+        transition: .2s ease-in;
+        
+    }
+    &-item > a:hover {
+      text-shadow: 0px 0px 1px #2C2A29;
+      color: #2C2A29;
+      transition: .2s ease-in;
+        
+    }
+
+    &-item.white > a {
+      color: #ECE4D7;
+    }
+
+    
+}
+
+
+
+
+
+
+
+
+.header {
+    position: relative;
+    z-index: 100;
+    max-height: 74px;
+    &__container {
+
+    }
+    &__row {
+        width: 100%;
+        margin: 0 auto;
+    }
+    &__logo {
+        position: absolute;
+        /* margin: 0 auto; */
+        left: 0;
+        right: 0;
+        display: flex;
+        justify-content: center;
+
+        
+
+        @media (max-width:2199px) {
+            position: unset;
+            flex: 1;
+            justify-content: flex-start;
+        }
+        @media (max-width:767px) {
+            position: absolute;
+            width: 200px;
+            margin: 0 auto;
+
+        }
+        @media (max-width:567px) {
+            width: 150px;
+        }
+        @media (max-width:375px) {
+          width: 100px;
+        }
+    }
+    &__info {
+        display: flex;
+        align-items: center;
+        gap: 60px;
+        z-index: 5;
+        @media (max-width:1300px) {
+          gap: 15px;
+        }
+    }
+    &__tel {
+        color: $black;
+        font-family: 'Avenir Next Cyr';
+        font-size: 18px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+        transition: .2s ease-in;
+        @media (max-width:867px) {
+            display: none;
+        }
+        &.white {
+          color:#ECE4D7
+        }
+        &:hover {
+          text-shadow: 0px 0px 1px #2C2A29;
+          color: #2C2A29;
+          transition: .2s ease-in;
+        }
+    }
+    
+
+    
+}
+
+
+.nav {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    padding: 50px 0 0 0;
+    position: relative;
+    @media (max-width:2199px) {
+        justify-content: space-between;
+    }
+    @media (max-width:767px) {
+        
+    }
+}
+
+.menu {
+    display: flex;
+    gap: 30px;
+    align-items: center;
+
+    position: absolute;
+    bottom: 0;
+
+    z-index: 10;
+    padding-left: 50px;
+
+    @media (max-width:2199px) {
+        display: none;
+    }
+
+    &-item {
+    
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+.city-list {
+  width: 100% !important;
+
+  
+}
+
+.city-dropdown {
+  border: none;
+  background: none;
+  color: var(--Black, #2C2A29);
+  font-family: 'Avenir Next Cyr';
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 750;
+  line-height: normal;
+  z-index: 5;
+
+  text-transform: uppercase;
+
+  &.white {
+    color: #ECE4D7;
+    & > option {
+      color: #2C2A29;
+    }
+  }
+  
+  @media (max-width:991px) {
+    font-size: 16px;
+  }
+  @media (max-width:767px) {
+    font-size: 14px;
+  }
+  @media (max-width:567px) {
+    font-size: 10px;
+  }
+  @media (max-width:425px) {
+    font-size: 10px;
+    
+    position: relative;
+    right: -11px;
+  }
+}
+
+
+
+
+
+
+
+
+
+.menu-dropdown {
+  display: flex;
+  gap: 5px;
+
+
+
+  
+
+  @media (max-width:991px) {
+      font-size: 14px;
+  }
+  @media (max-width:567px) {
+      font-size: 10px;
+  }
+}
+
+
+.menu-dropdown {
+  position: relative;
+  display: inline-block;
+  // min-width: 200px;
+  @media (max-width:991px) {
+    min-width: none;
+  }
+  
+
+  &__toggler {
+      display: flex;
+      transition: .2s ease-in;
+  }
+  
+  .selected-menu {
+    
+    
+
+    color: $black;
+    font-family: 'Avenir Next Cyr';
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    text-transform: uppercase;
+    
+    transition: .2s ease-in;
+
+
+    &.white {
+      color:#ECE4D7;
+    }
+
+
+    cursor: pointer;
+    transition: 0.1s ease-in;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    gap: 10px;
+
+    white-space: pre;
+
+    text-align: center;
+
+
+      display: flex;
+
+    
+
+
+    
+    &:hover {
+      content: '\25BE';
+      display: flex;
+      
+      // color: $white;
+      transition: 0.2s ease-in;
+      // color: $main-dark;
+    }
+
+    &__title-primary {
+      color: $black;
+      font-family: 'Avenir Next Cyr';
+      font-size: 18px;
+      font-style: normal;
+      font-weight: 750;
+      line-height: normal;
+      text-transform: uppercase;
+      &.white {
+        color:#ECE4D7;
+      }
+      @media (max-width:991px) {
+        font-size: 10px;
+      }
+    }
+
+    &__title-secondary {
+      color: $black;
+      font-family: 'Avenir Next Cyr';
+      font-size: 18px;
+      font-style: normal;
+      font-weight: 400;
+      line-height: normal;
+      transition: .2s ease-in;
+      &.white {
+        color: #ECE4D7;
+      }
+    }
+    &__title-secondary:hover {
+      text-shadow: 0px 0px 1px #2C2A29;
+      transition: .2s ease-in;
+    }
+
+
+
+
+  }
+  .selected-menu::after {
+    content: ''; /* Убираем текстовое содержание, чтобы не было стрелки */
+    display: inline-block;
+    width: 17px; /* Ширина вашей иконки */
+    height: 9px; /* Высота вашей иконки */
+    background: url('../../../img/svg/dropdown-toggler.svg') center center no-repeat; /* Укажите путь к вашей иконке и стиль отображения */
+    transform: var(--toggler-rotation, rotateX(0deg));
+    transition: transform 0.2s ease-in;
+    margin-left: 5px; /* Расстояние между надписью и иконкой */
+    z-index: 1; /* Установите z-index, чтобы элемент находился поверх других элементов */
+    position: relative; /* Установите позицию, чтобы z-index работал */
+  }
+
+  .selected-menu.white::after {
+    content: ''; /* Убираем текстовое содержание, чтобы не было стрелки */
+    display: inline-block;
+    width: 17px; /* Ширина вашей иконки */
+    height: 9px; /* Высота вашей иконки */
+    background: url('../../../img/svg/dropdown-toggler-white.svg') center center no-repeat; /* Укажите путь к вашей иконке и стиль отображения */
+    transform: var(--toggler-rotation, rotateX(0deg));
+    transition: transform 0.2s ease-in;
+    margin-left: 5px; /* Расстояние между надписью и иконкой */
+    z-index: 1; /* Установите z-index, чтобы элемент находился поверх других элементов */
+    position: relative; /* Установите позицию, чтобы z-index работал */
+  }
+
+  
+
+  .menu-list {
+    position: absolute;
+    top: 150%;
+    left: 0;
+    width: 100%;
+    overflow-y: auto;
+    background: rgba(255, 255, 255, 0.486);
+    border-top: none;
+    display: none;
+    z-index: 1;
+    padding: unset;
+
+    width: max-content;
+
+    &-secondary {
+      width: 350px;
+  
+    }
+
+
+    li, option {
+      padding: 5px;
+      cursor: pointer;
+      text-align: left;
+
+
+      color: $black;
+      font-family: 'Avenir Next Cyr';
+      font-size: 16px;
+      font-style: normal;
+      font-weight: 700;
+      line-height: 200%; /* 32px */
+      text-transform: uppercase;
+
+
+
+      &:hover {
+        background-color: #BB9767;
+        transition: 0.1s ease-in;
+      //   color: $white;
+      }
+    }
+
+    li.white {
+      color: #ECE4D7;
+    }
+
+    
+
+    &__item > a {
+      color: $black;
+      font-family: 'Avenir Next Cyr';
+      font-size: 16px;
+      font-style: normal;
+      font-weight: 400;
+      line-height: 200%; /* 32px */
+      text-transform: uppercase;
+      
+    }
+    &__item:hover a {
+      text-shadow: 0px 0px 1px #2C2A29;
+      
+    }
+    &__item > a > span {
+      margin: 0 5px 0 7.5px;
+    }
+    &__item.white > a {
+      color: #ECE4D7;
+    }
+  }
+
+  
+
+  &.open {
+    .menu-list {
+      display: block;
+      
+    }
+    .menu-city {
+      // color: $main-dark; // Применяем цвет текста к .selected-city, если .city-dropdown сразу после него имеет класс "open"
+     
+    }
+  }
+}
+
+.menu-dropdown {
+  &.open {
+    .selected-menu__title-secondary {
+      text-shadow: 0px 0px 1px #2C2A29;
+    }
+    
+    
+  }
+  &.open::after {
+    transition: .2s ease-in;
+    transform: rotateX(180deg); /* Состояние при открытом дропдауне - иконка вверх */
+  }
+}
+
+.menu-list > li, .selected-menu {
+  @media (max-width:1699px) and (min-width:992px) {
+    font-size: 12px;
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+// <~~~~~~~~~~~~~~~~~~ Стили full-screen-menu ~~~~~~~~~~~~~~~~~~> 
+
+
+
+
+
+.fullscreen-menu {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background: url(../../img/bg/bg-secondary.jpg);
+  z-index: 9;
+  opacity: 0;
+  display: none;
+  
+  transition: transform 0.5s ease, opacity 0.2s ease;
+
+  
+
+  &.active {
+    opacity: 1;
+    display: unset;
+    
+    
+    height: 100vh;
+  }
+
+  &-secondary {
+    background: url(../../img/bg/bg-alt.jpg);
+    position: absolute;
+   
+  }
+
+  &-secondary.active {
+    background: url(../../img/bg/bg-alt.jpg);
+    position: absolute;
+    
+  }
+
+  &__container {
+    margin-top: 15vh;
+    // height: 100vh;
+  }
+
+  &__row {
+    text-align: center;
+  }
+
+  &__row-desktop {
+    @media (max-width:1024px) {
+      display: none;
+    }
+    
+  }
+
+
+
+
+
+
+
+
+
+
+  &__img > img {
+    width: 100%;
+    object-fit: contain;
+  }
+
+  &__img {
+    @media (max-width:1820px) {
+      display: none;
+    }
+  }
+
+
+
+
+
+
+
+  &__sub-list {
+    display: none;
+    opacity: 0;
+    transition: .2 ease-in;
+  }
+
+
+
+
+
+  &__services-item-1:hover + &__sub-list-1 {
+    display: block;
+  }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  &__accordion {
+    display: none;
+    @media (max-width:1024px) {
+        display: block;
+    }
+  }
+
+
+
+
+  &__accordion-list {
+    background-color:  rgba(187, 151, 103, 0.14);
+
+
+    padding: 10px;
+
+    &-secondary {
+      background-color: #1C1C1C;
+    }
+  }
+
+  &__accordion-list > li {
+    padding: 0 10px;
+
+  }
+
+  &__accordion-list > li > a {
+
+    &:hover {
+      border-bottom: 1px solid $black;
+    }
+  }
+
+
+  &__accordion-list > li > a {
+    color: $black;
+    font-family: 'Avenir Next Cyr';
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 200%; /* 32px */
+  }
+  &__accordion-list.white > li > a {
+    color: #ECE4D7;
+    
+  }
+  &__accordion-list.white {
+    background-color: #1C1C1C;
+  }
+
+  &__accordion-list > li > span {
+    color: $black;
+    margin: 0 7.5px 0 7.5px;
+  }
+
+  &__mobile-link {
+    justify-content: space-between;
+    padding: 1rem;
+    color: var(--Black, #2C2A29);
+    font-family: "Avenir Next Cyr";
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    
+    &>a {
+      color: var(--Black, #2C2A29);
+    }
+    &:hover {
+      font-weight: 700;
+    }
+
+    &-secondary > a  {
+      color: #ECE4D7;
+    }
+  }
+
+}
+
+
+
+
+
+
+
+// <~~~~~~~~~~~~~~~~~~ Стили full-screen-menu ( <--- END ---> )~~~~~~~~~~~~~~~~~~> 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.burger-menu {
+  display: flex;
+  flex-direction: column;
+  cursor: pointer;
+  
+
+  .bar {
+    width: 35px;
+    height: 3px;
+    background-color: #2C2A29;
+    margin: 3px auto;
+    transition: 0.4s;
+
+    &:first-child {
+      margin-top: 0;
+    }
+    &:nth-child(2) {
+      width: 25px;
+      
+    }
+    
+  }
+  .bar.white {
+    background-color: #ECE4D7;
+  }
+
+
+  &.open {
+    .bar:first-child {
+      transform: translateY(10px) rotate(40deg);
+    }
+    .bar:nth-child(2) {
+      opacity: 0;
+    }
+    .bar:last-child {
+      transform: translateY(-7.5px) rotate(-40deg);
+    }
+  }
+
+  &-mobile {
+    display: none;
+    flex-direction: column;
+    margin-right: 35px;
+    cursor: pointer;
+
+    @media (max-width:991px) {
+      position: absolute;
+      left: -75px;
+    }
+
+    @media (max-width:867px) {
+      position: relative;
+      left: unset;
+    }
+
+    .bar {
+      width: 35px;
+      height: 3px;
+      background-color: #2C2A29;
+      margin: 3px auto;
+      transition: 0.4s;
+  
+      &:first-child {
+        margin-top: 0;
+      }
+      &:nth-child(2) {
+        width: 25px;
+      }
+      
+    }
+    .bar.white {
+      background-color: #ECE4D7;
+    }
+
+    &.open {
+      .bar:first-child {
+        transform: translateY(10px) rotate(40deg);
+      }
+      .bar:nth-child(2) {
+        opacity: 0;
+      }
+      .bar:last-child {
+        transform: translateY(-7.5px) rotate(-40deg);
+      }
+    }
+
+    @media (max-width:2199px) {
+        display: flex;
+        
+    }
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
